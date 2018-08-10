@@ -1,5 +1,8 @@
 theme: jekyll-theme-cayman
 
+title: Hello World
+description: whatever
+
 # hide those links to view on github and download tgz
 github: false
 show_downloads: false
