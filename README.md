@@ -1,3 +1,6 @@
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/koddo/test-jekyll-cayman-theme/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -35,3 +38,8 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+# test
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
