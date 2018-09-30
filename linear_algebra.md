@@ -1,3 +1,7 @@
+---
+title:  "Linear algebra"
+---
+
 {% include mathjax.html %}
 
 # test
