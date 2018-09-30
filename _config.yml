@@ -14,3 +14,7 @@ plugins:
   - jekyll-feed
 
 
+collections:
+  notes:
+    title: "Notes"
+    output: true
