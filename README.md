@@ -1,3 +1,6 @@
+---
+title:  "readme"
+---
 
 This is the source for <https://koddo.github.io/test-jekyll-cayman-theme/>.
 
