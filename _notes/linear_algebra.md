@@ -1,5 +1,7 @@
 ---
 title:  "Linear algebra"
+layout: default
+
 ---
 
 {% include mathjax.html %}
