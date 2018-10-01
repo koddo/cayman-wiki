@@ -21,3 +21,13 @@ collections:
 
 
 superlearn_url: "https://superlearn.it"
+
+
+
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input:          GFM
+  hard_wrap:      true
+highlighter: rouge
