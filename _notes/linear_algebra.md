@@ -38,9 +38,13 @@ $$
 
 Elementary row operations do not change the solution set:
 
-$\boxed{\Rightarrow}$ let $x: \ Ax=0 \quad \Leftrightarrow \quad E \cdot Ax = E \cdot 0$, then $(EA)x=0$, then $x$ is in null set of $EA$
+$\boxed{\Rightarrow}$ let $x: \ Ax=0 \quad \Leftrightarrow \quad E \cdot Ax = E \cdot 0$,  
+then $(EA)x=0$,  
+then $x$ is in null set of $EA$
 
-$\boxed{\Leftarrow}$ let $x: \ EAx=0$, then $Ax = (E^{-1}E)Ax = E^{-1} (EA)x = E^{-1} 0 = 0$, then $x$ is in null set of $A$
+$\boxed{\Leftarrow}$ let $x: \ EAx=0$,  
+then $Ax = (E^{-1}E)Ax = E^{-1} (EA)x = E^{-1} 0 = 0$,  
+then $x$ is in null set of $A$
 
 But they change the image, see what happens after row switching:
 
