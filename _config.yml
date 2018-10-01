@@ -30,4 +30,4 @@ markdown: kramdown
 kramdown:
   input:          GFM
   hard_wrap:      true
-highlighter: rouge
+  highlighter: rouge
