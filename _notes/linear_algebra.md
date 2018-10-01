@@ -108,7 +108,9 @@ TODO: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-time-
 </iframe>
 
 <script>
- if(document.cookie.indexOf('superlearn=') >= 0) {
-     console.log('hello')
- }
+ if(getCookie('superlearn')) {
+     console.log('hello');
+ } else {
+     console.log('nope');
+}
 </script>
