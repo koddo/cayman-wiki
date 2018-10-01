@@ -103,7 +103,7 @@ TODO: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-time-
     
 
     
-<iframe class="autoresize" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python%20--%20true,%20false,%20and%20comparisons">
+<iframe class="autoresize" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- systems of linear equations">
     <p>Your browser does not support iframes.</p>
 </iframe>
 
