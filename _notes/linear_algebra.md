@@ -59,11 +59,10 @@ Dually, elementary column operations do not change the image, but they do change
 ## Gauss-Jordan elimination vs Gaussian elimination
 Usually one use Gauss-Jordan to invert a matrix and Gaussian for rank.
 
-Both are $O(n^3)$ for an $n$ by $n$ full rank matrix
-but order of magnitude of Gauss-Jordan elimination is $n^3$, whereas that for Gaussian elimination is $\frac{2}{3}n^3$
+Both are $O(n^3)$ for an $n$ by $n$ full rank matrix, but order of magnitude of Gauss-Jordan elimination is $n^3$, whereas that for Gaussian elimination is $\frac{2}{3}n^3$
 
 
-row echelon form --- result of Gaussian elimination
+Row echelon form --- result of Gaussian elimination:
 
 $$
 \left( \begin{array}{ccccc}
@@ -74,7 +73,8 @@ $$
 $$
 
 
-reduced row echelon form --- result of Gauss-Jordan elimination
+Reduced row echelon form --- result of Gauss-Jordan elimination:
+
 $$ 
 \left( \begin{array}{ccccc}
 1 & 0 & 0 & 0 & b_1 \\
@@ -82,9 +82,15 @@ $$
 0 & 0 & 0 & 1 & b_3
 \end{array} \right)
 $$
+
 and
+
 $$
-\begin{pmatrix} 1 & 0 & -2 & 3 & 0 & -24 \\ 0 & 1 & -2 & 2 & 0 & -7 \\ 0 & 0 & 0 & 0 & 1 & 4 \end{pmatrix}
+\begin{pmatrix}
+1 & 0 & -2 & 3 & 0 & -24 \\
+0 & 1 & -2 & 2 & 0 & -7 \\
+0 & 0 & 0 & 0 & 1 & 4
+\end{pmatrix}
 $$
 
 
