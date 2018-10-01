@@ -18,6 +18,7 @@
         <meta name="theme-color" content="#157878">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        {% feed_meta %}
     </head>
     <body>
         <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
@@ -50,5 +51,19 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.15/iframeResizer.min.js"></script>
         <script>iFrameResize({log:false}, 'iframe.autoresize')</script>
+
+        <script type="text/x-mathjax-config">
+         MathJax.Hub.Config({
+             TeX: {
+                 extensions: ["color.js"]
+             },
+             tex2jax: {
+                 inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                 displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                 processEscapes: true
+             }
+         });
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
     </body>
 </html>

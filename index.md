@@ -1,5 +1,3 @@
-{% feed_meta %}
-
 <ul class="page-list">
     {% for my_page in site.pages %}
         {% if my_page.title %}
