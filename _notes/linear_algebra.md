@@ -46,9 +46,9 @@ $\boxed{\Leftarrow}$ let $x: \ EAx=0$, then $Ax = (E^{-1}E)Ax = E^{-1} (EA)x = E
 
 but they change the image, see what happens after row switching
 
-$A  = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$
+$$A  = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$$
 
-$A' = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$
+$$A' = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$$
 
 a new matrix represents a projection to completely another plane
 
@@ -60,7 +60,7 @@ Dually, elementary column operations do not change the image, but they do change
 
 TODO: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-time-complexity-of-gaussian-elimination>
 
-*** Gauss-Jordan elimination vs Gaussian elimination
+## Gauss-Jordan elimination vs Gaussian elimination
 Usually one use Gauss-Jordan to invert a matrix
 and Gaussian for rank
 
