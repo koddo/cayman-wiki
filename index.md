@@ -1,4 +1,5 @@
 {% for my_collection in site.collections %}
+{% if my_collection.title %}
 <h1 class="page-heading">{{ my_collection.title }}</h1>
 {% for my_page in my_collection.docs %}
 {% if my_page.title != 'Index' %}
@@ -7,5 +8,6 @@
 </ul>
 {% endif %}
 {% endfor %}
+{% endif %}
 {% endfor %}
 
