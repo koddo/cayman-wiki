@@ -15,8 +15,11 @@ plugins:
 
 
 collections:
-  linear_algebra:
-    title: "Linear algebra"
+  math:
+    title: "Math"
+    output: true
+  python:
+    title: "Python"
     output: true
 
 
