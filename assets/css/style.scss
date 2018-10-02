@@ -7,3 +7,7 @@ iframe.autoresize {
     width: 100%;
     // height is handled by https://github.com/davidjbradshaw/iframe-resizer
 }
+
+nodisplay {
+    display: none;
+}
