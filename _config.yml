@@ -28,3 +28,5 @@ kramdown:
   input: GFM
 
 permalink: /blog/:title
+
+page_source_prefix: "https://github.com/koddo/cayman-wiki/blob/master"       # without trailing slash
