@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 
-title: koddo-wiki
+title: cayman-wiki
 description: hell oh world
 
 # hide those links to view on github and download tgz
@@ -15,8 +15,8 @@ plugins:
 
 
 collections:
-  notes:
-    title: "Notes"
+  linear_algebra:
+    title: "Linear algebra"
     output: true
 
 
@@ -26,3 +26,5 @@ superlearn_url: "https://superlearn.it"
 markdown: kramdown
 kramdown:
   input: GFM
+
+permalink: /blog/:title
