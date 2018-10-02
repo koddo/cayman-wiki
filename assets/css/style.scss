@@ -13,11 +13,10 @@ nodisplay {
 }
 
 .site-title {
-    color: $body-text-color;
-
+    color: $header-heading-color;
     &,
     &:visited {
-        color: $body-text-color;
+        color: $header-heading-color;
     }
 }
 
