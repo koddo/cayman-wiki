@@ -17,7 +17,5 @@
                 </ul>
             {% endif %}
         {% endfor %}
-    </li>
-    </ul>
   {% endif %}
 {% endfor %}
