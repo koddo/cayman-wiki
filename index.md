@@ -9,7 +9,7 @@
 
 {% for my_collection in site.collections %}
   {% if my_collection.label != 'posts' %}
-  <h1 class="page-heading no-anchor">{{ my_collection.title }}</h1>
+  <h1 class="page-heading">{{ my_collection.title }}</h1>
   <ul class="collection-list">
       <li>
           <!-- <p>collection: <a href="{{ site.baseurl }}/{{ my_collection.label }}">{{ my_collection.title }}</a></p> -->
