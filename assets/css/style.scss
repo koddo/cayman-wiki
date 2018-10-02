@@ -13,8 +13,11 @@ nodisplay {
 }
 
 .site-title {
-  &,
-  &:visited {
     color: $body-text-color;
-  }
+
+    &,
+    &:visited {
+        color: $body-text-color;
+    }
 }
+
