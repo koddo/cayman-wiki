@@ -21,6 +21,9 @@ collections:
   python:
     title: "Python"
     output: true
+  misc:
+    title: "Misc"
+    output: true
 
 
 superlearn_url: "https://superlearn.it"
