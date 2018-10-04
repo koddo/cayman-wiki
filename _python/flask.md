@@ -4,8 +4,60 @@ layout: default
 
 ---
 
-# Flask
+# Misc
 
+<https://github.com/mgood/flask-debugtoolbar>
+
+# Questions
+
+- q: How to have a route in flask? With variables? --- a: 
+```
+@app.route('/hello')
+def hello():
+    return 'Hello, World'
+    
+@app.route('/user/<username>')
+def show_user_profile(username):
+    ...
+    
+@app.route('/post/<int:post_id>')
+def show_post(post_id):
+    ...
+```
+
+- q: What are converter types for flask routes? ---
+string      the default, accepts any text without a slash
+int         positive integers
+float       positive floats
+path        like string, but also accepts slashes
+uuid        uuid
+
+
+- q: What's the difference between `/projects` and `/projects/` in flask? --- a: <http://flask.pocoo.org/docs/1.0/quickstart/#unique-urls-redirection-behavior>
+
+- q: How to handle different HTTP methods using flask? --- a: 
+
+```
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if flask.request.method == 'POST':
+        ...
+```
+
+- q: How to serve static files using flask? --- a:
+Just have a `/static` folder, files in it will be available at the same route.
+To generate URLs for static files use `url_for('static', filename='style.css')`.
+
+- q: How to set a secret key for signed cookies in flask? --- a:
+<http://flask.pocoo.org/docs/1.0/quickstart/#sessions>
+<https://stackoverflow.com/questions/22463939/demystify-flask-app-secret-key/48596852#48596852>
+
+- q: How to have templates in flask? --- a:
+Flask looks for templates in the `templates` folder.
+
+```
+return render_template('hello.html', name=name)
+```
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python -- flask">
