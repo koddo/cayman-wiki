@@ -44,23 +44,34 @@ def login():
         ...
 ```
 
-- q: How to serve static files using flask? --- a:
-Just have a `/static` folder, files in it will be available at the same route.
+- q: How to serve static files using flask? How to generate URLs for them? --- a:
+Put them in `static/` folder.
 To generate URLs for static files use `url_for('static', filename='style.css')`.
 
 - q: How to set a secret key for signed cookies in flask? --- a:
 <http://flask.pocoo.org/docs/1.0/quickstart/#sessions>
 <https://stackoverflow.com/questions/22463939/demystify-flask-app-secret-key/48596852#48596852>
 
-- q: How to have templates in flask? --- a:
+- q: Where to put templates in flask? How to render them? --- a:
 Flask looks for templates in the `templates` folder.
 
 ```
 return render_template('hello.html', name=name)
 ```
 
+- q: How to access HTTP method info of request in flask, form data, URL params?
+
+```
+if request.method == 'POST':
+    ...
+request.form['username']
+request.args.get('key', '')
+```
+
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python -- flask">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
 
