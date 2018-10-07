@@ -39,6 +39,7 @@ v_1 \\
 v_n
 \end{pmatrix}
 & = \nabla_v f(x_1, \ldots, x_n) \cdot v = \nabla f \cdot v
+\end{align*}
 $$
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus -- ">
