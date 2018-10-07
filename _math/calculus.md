@@ -7,9 +7,12 @@ layout: default
 # Gradient
 
 \\[
-\nabla f = \begin{pmatrix} \frac {\partial f}{\partial x_1} \\
+\nabla f = 
+\begin{pmatrix}
+\frac {\partial f}{\partial x_1} \\
 \vdots \\
-\frac {\partial f}{\partial x_n} \end{pmatrix}
+\frac {\partial f}{\partial x_n}
+\end{pmatrix}
 \\]
 
 Gradient vector is perpendicular to countour lines.
