@@ -38,7 +38,8 @@ More detailed explanation:
 
 $$
 \begin{align*}
-\nabla_v f = \nabla_v f(x_1, \ldots, x_n) & = v_1 \frac {\partial f}{\partial x_1}(x_1) + \ldots + v_1 \frac {\partial f}{\partial x_1}(x_1) = \\
+\nabla_v f & = \nabla_v f(x_1, \ldots, x_n) = \\ 
+& = v_1 \frac {\partial f}{\partial x_1}(x_1) + \ldots + v_1 \frac {\partial f}{\partial x_1}(x_1) = \\
 & =
 \begin{pmatrix}
 \frac {\partial f}{\partial x_1} \\
@@ -51,7 +52,8 @@ v_1 \\
 \vdots \\
 v_n
 \end{pmatrix} = \\
-& = \nabla_v f(x_1, \ldots, x_n) \cdot v = \nabla f \cdot v
+& = \nabla_v f(x_1, \ldots, x_n) \cdot v = \\
+& = \nabla f \cdot v
 \end{align*}
 $$
 
