@@ -6,7 +6,13 @@ layout: default
 
 # Partial derivatives and second partial derivatives
 
-TODO: symmetry of second derivatives, example when it's not true, <https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity>
+## Symmetry of second partial derivatives
+
+Under certain conditions:
+
+$${\frac {\partial }{\partial x}}\left({\frac {\partial f}{\partial y}}\right)={\frac {\partial }{\partial y}}\left({\frac {\partial f}{\partial x}}\right)$$
+
+TODO LOW: symmetry of second derivatives, example when it's not true, <https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity>
 
 # Gradient
 
@@ -22,7 +28,7 @@ $$
 It tells you which direction to go to get the greatest rate of increase of the function.
 Its magnitude is the slope of the graph in that direction.
 
-Gradient vector is perpendicular to countour lines.
+Gradient vector is perpendicular to contour lines.
 
 # Directional derivative
 
@@ -57,6 +63,26 @@ v_n
 \end{align*}
 $$
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus -- ">
+
+# TODO: Divergence, curl, Laplacian, Jacobian
+
+
+# Questions
+
+- Q: What is partial derivative? What is second partial derivative? What is symmetry of second partial derivatives? 
+- Q: What is gradient? What is its direction and magnitude? What are contour lines and their relation to gradient?
+- Q: What is directional derivative? Its relation to gradient?
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
+
+
+
+
+
+
+
+

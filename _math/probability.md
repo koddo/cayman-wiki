@@ -40,6 +40,8 @@ Covariation. For independent $x$ and $y$ their \\(\operatorname {cov}(x, y) = 0\
 Correlation.
 Covariance matrix.
 
+TODO LOW: sample standard variance, <https://en.wikipedia.org/wiki/Bessel%27s_correction>, <http://duramecho.com/Misc/WhyMinusOneInSd.html>
+
 # Joint probability distribution
 
 for discrete random variables, a table.
