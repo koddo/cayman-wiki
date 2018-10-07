@@ -4,6 +4,10 @@ layout: default
 
 ---
 
+# Partial derivatives and second partial derivatives
+
+TODO: symmetry of second derivatives, example when it's not true, <https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity>
+
 # Gradient
 
 $$
@@ -14,6 +18,9 @@ $$
 \frac {\partial f}{\partial x_n}
 \end{pmatrix}
 $$
+
+It tells you which direction to go to get the greatest rate of increase of the function.
+Its magnitude is the slope of the graph in that direction.
 
 Gradient vector is perpendicular to countour lines.
 
