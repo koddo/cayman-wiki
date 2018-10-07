@@ -17,15 +17,21 @@ $$
 
 Gradient vector is perpendicular to countour lines.
 
+# Directional derivative
+
 Directional derivative along $v$ is
 
 $$\nabla_v f(x) = \lim_{h \to 0} \frac{f(x + hv) - f(x)}{h |v|}$$
 
+It's a dot-product of gradient and the direction:
+
 $$\nabla_v f = \nabla f \cdot v$$
+
+More detailed explanation:
 
 $$
 \begin{align*}
-\nabla_v f(x_1, \ldots, x_n) & = v_1 \frac {\partial f}{\partial x_1}(x_1) + \ldots + v_1 \frac {\partial f}{\partial x_1}(x_1) = \\
+\nabla_v f = \nabla_v f(x_1, \ldots, x_n) & = v_1 \frac {\partial f}{\partial x_1}(x_1) + \ldots + v_1 \frac {\partial f}{\partial x_1}(x_1) = \\
 & =
 \begin{pmatrix}
 \frac {\partial f}{\partial x_1} \\
@@ -37,7 +43,7 @@ $$
 v_1 \\
 \vdots \\
 v_n
-\end{pmatrix}
+\end{pmatrix} = \\
 & = \nabla_v f(x_1, \ldots, x_n) \cdot v = \nabla f \cdot v
 \end{align*}
 $$
