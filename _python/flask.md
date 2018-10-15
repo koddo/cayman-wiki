@@ -10,7 +10,7 @@ layout: default
 
 # Questions
 
-- q: How to have a route in flask? With variables? --- a: 
+- Q: How to have a route in flask? With variables? --- a: 
 ```
 @app.route('/hello')
 def hello():
@@ -25,7 +25,7 @@ def show_post(post_id):
     ...
 ```
 
-- q: What are converter types for flask routes? ---
+- Q: What are converter types for flask routes? ---
 string      the default, accepts any text without a slash
 int         positive integers
 float       positive floats
@@ -33,9 +33,9 @@ path        like string, but also accepts slashes
 uuid        uuid
 
 
-- q: What's the difference between `/projects` and `/projects/` in flask? --- a: <http://flask.pocoo.org/docs/1.0/quickstart/#unique-urls-redirection-behavior>
+- Q: What's the difference between `/projects` and `/projects/` in flask? --- a: <http://flask.pocoo.org/docs/1.0/quickstart/#unique-urls-redirection-behavior>
 
-- q: How to handle different HTTP methods using flask? --- a: 
+- Q: How to handle different HTTP methods using flask? --- a: 
 
 ```
 @app.route('/login', methods=['GET', 'POST'])
@@ -44,22 +44,22 @@ def login():
         ...
 ```
 
-- q: How to serve static files using flask? How to generate URLs for them? --- a:
+- Q: How to serve static files using flask? How to generate URLs for them? --- a:
 Put them in `static/` folder.
 To generate URLs for static files use `url_for('static', filename='style.css')`.
 
-- q: How to set a secret key for signed cookies in flask? --- a:
+- Q: How to set a secret key for signed cookies in flask? --- a:
 <http://flask.pocoo.org/docs/1.0/quickstart/#sessions>
 <https://stackoverflow.com/questions/22463939/demystify-flask-app-secret-key/48596852#48596852>
 
-- q: Where to put templates in flask? How to render them? --- a:
+- Q: Where to put templates in flask? How to render them? --- a:
 Flask looks for templates in the `templates` folder.
 
 ```
 return render_template('hello.html', name=name)
 ```
 
-- q: How to access HTTP method info of request in flask, form data, URL params?
+- Q: How to access HTTP method info of request in flask, form data, URL params?
 
 ```
 if request.method == 'POST':

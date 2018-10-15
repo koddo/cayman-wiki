@@ -4,6 +4,12 @@ layout: default
 
 ---
 
+# TODOs
+
+reverse of 2x2 matrix `d & -b \\ -c & a`
+
+
+
 # test
 
 When \\(a \ne 0\\), $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
@@ -117,3 +123,4 @@ TODO LOW: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-t
     console.log('nope');
 }
 </script>
+
