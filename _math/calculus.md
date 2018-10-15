@@ -64,7 +64,12 @@ v_n
 $$
 
 
-# TODO: Divergence, curl, Laplacian, Jacobian
+# TODO LOW: Divergence, curl, Laplacian, Jacobian
+
+<https://www.khanacademy.org/math/multivariable-calculus>
+
+# TODO: Gradient descent
+
 
 
 # Questions
