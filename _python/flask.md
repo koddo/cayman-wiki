@@ -8,34 +8,20 @@ layout: default
 
 <https://github.com/mgood/flask-debugtoolbar>
 
+# Running flask
+
+Use `$ flask run` instead of `Flask.run()` in code, because of code reload: <https://softwareengineering.stackexchange.com/questions/326517/why-is-flask-cli-recommended-over-flask-run>
+
+<http://flask.pocoo.org/docs/1.0/deploying/wsgi-standalone/>
+
+# Routing, variables, and converters.
+
+The `any` converter: <https://github.com/pallets/werkzeug/blob/778f482d1ac0c9e8e98f774d2595e9074e6984d7/werkzeug/routing.py#L1271>
+
 # Questions
 
-- q: How to have a route in flask? With variables? --- a: 
-```
-@app.route('/hello')
-def hello():
-    return 'Hello, World'
-    
-@app.route('/user/<username>')
-def show_user_profile(username):
-    ...
-    
-@app.route('/post/<int:post_id>')
-def show_post(post_id):
-    ...
-```
 
-- q: What are converter types for flask routes? ---
-string      the default, accepts any text without a slash
-int         positive integers
-float       positive floats
-path        like string, but also accepts slashes
-uuid        uuid
-
-
-- q: What's the difference between `/projects` and `/projects/` in flask? --- a: <http://flask.pocoo.org/docs/1.0/quickstart/#unique-urls-redirection-behavior>
-
-- q: How to handle different HTTP methods using flask? --- a: 
+- Q: How to handle different HTTP methods using flask? --- A: 
 
 ```
 @app.route('/login', methods=['GET', 'POST'])
@@ -44,29 +30,14 @@ def login():
         ...
 ```
 
-- q: How to serve static files using flask? How to generate URLs for them? --- a:
-Put them in `static/` folder.
-To generate URLs for static files use `url_for('static', filename='style.css')`.
 
-- q: How to set a secret key for signed cookies in flask? --- a:
+- Q: How to set a secret key for signed cookies in flask? --- A:
 <http://flask.pocoo.org/docs/1.0/quickstart/#sessions>
 <https://stackoverflow.com/questions/22463939/demystify-flask-app-secret-key/48596852#48596852>
 
-- q: Where to put templates in flask? How to render them? --- a:
-Flask looks for templates in the `templates` folder.
 
-```
-return render_template('hello.html', name=name)
-```
+- Q: How to use `url_for` in flask? --- A: <http://flask.pocoo.org/docs/1.0/api/#flask.url_for>
 
-- q: How to access HTTP method info of request in flask, form data, URL params?
-
-```
-if request.method == 'POST':
-    ...
-request.form['username']
-request.args.get('key', '')
-```
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python -- flask">
