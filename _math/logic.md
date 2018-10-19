@@ -43,3 +43,12 @@ $$
 minimal set of ops: v, *, -; proof
 
 <https://en.wikipedia.org/wiki/Disjunctive_normal_form>
+
+<https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D1%82%D0%B5%D1%80%D0%B8%D0%B9_%D0%9F%D0%BE%D1%81%D1%82%D0%B0>
+<https://en.wikipedia.org/wiki/Post%27s_lattice>
+полином Жегалкина
+
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
+    <p>Your browser does not support iframes.</p>
+</iframe>
