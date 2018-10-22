@@ -39,7 +39,7 @@ s = s.sort_values(by=['year', 'name'])
 
 df.plot()
 s.plot(kind='bar')
-titles.year.value_count().sort_index().plot()
+titles.year.value_counts().sort_index().plot()
 
 %%time df[ df.title == 'Hamlet' ]
 c = cast.set_index(['title']).sort_index()
@@ -109,14 +109,14 @@ or with `df.set_axis(['a', 'b', 'c', 'd', 'e'], axis='columns', inplace=False)` 
 - Q: How to sort data frame? By multiple columns? --- a: `df.sort_value(by='col')`, `df.sort_value(by=['col1', 'col2'])`
 
 
-optimized pandas data access methods, .at, .iat, .loc, .iloc and .ix
-
-
 - Q: How to get non-null data? --- A: `df[ ~(df.col.isnull()) ]`
 
 - Q: How to group by range of values? --- A: `df.groupby(pd.cut(df['Age'], bins=[15, 25, 35, 45, 55], right=False))`
 
 Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#Finer-Control:-Display-Values>
+
+- Q: How to install and run jupyter notebook?
+- A: `$ pip install jupyter`, <https://jupyter.readthedocs.io/en/latest/running.html#running>
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=pandas">
     <p>Your browser does not support iframes.</p>
