@@ -4,6 +4,31 @@ layout: default
 
 ---
 
+# Logic
+
+If any doubts, draw a table and check it yourself. 
+
+$\neg(\neg x) = x$
+commutativity
+associativity
+distributivity of $\vee, \wedge$: $(x \wedge y) \vee z = (x \wedge z) \vee (y \wedge z)$, $(x \vee y) \wedge z = (x \wedge z) \vee (y \wedge z)$
+$\neg (x \vee y) = \neg x \wedge \neg y$, $\neg (x \wedge y) = \neg x \vee \neg y$
+$x \vee \neg x = 1$
+$x = x \vee 0 = x \wedge 1 = x \oplus 0$, $x \wedge 0 = 0$, $x \oplus 1 = \neg x$
+idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
+absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
+$x \rightarrow y = \neg x \vee y = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
+
+properties of implication (these are $= 1$):
+$x \rightarrow x$
+$(x \rightarrow y) \wedge (y \rightarrow x)$
+$((x \rightarrow y) \wedge (y \rightarrow z)) \rightarrow (x \rightarrow z)$
+$((x \rightarrow y) \vee (x \rightarrow \neg \rightarrow)) \rightarrow \neg x$
+$((x \rightarrow y) \wedge x) \rightarrow y$
+
+
+$x \rightarrow y$ is to be understood as if $x$ is true, $y$ is also true, so it's false only when $x$ is true and $y$ is false.
+
 # Sets
 
 Russel's paradox
