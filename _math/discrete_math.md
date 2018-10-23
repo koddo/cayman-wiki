@@ -29,6 +29,9 @@ $((x \rightarrow y) \wedge x) \rightarrow y$
 
 $x \rightarrow y$ is to be understood as if $x$ is true, $y$ is also true, so it's false only when $x$ is true and $y$ is false.
 
+    If it is a bear, then it can swim.
+    Thus, it is not a bear or it can swim.
+
 # Sets
 
 Russel's paradox
@@ -45,6 +48,7 @@ A -> B = -A v B
 TODO: logic tables and formulas for for must have equations
 
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables>, <https://www.tablesgenerator.com/markdown_tables#>
+
 | A | B | A->B |
 |---|---|------|
 | 0 | 0 | 1  |

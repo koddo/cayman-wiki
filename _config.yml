@@ -32,6 +32,7 @@ superlearn_url: "https://superlearn.it"
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: true
 
 permalink: /blog/:title
 
