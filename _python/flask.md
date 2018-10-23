@@ -29,7 +29,7 @@ def login():
 <https://stackoverflow.com/questions/20938619/whats-the-difference-between-application-and-request-contexts>
 <https://stackoverflow.com/questions/15083967/when-should-flask-g-be-used>
 
-Application context is a lighter version of full-blown request context. It has 
+Application context is a lighter version of full-blown request context.
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python -- flask">
