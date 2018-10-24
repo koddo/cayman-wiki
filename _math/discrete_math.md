@@ -17,7 +17,11 @@ $x \vee \neg x = 1$
 $x = x \vee 0 = x \wedge 1 = x \oplus 0$, $x \wedge 0 = 0$, $x \oplus 1 = \neg x$
 idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
 absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
-$x \rightarrow y = \neg x \vee y = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
+$x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
+
+$x \rightarrow y$ can be paraphrased to "if $x$, then it can't be not $y$".
+"It's raining" $\rightarrow$ "ground is wet". If it's raining, the ground can't be not wet.
+$x \rightarrow y = \neg (x \wedge \neg y)$
 
 properties of implication (these are $= 1$):
 $x \rightarrow x$
