@@ -80,7 +80,7 @@ minimal set of ops: v, *, -; proof
 # Logic
 
 - Truth-preserving <span markdown="0">$T_0 = \left\{ \, f \ : \ f(0,\dots ,0) = 0 \, \right\}$</span>, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow$
-- False-preserving <span markdown="0">$T_1 = \left\{ \, f \ : \ f(1,\dots ,1) = 1 \right \, \}$</span>, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
+- False-preserving <span markdown="0">$T_1 = \left\{ \, f \ : \ f(1,\dots ,1) = 1 \, \right\}$</span>, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
 - Monotonic <span markdown="0">$M = \left\{ \, f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \, \right\}$</span>, $\vee ,\wedge ,\top ,\bot$
 - Self-dual <span markdown="0">$S = \left\{ \, f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \, \right\}$</span>, $\neg $, $MAJ(p, q, r)$
 - Linear <span markdown="0">$L = \left\{ \, f \ : \ f(x_{1},\dots ,x_{n})=a_{0}\oplus a_{1}x_{1}\oplus \dots \oplus a_{n}x_{n} \,  \right\}$</span> 
