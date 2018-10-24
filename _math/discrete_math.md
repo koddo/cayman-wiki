@@ -66,7 +66,7 @@ TODO: logic tables and formulas for for must have equations
 
 
 $$
-{\displaystyle {\begin{aligned}\left|\bigcup _{i=1}^{n}A_{i}\right|={}&\sum _{i=1}^{n}|A_{i}|-\sum _{1\leq i<j\leq n}|A_{i}\cap A_{j}|+\dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}|A_{i}\cap A_{j}\cap A_{k}|-\dots +(-1)^{n-1}\left|A_{1}\cap \dots \cap A_{n}\right|.\end{aligned}}}
+{\begin{aligned}\left|\bigcup _{i=1}^{n}A_{i}\right|={}&\sum _{i=1}^{n}|A_{i}|-\sum _{1\leq i<j\leq n}|A_{i}\cap A_{j}|+\dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}|A_{i}\cap A_{j}\cap A_{k}|-\dots +(-1)^{n-1}\left|A_{1}\cap \dots \cap A_{n}\right|.\end{aligned}}
 $$
 
 $$
@@ -79,7 +79,7 @@ minimal set of ops: v, *, -; proof
 
 # Logic
 
-- Truth-preserving $T_0 = \left{ f : f(0,\dots ,0) = 0 \right}$, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow $
+- Truth-preserving $a$, $T_0 = \left{ f : f(0,\dots ,0) = 0 \right}$, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow $
 - False-preserving $T_1 = \left{ f \ : \ f(1,\dots ,1) = 1 \right}$, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
 - Monotonic $M = \left{ f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \right}$, $\vee ,\wedge ,\top ,\bot$
 - Self-dual $S = \left{ f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \right}$, $\neg $, $MAJ(p, q, r)$
