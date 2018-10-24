@@ -26,6 +26,9 @@ Same thing: $(x < 3) \rightarrow (x < 5)$. If $(x < 3)$, it can't be that it's n
 
 - "If you are a man, you'll do this". $x \rightarrow y = \neg x \vee y$. You're not a man or you'll do this.
 
+$0 \rightarrow 1$ doen't mean that we can infer truth from false.
+It only means we can have a situation when premise is false and conclusion is still true anyway. Like $x \ge 3$, but it's still $x < 5$.
+
 
 properties of implication (these are $= 1$):
 $x \rightarrow x$
