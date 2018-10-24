@@ -19,11 +19,13 @@ idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
 absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
 $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
 
-$x \rightarrow y$ can be paraphrased to "if $x$, then it can't be not $y$".
-"It's raining" $\rightarrow$ "ground is wet". If it's raining, the ground can't be not wet.
-$x \rightarrow y = \neg (x \wedge \neg y)$
+## Implication
 
-"If you are a man, you'll do this". $x \rightarrow y = \neg x \vee y$. You're not a man or you'll do this.
+- $x \rightarrow y$ can be paraphrased to "if $x$, then it can't be not $y$". "It's raining" $\rightarrow$ "ground is wet". If it's raining, the ground can't be not wet. $x \rightarrow y = \neg (x \wedge \neg y)$.
+Same thing: $(x < 3) \rightarrow (x < 5)$. If $(x < 3)$, it can't be that it's not $(x < 5)$.
+
+- "If you are a man, you'll do this". $x \rightarrow y = \neg x \vee y$. You're not a man or you'll do this.
+
 
 properties of implication (these are $= 1$):
 $x \rightarrow x$
