@@ -79,8 +79,8 @@ minimal set of ops: v, *, -; proof
 
 # Logic
 
-- Truth-preserving $T_{0} = \left{ f : f(0,\dots ,0)=0 \right}$, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow $
-- False-preserving $T_{1} = \left{ f \ : \ f(1,\dots ,1)=1 \right}$, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
+- Truth-preserving $T_0 = \left{ f : f(0,\dots ,0) = 0 \right}$, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow $
+- False-preserving $T_1 = \left{ f \ : \ f(1,\dots ,1) = 1 \right}$, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
 - Monotonic $M = \left{ f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \right}$, $\vee ,\wedge ,\top ,\bot$
 - Self-dual $S = \left{ f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \right}$, $\neg $, $MAJ(p, q, r)$
 - Linear $L = \left{ f \ : \ f(x_{1},\dots ,x_{n})=a_{0}\oplus a_{1}x_{1}\oplus \dots \oplus a_{n}x_{n} \right}$, 
