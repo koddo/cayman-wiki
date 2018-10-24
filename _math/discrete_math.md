@@ -23,6 +23,8 @@ $x \rightarrow y$ can be paraphrased to "if $x$, then it can't be not $y$".
 "It's raining" $\rightarrow$ "ground is wet". If it's raining, the ground can't be not wet.
 $x \rightarrow y = \neg (x \wedge \neg y)$
 
+"If you are a man, you'll do this". $x \rightarrow y = \neg x \vee y$. You're not a man or you'll do this.
+
 properties of implication (these are $= 1$):
 $x \rightarrow x$
 $(x \rightarrow y) \wedge (y \rightarrow x)$
