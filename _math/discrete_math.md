@@ -23,7 +23,7 @@ properties of implication (these are $= 1$):
 $x \rightarrow x$
 $(x \rightarrow y) \wedge (y \rightarrow x)$
 $((x \rightarrow y) \wedge (y \rightarrow z)) \rightarrow (x \rightarrow z)$
-$((x \rightarrow y) \vee (x \rightarrow \neg \rightarrow)) \rightarrow \neg x$
+$((x \rightarrow y) \vee (x \rightarrow \neg y)) \rightarrow \neg x$
 $((x \rightarrow y) \wedge x) \rightarrow y$
 
 
@@ -60,8 +60,10 @@ TODO: logic tables and formulas for for must have equations
 
 <https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle>
 
-$| A \cup B| = |A| + |B| - |A \cap B|$
-$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|$
+
+<span markdown="0">$| A \cup B| = |A| + |B| - |A \cap B|$</span>
+<span markdown="0">$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|$</span>
+
 
 $$
 {\displaystyle {\begin{aligned}\left|\bigcup _{i=1}^{n}A_{i}\right|={}&\sum _{i=1}^{n}|A_{i}|-\sum _{1\leq i<j\leq n}|A_{i}\cap A_{j}|+\cdots {}\\&{}\cdots +\sum _{1\leq i<j<k\leq n}|A_{i}\cap A_{j}\cap A_{k}|-\cdots +(-1)^{n-1}\left|A_{1}\cap \cdots \cap A_{n}\right|.\end{aligned}}}
