@@ -28,6 +28,7 @@ Same thing: $(x < 3) \rightarrow (x < 5)$. If $(x < 3)$, it can't be that it's n
 
 $0 \rightarrow 1$ doen't mean that we can infer truth from false.
 It only means we can have a situation when premise is false and conclusion is still true anyway. Like $x \ge 3$, but it's still $x < 5$.
+A legit theorem can have a wrong proof.
 
 
 properties of implication (these are $= 1$):
@@ -37,11 +38,11 @@ $((x \rightarrow y) \wedge (y \rightarrow z)) \rightarrow (x \rightarrow z)$
 $((x \rightarrow y) \vee (x \rightarrow \neg y)) \rightarrow \neg x$
 $((x \rightarrow y) \wedge x) \rightarrow y$
 
-
 $x \rightarrow y$ is to be understood as if $x$ is true, $y$ is also true, so it's false only when $x$ is true and $y$ is false.
 
-    If it is a bear, then it can swim.
-    Thus, it is not a bear or it can swim.
+Interesting thing: $\neg p \rightarrow (p \rightarrow q)$, this works because at some step it's equal to $p \vee \neg p \vee q$, which is always true, and doesn't depend on $q$, doesn't say anything about it. It's true for any $q$, true or false.
+Reading it as "if $p$ is false then any $q$ is true" is wrong.
+
 
 # Sets
 
@@ -88,7 +89,7 @@ minimal set of ops: v, *, -; proof
 
 <https://en.wikipedia.org/wiki/Disjunctive_normal_form>
 
-# Logic
+# Post's theorem on function completeness
 
 - Truth-preserving <span markdown="0">$T_0 = \left\{ \, f \ : \ f(0,\dots ,0) = 0 \, \right\}$</span>, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow$
 - False-preserving <span markdown="0">$T_1 = \left\{ \, f \ : \ f(1,\dots ,1) = 1 \, \right\}$</span>, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
@@ -133,8 +134,10 @@ Monotone functions order? <https://en.wikipedia.org/wiki/Hasse_diagram>, n-dimen
 
 HW.01.05. $A = \{ 1, 2, 4, 5, 9 \}$, $B = \{ 2, 3, 5, 6, 9 \}$, $C = \{ 4, 5, 6, 7 \}$. Express $\{4, 5, 7\}$ and $\{1, 2, 4\}$ through A, B, C.
 How to prove the latter can't be expressed?
+--- Если входит 2, то по там же причинам должна входить и 9 - делаются те же проверки.
 
-HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations $\sin x = |\sin x|$ and $\cos x = \tan{\tan x}$.
+HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = |\sin x|$ and $\cos x = \tan{\tan x}$</span>.
+$u(f, g) = 0 \Leftrightarrow f=0, g=0$, $u=f^2+g^2$
 
 HW.01.09.
 
