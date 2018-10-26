@@ -130,6 +130,8 @@ Monotone functions order? <https://en.wikipedia.org/wiki/Hasse_diagram>, n-dimen
 метод неопределенных коэффициентов для проверки на линейность
 
 
+Theorem. Max number of functions in basis is 4: <https://ru.wikipedia.org/wiki/Критерий_Поста#Теорема_о_максимальном_числе_функций_в_базисе>
+
 # Problems
 
 HW.01.05. $A = \{ 1, 2, 4, 5, 9 \}$, $B = \{ 2, 3, 5, 6, 9 \}$, $C = \{ 4, 5, 6, 7 \}$. Express $\{4, 5, 7\}$ and $\{1, 2, 4\}$ through A, B, C.
@@ -137,7 +139,9 @@ How to prove the latter can't be expressed?
 --- Если входит 2, то по там же причинам должна входить и 9 - делаются те же проверки.
 
 HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = |\sin x|$ and $\cos x = \tan{\tan x}$</span>.
-$u(f, g) = 0 \Leftrightarrow f=0, g=0$, $u=f^2+g^2$
+- Q: What equation $u(f, g)=0$ has solution set that is _union_ of solution sets of $f=0$ and $g=0$? _Intersection_?
+$u(f, g) = 0 \Leftrightarrow f=0, g=0$
+$u=f^2+g^2$
 
 HW.01.09.
 

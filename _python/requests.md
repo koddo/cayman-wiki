@@ -6,7 +6,7 @@ layout: default
 
 # Requests
 
-- Q: How to make a `get` request? What about `post`, `put`, `delete`, `head`, `options`?
+- Q: How to make a `get` request? What about other verbs?
 
 - Q: How to suppress ignore SSL exceptions? To suppress `InsecureRequestWarning`? --- A:
 `requests.get(..., verify=False)`. You can also do `urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)`.
@@ -45,7 +45,7 @@ i = Image.open(BytesIO(r.content))
 r.json()   # raises ValueError if it's not a json response
 
 
-if r: <=> if r.ok:
+if r: <=> if r.ok:   # means not 4xx or 5xx
 if r.status_code == 404:
     ...
 try:
@@ -56,6 +56,50 @@ except requests.exceptions.HTTPError as e:
 if response.status_code // 100 * 100 == 200:
     ...
 
+# hearers is a special dictionary that is case-insensitive
+r.headers['Content-Type']
+
+r.cookies['example_cookie_name']
+# sending cookies:
+requests.get(url, cookies={'hello', 'world'})
+
+jar = cookielib.CookieJar()
+r = requests.get(url, cookies=jar)   # fills the jar
+r = requests.get(url, cookies=jar)   # send cookies back
+
+jar.set('tasty_cookie', 'yum', domain='httpbin.org', path='/cookies')
+jar.set('gross_cookie', 'blech', domain='httpbin.org', path='/elsewhere')
+
+# redirection
+allow_redirects=False
+
+r = requests.get(url)    # by default it does redirection for all verbs except head
+r.status_code == 200
+r.history == [<Response [301]>]
 
 
+
+# timeouts
+requests.get('https://github.com/', timeout=0.001)
+requests.exceptions.Timeout: HTTPConnectionPool(host='github.com', port=80): Request timed out. (timeout=0.001)
+
+r = requests.get(url, timeout=(3.05, 27))    # both connect and read timeouts; connect timeouts should be slightly larger than a multiple of 3, which is the default TCP packet retransmission window.
+
+
+# Exceptions
+ConnectionError
+Response.raise_for_status()   # raises HTTPError
+Timeout
+TooManyRedirects
+
+```
+
+# Sessions
+
+```
+with requests.Session() as s:
+    s.auth = ('user', 'pass')
+    s.headers.update({'x-test': 'true'})
+    r = s.get(url, cookies={'from-my': 'browser'})   # these cookies don't persist
+    r = s.get(url, cookies={'from-my': None})   # this cookie will be omited
 ```
