@@ -37,12 +37,7 @@ $(x \rightarrow y) \wedge (y \rightarrow x)$
 $((x \rightarrow y) \wedge (y \rightarrow z)) \rightarrow (x \rightarrow z)$
 $((x \rightarrow y) \vee (x \rightarrow \neg y)) \rightarrow \neg x$
 $((x \rightarrow y) \wedge x) \rightarrow y$
-
-$x \rightarrow y$ is to be understood as if $x$ is true, $y$ is also true, so it's false only when $x$ is true and $y$ is false.
-
-Interesting thing: $\neg p \rightarrow (p \rightarrow q)$, this works because at some step it's equal to $p \vee \neg p \vee q$, which is always true, and doesn't depend on $q$, doesn't say anything about it. It's true for any $q$, true or false.
-Reading it as "if $p$ is false then any $q$ is true" is wrong.
-
+Interesting thing: $\neg p \rightarrow (p \rightarrow q)$.
 
 # Sets
 
