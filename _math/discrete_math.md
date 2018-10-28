@@ -101,6 +101,7 @@ minimal set of ops: v, *, -; proof
 
 - Q: Why are there only two operations like up arrow and stroke? --- A: Build a truth table.
 
+- Q: Draw a scheme for proof of Post's functional completeness theorem. 
 Post's Functional Completeness Theorem — <https://cs.hse.ru/data/2015/05/28/1096847873/Lecture 13.1.pdf>
 <https://ru.wikipedia.org/wiki/Критерий_Поста>
 <https://ru.wikipedia.org/wiki/Предполные_классы>
@@ -116,6 +117,7 @@ Peirce's arrow $\downarrow$: <https://en.wikipedia.org/wiki/Logical_NOR>
 <https://ru.wikipedia.org/wiki/Полином_Жегалкина>
 <https://en.wikipedia.org/wiki/Zhegalkin_polynomial>
 Proof of uniqueness and existence of Zhegalkin polynomial, not from wikipedia, it's cheating.
+<https://neerc.ifmo.ru/wiki/index.php?title=Полином_Жегалкина#.D0.A1.D1.83.D1.89.D0.B5.D1.81.D1.82.D0.B2.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.B8_.D0.B5.D0.B4.D0.B8.D0.BD.D1.81.D1.82.D0.B2.D0.B5.D0.BD.D0.BD.D0.BE.D1.81.D1.82.D1.8C_.D0.BF.D1.80.D0.B5.D0.B4.D1.81.D1.82.D0.B0.D0.B2.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F_.28.D1.82.D0.B5.D0.BE.D1.80.D0.B5.D0.BC.D0.B0_.D0.96.D0.B5.D0.B3.D0.B0.D0.BB.D0.BA.D0.B8.D0.BD.D0.B0.29>
 Method of computation.
 `не` не может быть выражена через набор `или`, `и`
 There are $2^{2^n}$ functions of $n$ variables.
@@ -126,11 +128,23 @@ Monotone functions order? <https://en.wikipedia.org/wiki/Hasse_diagram>, n-dimen
 композиция монотонных функций монотонна
 линейный полином жегалкина
 
-куб для проверки на монотонность функций трех переменных --- any method for more than three dimentions?
-метод неопределенных коэффициентов для проверки на линейность
+- Q: How to check if a function is truth-preserving, false-preserving, self-dual, monotone (number of options to check?), linear?
+A cube for checking a function with three variables.
+The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <https://en.wikipedia.org/wiki/Zhegalkin_polynomial#The_method_of_indeterminate_coefficients>
+
+- Q: What is the max number of functions in a basis of functionally complete set? --- A: Theorem. Max number of functions in basis is 4: <https://ru.wikipedia.org/wiki/Критерий_Поста#Теорема_о_максимальном_числе_функций_в_базисе>
+- Q: Why are there only five classes? --- A: Because otherwise it would have a function ouside of those $T_0, T_1, M, S, L$ classes and be complete according to the Post's theorem.
 
 
-Theorem. Max number of functions in basis is 4: <https://ru.wikipedia.org/wiki/Критерий_Поста#Теорема_о_максимальном_числе_функций_в_базисе>
+# dual functions 
+
+$(x \vee y)* = $
+$(x \wedge y)* = $
+$(x \oplus y)* = x \oplus y \oplus 1$
+
+- Q: Is dual to a linear function linear?
+- Q: How to test for self-dualness?
+
 
 # Problems
 
@@ -149,6 +163,8 @@ HW.01.16. When proving set A is equal to set B, we have to prove $A \in B$ and $
 
 Proof of distributivity and absorbtion law for set operations --- <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
 double compliment law: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>
+
+
 
 
 

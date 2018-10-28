@@ -4,7 +4,7 @@ layout: default
 
 ---
 
-# helloworld
+# cheatsheet
 
 ```
 len(df)
@@ -27,7 +27,7 @@ df = df[ df['title'].str.startswith('Hamlet') ]
 df[ ['col1', 'col2'] ]
 
 s.value_counts().sort_index()   # dropna=True by default
-# it's like s.groupby('col').size()
+                                # it's like s.groupby('col').size()
 
 s.str.len()
 s.str.contains()
@@ -91,6 +91,8 @@ Exercises-4.ipynb: `cast.groupby(['year', 'type']).size().unstack('type').fillna
   s.fillna(value)   s.dt.dayofweek
 ```
 
+<https://stackoverflow.com/questions/31593201/pandas-iloc-vs-ix-vs-loc-explanation-how-are-they-different/46915810#46915810>
+
 - Q: How to create a series, a data frame? --- a: <https://pandas.pydata.org/pandas-docs/stable/10min.html#object-creation>
 - Q: How to create a column based on other columns? --- a: `df.assign( col = df.col1 * df.col2 )`
 - Q: `df['new_col'] = s` vs `df.assign( new_col = s )` --- a: The former has issues with indices??? Inplace vs a copy, the latter can be inlined
@@ -115,9 +117,20 @@ or with `df.set_axis(['a', 'b', 'c', 'd', 'e'], axis='columns', inplace=False)` 
 
 Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#Finer-Control:-Display-Values>
 
-- Q: How to install and run jupyter notebook?
-- A: `$ pip install jupyter`, <https://jupyter.readthedocs.io/en/latest/running.html#running>
+- Q: How to change order of columns of a `DataFrame`?
+
+
+- Q: How to get count, mean, standard deviation in `DataFrame`? --- A: `df.describe()`
+
+- Q: `df[][] = 1` vs `df.loc['row', 'column'] = 1`? What is `SettingWithCopyWarning`? --- A: <https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy>
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=pandas">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
+
+
+
+
+
