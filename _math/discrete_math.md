@@ -92,14 +92,23 @@ minimal set of ops: v, *, -; proof
 - Self-dual <span markdown="0">$S = \left\{ \, f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \, \right\}$</span>, $\neg $, $MAJ(p, q, r)$
 - Linear <span markdown="0">$L = \left\{ \, f \ : \ f(x_{1},\dots ,x_{n})=a_{0}\oplus a_{1}x_{1}\oplus \dots \oplus a_{n}x_{n} \,  \right\}$</span> 
 
-<https://en.wikipedia.org/wiki/List_of_logic_symbols>
+```
+Using non-false-preserving, non-monotonic, non-self-dual functions we get constants and invertor:
 
-- Q: Why are there only two operations like up arrow and stroke? --- A: Build a truth table.
+f not in T_0 ---> 1 ---> 0 
+             \     \      \
+              \     \---> ~x
+               \
+                \---> ~x ---> 0
+                        \      \
+                         \----> 1
 
-- Q: Draw a scheme for proof of Post's functional completeness theorem. 
-Post's Functional Completeness Theorem — <https://cs.hse.ru/data/2015/05/28/1096847873/Lecture 13.1.pdf>
+Now we have 0, 1, ~x, non-linear f   -->   we have xy   -->   we have x+y   -->   we have everything 
+```
+
+- Q: Why are there only two operations like up arrow and stroke? --- A: 
+
 <https://ru.wikipedia.org/wiki/Критерий_Поста>
-<https://ru.wikipedia.org/wiki/Предполные_классы>
 <https://en.wikipedia.org/wiki/Functional_completeness>
 <https://www.academia.edu/12708709/Posts_functional_completeness_theorem>
 <https://en.wikipedia.org/wiki/Post%27s_lattice>
@@ -131,7 +140,7 @@ The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <ht
 - Q: Why are there only five classes? --- A: Because otherwise it would have a function ouside of those $T_0, T_1, M, S, L$ classes and be complete according to the Post's theorem.
 
 
-# dual functions 
+## dual functions 
 
 $(x \vee y)* = $
 $(x \wedge y)* = $

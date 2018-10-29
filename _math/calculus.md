@@ -71,7 +71,6 @@ $$
 # TODO: Gradient descent
 
 
-
 # Questions
 
 - Q: What is partial derivative? What is second partial derivative? What is symmetry of second partial derivatives? 
