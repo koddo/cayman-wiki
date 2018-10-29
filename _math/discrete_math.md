@@ -139,8 +139,12 @@ The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <ht
 - Q: What is the max number of functions in a basis of functionally complete set? --- A: Theorem. Max number of functions in basis is 4: <https://ru.wikipedia.org/wiki/Критерий_Поста#Теорема_о_максимальном_числе_функций_в_базисе>
 - Q: Why are there only five classes? --- A: Because otherwise it would have a function ouside of those $T_0, T_1, M, S, L$ classes and be complete according to the Post's theorem.
 
+полная в слабом смысле --- <http://matica.org.ua/metodichki-i-knigi-po-matematike/lektcii-po-diskretnoi-matematike/2-3-3-teoremy-o-funktcionalnoi-polnote>
 
-## dual functions 
+expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-funkcii-ot-odnogo-i-dvuh-argumentov.html#toc6>
+
+
+## dual functions
 
 $(x \vee y)* = $
 $(x \wedge y)* = $

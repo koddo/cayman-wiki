@@ -38,6 +38,7 @@ Convex functions and sets, their properties: <http://www.machinelearning.ru/wiki
 # machine learning
 
 1. <https://en.wikipedia.org/wiki/Linear_regression>, <https://en.wikipedia.org/wiki/Least_squares#Linear_least_squares>, gradient descent.
+Least squares method comes from maximum likelyhood for linear regression.
 
 2. <https://en.wikipedia.org/wiki/Regularization_%28mathematics%29>
 Linear regularization aka <https://en.wikipedia.org/wiki/Tikhonov_regularization>
