@@ -185,12 +185,12 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
 - Q: Prove these properties of compliment: double compliment law: $\overline{\overline A} = A$; $A \subseteq B \ \Rightarrow \ \overline B \subseteq \overline A$; and De Morgan's law: $\overline {A \cup B} \ = \ {\overline A} \cap {\overline B}$, $\overline {A \cap B} \ = \ {\overline A} \cup {\overline B}$. --- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
 
 - Q: Prove the following properties of set difference:
-  = $A \subseteq B \quad \Leftrightarrow \quad A \setminus B \ = \ \emptyset$
-  = $A \setminus B \ = \ B \setminus A \quad \Leftrightarrow \quad A \ = \ B$ (anticommutativity)
-  = $(A \setminus B) \setminus C \ = \ (A \setminus C) \setminus (B \setminus C)$ (self-distributivity)
-  = $A \setminus B \ = \ A \setminus (A \cap B)$
-  = $A \setminus (B \setminus C) \ = \ (A \setminus B) \cup (A \cap C)$
-  = $(A \setminus C) \setminus (B \setminus A) \quad \subseteq \quad (A \setminus C) \quad \subseteq \quad (A \setminus B) \cup (B \setminus C)$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \setminus B \ = \ \emptyset$
+  - $A \setminus B \ = \ B \setminus A \quad \Leftrightarrow \quad A \ = \ B$ (anticommutativity)
+  - $(A \setminus B) \setminus C \ = \ (A \setminus C) \setminus (B \setminus C)$ (self-distributivity)
+  - $A \setminus B \ = \ A \setminus (A \cap B)$
+  - $A \setminus (B \setminus C) \ = \ (A \setminus B) \cup (A \cap C)$
+  - $(A \setminus C) \setminus (B \setminus A) \quad \subseteq \quad (A \setminus C) \quad \subseteq \quad (A \setminus B) \cup (B \setminus C)$
 
 - Q: properties of $\subseteq$
 1. $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
