@@ -196,9 +196,17 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
 1. $A \subseteq B \Leftrightarrow A \cup B = B$
 2. $A \subseteq B \Leftrightarrow A \cap B = A$
 
+- Q: Properties of set difference $\triangle$: commutative, associative.
+1. commutative, associative
+2. $A = B \Leftrightarrow A \triangle B = \emptyset$
+3. $A \triangle B = C \Leftrightarrow A \triangle C = B \Leftrightarrow B \triangle C = A$
+4. $A \cap B = \emptyset \Leftrightarrow A \cup B = A \triangle B$
+5. $A \cup B = (A \triangle B) \triangle (A \cap B)$
+6. $A \setminus B = A \triangle (A \cap B)$
 
 
-19, 20, 21
+
+19, 20, 21, 23, 34
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
