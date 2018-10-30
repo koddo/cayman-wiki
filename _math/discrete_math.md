@@ -144,6 +144,8 @@ The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <ht
 expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-funkcii-ot-odnogo-i-dvuh-argumentov.html#toc6>
 
 
+
+
 ## dual functions
 
 $(x \vee y)* = $
@@ -166,16 +168,49 @@ $u(f, g) = 0 \Leftrightarrow f=0, g=0$
 $u=f^2+g^2$
 
 HW.01.09.
+HW.01.10.
 
 HW.01.16. When proving set A is equal to set B, we have to prove $A \in B$ and $B \in A$.
 
-Proof of distributivity and absorbtion law for set operations --- <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
-double compliment law: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>
+
+- Q: When are two sets equal? --- A: $A = B$ when $A \subseteq B$ and $B \subseteq A$.
+- Q: How many subsets does a set of $n$ elements have? --- A: $2^n$
+- Q: Is it true that 1) a set, that only has an empty set as it's element, is a subset of an empty set? 2) It's equal to set of all subsets of an empty set? --- A:
+- Q: Prove $(A \cap B) \setminus C = (A \setminus C) \cap$.
+
+- Q: Prove distributivity law: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+And absorbtion law: $(A \cup B) \cap A = A$, $(A \cap B) \cup A = A$
+A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
+
+- Q: Prove these properties of compliment: double compliment law: $\neg{\neg x}$; $A \subseteq B \Rightarrow \neg B \subseteq \neg A$; and De Morgan's law: $\overline {A \cup B}} = {\overline A} \cap {\overline B}$, $\overline {A \cap B}} = {\overline A} \cup {\overline B}$. --- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
+
+- Q: Prove the following properties of set difference:
+1. $A \subseteq B \Leftrightarrow A \setminus B = \emptyset$
+2. $A \setminus B = B \setminus A \Leftrightarrow A = B$ (anticommutativity)
+3. $(A \setminus B) \setminus C = (A \setminus C) \setminus (B \setminus C)$ (self-distributivity)
+4. $A \setminus B = A \setminus (A \cap B)$
+5. $A \setminus (B \setminus C) = (A \setminus B) \cup (A \cap C)$
+6. $(A \setminus C) \setminus (B \setminus A) \subseteq (A \setminus C) \subseteq (A \setminus B) \cup (B \setminus C)$
+
+- Q: properties of $\subseteq$
+1. $A \subseteq B \Leftrightarrow A \cup B = B$
+2. $A \subseteq B \Leftrightarrow A \cap B = A$
+
+- Q: Properties of set difference $\triangle$: commutative, associative.
+1. commutative, associative
+2. $A = B \Leftrightarrow A \triangle B = \emptyset$
+3. $A \triangle B = C \Leftrightarrow A \triangle C = B \Leftrightarrow B \triangle C = A$
+4. $A \cap B = \emptyset \Leftrightarrow A \cup B = A \triangle B$
+5. $A \cup B = (A \triangle B) \triangle (A \cap B)$
+6. $A \setminus B = A \triangle (A \cap B)$
 
 
 
+19, 20, 21, 23, 34
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
