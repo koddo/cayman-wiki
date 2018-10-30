@@ -83,7 +83,10 @@
         <script type="text/x-mathjax-config">
          MathJax.Hub.Config({
              TeX: {
-                 extensions: ["color.js"]
+                 extensions: ["color.js"],
+                 Macros: {
+                     emptyset: "\\varnothing"
+                 }
              },
              tex2jax: {
                  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
