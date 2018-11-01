@@ -204,9 +204,25 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
 5. $A \cup B \ = \ (A \triangle B) \triangle (A \cap B)$
 6. $A \setminus B \ = \ A \triangle (A \cap B)$
 
+- Q: Prove properties of set compliment:
+  - Set compliment $B$ for $A$ is fully defined from these two conditions: $A \cup A^C = U$ and $A \cap A^C = \emptyset$.
+
+- Q: $A \cap B = \emptyset \quad \Leftrightarrow \quad B \subseteq \overline A$.
+
+- Q: Express set difference $\setminus$ using:
+  - intersection and compliment
+  - union and compliment
+
+- Q: Prove properties of $\subseteq$:
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
+  - Let $A_1 \subseteq B_1$, $A_2 \subseteq B_2$:
+    - $A_1 \cup B_1 \subseteq A_2 \cup B_2$ --- stability against union
+    - $A_1 \cap B_1 \subseteq A_2 \cap B_2$ --- against intersection
 
 
-19, 20, 21, 23, 34
+# Indicator functions
+
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">

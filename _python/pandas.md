@@ -124,6 +124,10 @@ Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#F
 
 - Q: `df[][] = 1` vs `df.loc['row', 'column'] = 1`? What is `SettingWithCopyWarning`? --- A: <https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy>
 
+- Q: How to filter out values that are below some quantile? --- A: `df[ dfc['height'] < dfc['height'].quantile(0.025) ]`
+
+
+
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=pandas">
     <p>Your browser does not support iframes.</p>
 </iframe>
