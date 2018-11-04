@@ -19,6 +19,17 @@ idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
 absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
 $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
 
+- Q: ^
+
+- Q: Express:
+  - $\vee, \wedge, \neg$ using $\neg, \rightarrow$
+  - $\vee, \wedge, \neg$ using $1, \wedge, \oplus$
+  - $|$ and \downarrow$ usign $\vee, \wedge, \neg$ --- $A|B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$
+  - $\vee, \wedge, \neg$ usign $|$; using \downarrow$ --- 
+  - prove there are no single operation that can be used to express $\vee, \wedge, \neg$
+
+
+
 ## Implication
 
 - $x \rightarrow y$ can be paraphrased to "if $x$, then it can't be not $y$". "It's raining" $\rightarrow$ "ground is wet". If it's raining, the ground can't be not wet. $x \rightarrow y = \neg (x \wedge \neg y)$.
@@ -88,9 +99,11 @@ minimal set of ops: v, *, -; proof
 
 - Truth-preserving <span markdown="0">$T_0 = \left\{ \, f \ : \ f(0,\dots ,0) = 0 \, \right\}$</span>, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow$
 - False-preserving <span markdown="0">$T_1 = \left\{ \, f \ : \ f(1,\dots ,1) = 1 \, \right\}$</span>, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
-- Monotonic <span markdown="0">$M = \left\{ \, f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \, \right\}$</span>, $\vee ,\wedge ,\top ,\bot$
+- Monotonic <span markdown="0">$M = \left\{ \, f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \, \right\}$</span>, $\vee ,\wedge ,\top ,\bot$; note they don't depend on order of variables
 - Self-dual <span markdown="0">$S = \left\{ \, f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \, \right\}$</span>, $\neg $, $MAJ(p, q, r)$
 - Linear <span markdown="0">$L = \left\{ \, f \ : \ f(x_{1},\dots ,x_{n})=a_{0}\oplus a_{1}x_{1}\oplus \dots \oplus a_{n}x_{n} \,  \right\}$</span> 
+
+- Q: Prove closure of the sets: $T_0, T_1, M, S, L$.
 
 ```
 Using non-false-preserving, non-monotonic, non-self-dual functions we get constants and invertor:
@@ -106,7 +119,19 @@ f not in T_0 ---> 1 ---> 0
 Now we have 0, 1, ~x, non-linear f   -->   we have xy   -->   we have x+y   -->   we have everything 
 ```
 
+- Q: Prove these steps in proof of Post's functional completeness theorem:
+  - We have $f \notin T_0$, then we have either $1$, or $\neg x$.
+  - We have $f \notin T_1$, then we have either $0$, or $\neg x$.
+  - We have $\neg x$ and $f \notin S$, then we have either $0$, or $1$.
+  - We have $0, 1, f \notin M$, then we have $\neg x$.
+  - And finally, we have $0, 1, \neg x, f \notin L$, how to get $x \cdot y$?
+- A: 
+
+- Q: Weak functonal completeness???, hw2p56.
+
 - Q: Why are there only two operations like up arrow and stroke? --- A: 
+
+
 
 <https://ru.wikipedia.org/wiki/Критерий_Поста>
 <https://en.wikipedia.org/wiki/Functional_completeness>
@@ -132,6 +157,8 @@ Monotone functions order? <https://en.wikipedia.org/wiki/Hasse_diagram>, n-dimen
 композиция монотонных функций монотонна
 линейный полином жегалкина
 
+
+
 - Q: How to check if a function is truth-preserving, false-preserving, self-dual, monotone (number of options to check?), linear?
 A cube for checking a function with three variables.
 The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <https://en.wikipedia.org/wiki/Zhegalkin_polynomial#The_method_of_indeterminate_coefficients>
@@ -144,6 +171,44 @@ The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <ht
 expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-funkcii-ot-odnogo-i-dvuh-argumentov.html#toc6>
 
 
+- Q: Prove that it's impossible to express:
+  - $\neg$ using $\vee, \wedge$
+  - $\vee, \wedge$ usign $\neg, \equiv$
+  - $\wedge$ usign $\vee, \rightarrow$
+  
+- Q: 
+  - Find all truth-preserving and false-preserving functions with two variables.
+  - Prove number of truth-preserving functions is equal to number of false-preserving functions.
+
+- Q:
+  - How many functions with $n$ variables are there?
+  - How many linear?
+  - How many self-dual?
+  - How many truth-preserving, false-preserving?
+  - How many monotone? --- this question wasn't in the list
+  
+- Q: Prove that if $f$ is self-dual, then $\neg f$ is also self-dual.
+- Q: 
+  - Prove there are no self-dual functions that depend (significantly) on exactly two variables.
+  - Find all self-dual functions that significantly depend on three variables.
+  - Prove a linear function is self-dual $\Leftrightarrow$ it significantly depends on an odd number of variables.
+  
+- Q: 
+  - Find a linear function (Zhegalkin polynomial) for functions with 3 variables that is true only on inputs with prime indices.
+  - Same with 4 variables. How to use the previous result to find it?
+  
+- Q: hw2p49 --- Let $f$ a non-constant function. Prove that in it's truth-table:
+  - there is an even number of ones.
+  - number of ones is equal to number of zeros.
+  - 
+
+- Q: hw2p50 --- Prove any monotone function can be expressed using $0, 1, \vee, \wedge$.
+
+- Q: Are the following sets of functions complete?
+  - $\vee, \wedge, \oplus$
+  - $\vee, \wedge, x \oplus y \oplus z \oplus 1$
+  - $1, \neg x, x~y$ 
+  - $$
 
 
 ## dual functions
@@ -180,9 +245,13 @@ HW.01.16. When proving set A is equal to set B, we have to prove $A \in B$ and $
 
 - Q: Prove distributivity law: $A \cap (B \cup C) \ = \ (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) \ = \ (A \cup B) \cap (A \cup C)$
 And absorbtion law: $(A \cup B) \cap A \ = \ A$, $(A \cap B) \cup A \ = \ A$
-A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
+- A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
 
-- Q: Prove these properties of compliment: double compliment law: $\overline{\overline A} = A$; $A \subseteq B \ \Rightarrow \ \overline B \subseteq \overline A$; and De Morgan's law: $\overline {A \cup B} \ = \ {\overline A} \cap {\overline B}$, $\overline {A \cap B} \ = \ {\overline A} \cup {\overline B}$. --- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
+- Q: Prove these properties of compliment:
+  - Double compliment law: $\overline{\overline A} = A$
+  - $A \subseteq B \ \Rightarrow \ \overline B \subseteq \overline A$
+  - De Morgan's law: $\overline {A \cup B} \ = \ {\overline A} \cap {\overline B}$, $\overline {A \cap B} \ = \ {\overline A} \cup {\overline B}$
+- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
 
 - Q: Prove the following properties of set difference:
   - $A \subseteq B \quad \Leftrightarrow \quad A \setminus B \ = \ \emptyset$
@@ -193,16 +262,16 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
   - $(A \setminus C) \setminus (B \setminus A) \quad \subseteq \quad (A \setminus C) \quad \subseteq \quad (A \setminus B) \cup (B \setminus C)$
 
 - Q: properties of $\subseteq$
-1. $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
-2. $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
 
-- Q: Properties of set difference $\triangle$: commutative, associative.
-1. commutative, associative
-2. $A = B \quad \Leftrightarrow \quad A \triangle B = \emptyset$
-3. $A \triangle B = C \quad \Leftrightarrow \quad A \triangle C = B \quad \Leftrightarrow \quad B \triangle C = A$
-4. $A \cap B = \emptyset \quad \Leftrightarrow \quad A \cup B = A \triangle B$
-5. $A \cup B \ = \ (A \triangle B) \triangle (A \cap B)$
-6. $A \setminus B \ = \ A \triangle (A \cap B)$
+- Q: Properties of set difference $\triangle$:
+  - It's commutative, associative.
+  - $A = B \quad \Leftrightarrow \quad A \triangle B = \emptyset$
+  - $A \triangle B = C \quad \Leftrightarrow \quad A \triangle C = B \quad \Leftrightarrow \quad B \triangle C = A$
+  - $A \cap B = \emptyset \quad \Leftrightarrow \quad A \cup B = A \triangle B$
+  - $A \cup B \ = \ (A \triangle B) \triangle (A \cap B)$
+  - $A \setminus B \ = \ A \triangle (A \cap B)$
 
 - Q: Prove properties of set compliment:
   - Set compliment $B$ for $A$ is fully defined from these two conditions: $A \cup A^C = U$ and $A \cap A^C = \emptyset$.
@@ -217,8 +286,8 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
   - $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
   - $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
   - Let $A_1 \subseteq B_1$, $A_2 \subseteq B_2$:
-    - $A_1 \cup B_1 \subseteq A_2 \cup B_2$ --- stability against union
-    - $A_1 \cap B_1 \subseteq A_2 \cap B_2$ --- against intersection
+    - $A_1 \cup B_1 \ \subseteq \ A_2\cup B_2$ --- stability against union
+    - $A_1 \cap B_1 \ \subseteq \ A_2\cap B_2$ --- against intersection
 
 
 # Indicator functions
