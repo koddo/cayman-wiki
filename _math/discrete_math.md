@@ -80,7 +80,7 @@ TODO: logic tables and formulas for for must have equations
 
 
 $\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
-$\vert A \cup B \cup C \vert = \vert A \vert + \vert B \vert + \vert C \vert - \vertA \cap B \vert - \vert A \cap C \vert - \vert B \cap C \vert + \vert A \cap B \cap C \vert$
+$\vert A \cup B \cup C \vert = \vert A \vert + \vert B \vert + \vert C \vert - \vert A \cap B \vert - \vert A \cap C \vert - \vert B \cap C \vert + \vert A \cap B \cap C \vert$
 
 
 $$
@@ -88,7 +88,7 @@ $$
 $$
 
 $$
-{\displaystyle \left\vert \bigcup_{i=1}^{n}A_{i} \right\vert = \sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n} \vert A_{i_{1}}\cap \cdots \cap A_{i_{k}} \vert\right)}
+{\displaystyle \left\vert \bigcup_{i=1}^{n}A_{i} \right\vert = \sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n} \vert A_{i_{1}}\cap \cdots \cap A_{i_{k}} \vert \right)}
 $$
 
 minimal set of ops: v, *, -; proof
