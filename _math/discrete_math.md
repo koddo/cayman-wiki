@@ -79,16 +79,16 @@ TODO: logic tables and formulas for for must have equations
 <https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle>
 
 
-<span markdown="0">$| A \cup B| = |A| + |B| - |A \cap B|$</span>
-<span markdown="0">$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|$</span>
+$\vert A \cup B\vert = \vertA\vert + \vertB\vert - \vertA \cap B\vert$
+$\vertA\cup B\cup C\vert=\vertA\vert+\vertB\vert+\vertC\vert-\vertA\cap B\vert-\vertA\cap C\vert-\vertB\cap C\vert+\vertA\cap B\cap C\vert$
 
 
 $$
-{\begin{aligned}\left|\bigcup _{i=1}^{n}A_{i}\right|={}&\sum _{i=1}^{n}|A_{i}|-\sum _{1\leq i<j\leq n}|A_{i}\cap A_{j}|+\dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}|A_{i}\cap A_{j}\cap A_{k}|-\dots +(-1)^{n-1}\left|A_{1}\cap \dots \cap A_{n}\right|.\end{aligned}}
+{\begin{aligned}\left\vert\bigcup _{i=1}^{n}A_{i}\right\vert={}&\sum _{i=1}^{n}\vertA_{i}\vert-\sum _{1\leq i<j\leq n}\vertA_{i}\cap A_{j}\vert+\dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}\vertA_{i}\cap A_{j}\cap A_{k}\vert-\dots +(-1)^{n-1}\left\vertA_{1}\cap \dots \cap A_{n}\right\vert.\end{aligned}}
 $$
 
 $$
-{\displaystyle \left|\bigcup _{i=1}^{n}A_{i}\right|=\sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n}|A_{i_{1}}\cap \cdots \cap A_{i_{k}}|\right)}
+{\displaystyle \left\vert\bigcup _{i=1}^{n}A_{i}\right\vert=\sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n}\vertA_{i_{1}}\cap \cdots \cap A_{i_{k}}\vert\right)}
 $$
 
 minimal set of ops: v, *, -; proof
@@ -231,7 +231,7 @@ HW.01.05. $A = \{ 1, 2, 4, 5, 9 \}$, $B = \{ 2, 3, 5, 6, 9 \}$, $C = \{ 4, 5, 6,
 How to prove the latter can't be expressed?
 --- Если входит 2, то по там же причинам должна входить и 9 - делаются те же проверки.
 
-HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = |\sin x|$ and $\cos x = \tan{\tan x}$</span>.
+HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = \vert\sin x\vert$ and $\cos x = \tan{\tan x}$</span>.
 - Q: What equation $u(f, g)=0$ has solution set that is _union_ of solution sets of $f=0$ and $g=0$? _Intersection_?
 $u(f, g) = 0 \Leftrightarrow f=0, g=0$
 $u=f^2+g^2$
