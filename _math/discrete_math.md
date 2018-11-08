@@ -207,8 +207,16 @@ expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-fu
 - Q: Are the following sets of functions complete?
   - $\vee, \wedge, \oplus$
   - $\vee, \wedge, x \oplus y \oplus z \oplus 1$
-  - $1, \neg x, x~y$ 
-  - $$
+  - $1, \neg x, x \equiv y$
+  - $0, \neg x, x (y \oplus z) \oplus yz$
+  - $1, xy (x \oplus z)$
+  - $\leftarrow, \oplus$
+  
+- Q: Let $p(n)$ number of functions with $n$ variables, that alone constitute functionally complete systems.
+
+$$
+\lim_{n \leftarrow \inf}\frac{p(n)}{2^{2^n}} \ = \ ?
+$$
 
 
 ## dual functions

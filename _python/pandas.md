@@ -126,10 +126,7 @@ all( type(sm[i]) == pd.Series for i in range(len(sm)) )
 
 - Q: How to get columns? How to get index? How to get values? --- a: <https://pandas.pydata.org/pandas-docs/stable/10min.html#viewing-data>
 
-- Q: How to rename a column in pandas? Inplace? --- a:
-`df.rename( columns={'oldName1': 'newName1', 'oldName2': 'newName2'} )`, it can also be `inplace=True`
-or with `df.set_axis(['a', 'b', 'c', 'd', 'e'], axis='columns', inplace=False)` --- <https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.set_axis.html#pandas.Series.set_axis>
-`df.columns = ['a', 'b', 'c']` is fine too.
+
 
 - Q: `s.str.contains()` vs `substr in a_str` --- a:  
 
