@@ -24,8 +24,8 @@ $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy
 - Q: Express:
   - $\vee, \wedge, \neg$ using $\neg, \rightarrow$
   - $\vee, \wedge, \neg$ using $1, \wedge, \oplus$
-  - <span markdown="0">$|$ and \downarrow$ usign $\vee, \wedge, \neg$ --- $A|B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$</span>
-  - <span markdown="0">$\vee, \wedge, \neg$ usign $|$; using $\downarrow$</span markdown="0"> --- 
+  - $\vert$ and $\downarrow$ using $\vee, \wedge, \neg$ --- $A \vert B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$
+  - $\vee, \wedge, \neg$ using $\vert$; using $\downarrow$ --- 
   - prove there are no single operation that can be used to express $\vee, \wedge, \neg$
 
 
