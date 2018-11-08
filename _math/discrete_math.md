@@ -24,8 +24,8 @@ $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy
 - Q: Express:
   - $\vee, \wedge, \neg$ using $\neg, \rightarrow$
   - $\vee, \wedge, \neg$ using $1, \wedge, \oplus$
-  - $|$ and \downarrow$ usign $\vee, \wedge, \neg$ --- $A|B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$
-  - $\vee, \wedge, \neg$ usign $|$; using \downarrow$ --- 
+  - <span markdown="0">$|$ and \downarrow$ usign $\vee, \wedge, \neg$ --- $A|B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$</span>
+  - <span markdown="0">$\vee, \wedge, \neg$ usign $|$; using $\downarrow$</span markdown="0"> --- 
   - prove there are no single operation that can be used to express $\vee, \wedge, \neg$
 
 
@@ -129,8 +129,6 @@ Now we have 0, 1, ~x, non-linear f   -->   we have xy   -->   we have x+y   --> 
 
 - Q: Weak functonal completeness???, hw2p56.
 
-- Q: Why are there only two operations like up arrow and stroke? --- A: 
-
 
 
 <https://ru.wikipedia.org/wiki/Критерий_Поста>
@@ -200,7 +198,6 @@ expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-fu
 - Q: hw2p49 --- Let $f$ a non-constant function. Prove that in it's truth-table:
   - there is an even number of ones.
   - number of ones is equal to number of zeros.
-  - 
 
 - Q: hw2p50 --- Prove any monotone function can be expressed using $0, 1, \vee, \wedge$.
 
@@ -213,9 +210,8 @@ expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-fu
   - $\leftarrow, \oplus$
   
 - Q: Let $p(n)$ number of functions with $n$ variables, that alone constitute functionally complete systems.
-
 $$
-\lim_{n \leftarrow \inf}\frac{p(n)}{2^{2^n}} \ = \ ?
+\lim_{n \rightarrow \inf}\frac{p(n)}{2^{2^n}} \ = \ ?
 $$
 
 
