@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+* this line gets replaced with the generated table of contents
+{:toc}
+
 # Logic
 
 If any doubts, draw a table and check it yourself. 
