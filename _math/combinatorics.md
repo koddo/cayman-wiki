@@ -17,8 +17,10 @@ layout: default
 # Exam old problems
 
 <https://www.dropbox.com/home/hse_math?preview=exam+problems+-+old.pdf>
-problems from 6 to 10
 
+- Q: Problem 6: How many six digit numbers are there containing 53?
+
+- Q: 
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- combinatorics">

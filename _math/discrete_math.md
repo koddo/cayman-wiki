@@ -296,6 +296,31 @@ And absorbtion law: $(A \cup B) \cap A \ = \ A$, $(A \cap B) \cup A \ = \ A$
 
 # Indicator functions
 
+$\chi_A(x) = 1$ when $x \in A$
+
+- Q: Prove for finite $U$ and $A$: $\sum_{x \in U} \chi_A(x) = \vert A \vert$
+
+- Q: Prove:
+  - $\chi_{ A \cap B }(x) \ = \ \chi_A(x) \wedge \chi_B(x)$, there's a hint, hw2p28a
+  - $\chi_{ A \cup B }(x) \ = \ \chi_A(x) \vee \chi_B(x)$
+  - $\chi_{\overline A}(x) = \neg \chi_A(x) = 1 - \chi_A(x)$
+  
+- Q: Fill in the gaps:
+  - $\chi_{A \setminus B} = \chi_A(x) \ldots \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \oplus \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \rightarrow \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \equiv \chi_B(x)$
+  
+- Q: hw2p31,32 --- Prove $\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
+!!! there's a lengthy formula
+<https://ru.wikipedia.org/wiki/Формула_включений-исключений#Доказательство>
+<https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Proof_of_main_statement>
+<https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
+
+$$
+\chi_{A \cup B}(x) = \chi_A(x) \vee \chi_B(x) = 1 - \overline{\chi_A(x) \vee \chi_B(x)} = 1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = 1 - (1 - \chi_A(x)) \cdot (1 - \chi_B(x)) = \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x)
+$$
+
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
