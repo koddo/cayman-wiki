@@ -312,7 +312,6 @@ $\chi_A(x) = 1$ when $x \in A$
   - $\chi_{A \ldots B} = \chi_A(x) \equiv \chi_B(x)$
   
 - Q: hw2p31,32 --- Prove $\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
-!!! there's a lengthy formula
 <https://ru.wikipedia.org/wiki/Формула_включений-исключений#Доказательство>
 <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Proof_of_main_statement>
 <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
@@ -320,7 +319,7 @@ $\chi_A(x) = 1$ when $x \in A$
 $$
 \begin{aligned}
 \chi_{A \cup B}(x) &= \chi_A(x) \vee \chi_B(x) = 1 - \overline{\chi_A(x) \vee \chi_B(x)} = \\
-&= \begin{aligned}1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = \\
+&= 1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = \\
 &= 1 - (1 - \chi_A(x)) \cdot (1 - \chi_B(x)) = \\
 &= \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x)
 \end{aligned}
@@ -335,8 +334,16 @@ $$
 \end{aligned}
 $$
 
+
+
+
+
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
+
+
 
 
