@@ -330,7 +330,7 @@ $$
 
 $$
 \begin{aligned}
-\vert A \cup B \vert &= \sum_{x \in U} \chi_{A \cup B}(x) = \sum_{x \in U} \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x) = \\
+\vert A \cup B \vert &= \sum_{x \in U} \chi_{A \cup B}(x) = \sum_{x \in U} \left( \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x) \right) = \\
 &= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_A(x) \cdot \chi_B(x) = \\
 &= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_{A \cap B}(x) = \\
 &= \vert A \vert + \vert B \vert - \vert A \cap B \vert
