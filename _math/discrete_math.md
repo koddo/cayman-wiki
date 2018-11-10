@@ -315,9 +315,14 @@ $\chi_A(x) = 1$ when $x \in A$
   - $\chi_{A \ldots B} = \chi_A(x) \equiv \chi_B(x)$
   
 - Q: hw2p31,32 --- Prove $\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
-<https://ru.wikipedia.org/wiki/Формула_включений-исключений#Доказательство>
-<https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Proof_of_main_statement>
-<https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
+  Prove $\vert A \cup B \cup C \vert = \vert A \vert + \vert B \vert + \vert C \vert - \vert A \cap B \vert - \vert A \cap C \vert- \vert B \cap C \vert + \vert A \cap B \cap C \vert$
+  Prove the inclusion-exclusion principle for arbitrary number of sets.
+  <https://ru.wikipedia.org/wiki/Формула_включений-исключений#Доказательство>
+  <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Proof_of_main_statement>
+  <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
+  Prove $\vert A \triangle B \vert = \vert A \vert + \vert B \vert - 2 \vert A \cap B \vert$
+  $\vert A \triangle B \triangle C \vert = \vert A \vert + \vert B \vert + \vert C \vert - 2 \left( \vert A \cap B \vert - \vert A \cap C \vert - \vert B \cap C \vert \right)+ \vert A \cap B \cap C \vert$
+  \*Prove for arbitrary number of sets.
 
 $$
 \begin{aligned}
