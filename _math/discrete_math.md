@@ -318,11 +318,21 @@ $\chi_A(x) = 1$ when $x \in A$
 <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
 
 $$
-\chi_{A \cup B}(x) = \chi_A(x) \vee \chi_B(x) = 1 - \overline{\chi_A(x) \vee \chi_B(x)} = 1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = 1 - (1 - \chi_A(x)) \cdot (1 - \chi_B(x)) = \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x)
+\begin{aligned}
+\chi_{A \cup B}(x) &= \chi_A(x) \vee \chi_B(x) = 1 - \overline{\chi_A(x) \vee \chi_B(x)} = \\
+&= \begin{aligned}1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = \\
+&= 1 - (1 - \chi_A(x)) \cdot (1 - \chi_B(x)) = \\
+&= \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x)
+\end{aligned}
 $$
 
 $$
-\vert A \cup B \vert = \sum_{x \in U} \chi_{A \cup B}(x) = \sum_{x \in U} \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x) = \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_A(x) \cdot \chi_B(x) = \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_{A \cap B}(x) = \vert A \vert + \vert B \vert - \vert A \cap B \vert
+\begin{aligned}
+\vert A \cup B \vert &= \sum_{x \in U} \chi_{A \cup B}(x) = \sum_{x \in U} \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x) = \\
+&= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_A(x) \cdot \chi_B(x) = \\
+&= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_{A \cap B}(x) = \\
+&= \vert A \vert + \vert B \vert - \vert A \cap B \vert
+\end{aligned}
 $$
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
