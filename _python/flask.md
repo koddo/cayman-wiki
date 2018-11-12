@@ -4,6 +4,8 @@ layout: default
 
 ---
 
+<https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ix-pagination>
+
 # Misc
 
 <https://github.com/mgood/flask-debugtoolbar>

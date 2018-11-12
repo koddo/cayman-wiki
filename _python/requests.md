@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+<http://docs.python-requests.org/en/master/user/quickstart/>
+<http://docs.python-requests.org/en/master/user/advanced/>
+
 # Requests
 
 - Q: How to make a `get` request? What about other verbs?
