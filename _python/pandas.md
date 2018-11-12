@@ -6,6 +6,11 @@ layout: default
 
 # cheatsheet
 
+<https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf>
+
+<https://github.com/rougier/numpy-100>
+<https://github.com/guipsamora/pandas_exercises>
+
 ```
 len(df)
 df.head(), df.tail()
@@ -91,18 +96,37 @@ Exercises-4.ipynb: `cast.groupby(['year', 'type']).size().unstack('type').fillna
   s.fillna(value)   s.dt.dayofweek
 ```
 
+## loc, iloc, at, iat
+
 <https://stackoverflow.com/questions/31593201/pandas-iloc-vs-ix-vs-loc-explanation-how-are-they-different/46915810#46915810>
 
+## apply, applymap, map
+
+```
+s = pd.Series([1, 2, 3])
+sa = s.apply(lambda x: pd.Series([x, x]))
+sm =   s.map(lambda x: pd.Series([x, x]))
+
+type(sa) == pd.DataFrame
+type(sm) == pd.Series
+all( type(sm[i]) == pd.Series for i in range(len(sm)) )
+```
+
+## concat vs append
+
+<https://stackoverflow.com/questions/15819050/pandas-dataframe-concat-vs-append/48168086#48168086>
+
+
+
+# Questions
+
 - Q: How to create a series, a data frame? --- a: <https://pandas.pydata.org/pandas-docs/stable/10min.html#object-creation>
-- Q: How to create a column based on other columns? --- a: `df.assign( col = df.col1 * df.col2 )`
-- Q: `df['new_col'] = s` vs `df.assign( new_col = s )` --- a: The former has issues with indices??? Inplace vs a copy, the latter can be inlined
+- Q: How to create a column based on other columns? --- a: `df.assign( col = df.col1 * df.col2 )`; `df.assign(**{'- colname -' : col1*col2})` if you'd like an arbitrary name.
+- Q: `df['new_col'] = s` vs `df.assign( new_col = s )` --- a: The former has issues with indices??? Inplace vs a copy, the latter can be inlined.
 
 - Q: How to get columns? How to get index? How to get values? --- a: <https://pandas.pydata.org/pandas-docs/stable/10min.html#viewing-data>
 
-- Q: How to rename a column in pandas? Inplace? --- a:
-`df.rename( columns={'oldName1': 'newName1', 'oldName2': 'newName2'} )`, it can also be `inplace=True`
-or with `df.set_axis(['a', 'b', 'c', 'd', 'e'], axis='columns', inplace=False)` --- <https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.set_axis.html#pandas.Series.set_axis>
-`df.columns = ['a', 'b', 'c']` is fine too.
+
 
 - Q: `s.str.contains()` vs `substr in a_str` --- a:  
 
@@ -124,13 +148,34 @@ Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#F
 
 - Q: `df[][] = 1` vs `df.loc['row', 'column'] = 1`? What is `SettingWithCopyWarning`? --- A: <https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy>
 
+- Q: Performance: `df.query` vs `df[boolean_expr]` vs `numexpr` vs `logical_and` --- A: <https://stackoverflow.com/questions/49936557/pandas-dataframe-loc-vs-query-performance>, <https://stackoverflow.com/questions/13611065/efficient-way-to-apply-multiple-filters-to-pandas-dataframe-or-series/30778300#30778300>
+- Q: How to use `isin` in `df.query()` like this? `df[df['id'].isin(id_list)]` --- A: <https://stackoverflow.com/questions/33990955/combine-pandas-dataframe-query-method-with-isin>
+
+- Q: What is `ufunc` in `numpy`? 
+- A: <https://jakevdp.github.io/PythonDataScienceHandbook/02.03-computation-on-arrays-ufuncs.html>, <https://docs.scipy.org/doc/numpy-1.12.0/reference/ufuncs.html>, <http://www.scipy-lectures.org/advanced/advanced_numpy/index.html#universal-functions>
+
+- Q: 
+- A: 
+
+
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=pandas">
     <p>Your browser does not support iframes.</p>
 </iframe>
 
 
+# snippets
+
+```
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+%matplotlib inline
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+```
 
 
 
-
+# numpy
 

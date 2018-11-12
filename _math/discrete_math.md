@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+* this line gets replaced with the generated table of contents
+{:toc}
+
 # Logic
 
 If any doubts, draw a table and check it yourself. 
@@ -18,6 +21,17 @@ $x = x \vee 0 = x \wedge 1 = x \oplus 0$, $x \wedge 0 = 0$, $x \oplus 1 = \neg x
 idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
 absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
 $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
+
+- Q: ^ --- should just memorize those
+
+- Q: Express:
+  - $\vee, \wedge, \neg$ using $\neg, \rightarrow$
+  - $\vee, \wedge, \neg$ using $1, \wedge, \oplus$
+  - $\vert$ and $\downarrow$ using $\vee, \wedge, \neg$ --- $A \vert B \ = \ \neg (A \wedge B)$, $A \downarrow B \ = \ \neg (A \vee B)$
+  - $\vee, \wedge, \neg$ using $\vert$; using $\downarrow$ --- 
+  - prove there are no single operation that can be used to express $\vee, \wedge, \neg$
+
+
 
 ## Implication
 
@@ -68,16 +82,16 @@ TODO: logic tables and formulas for for must have equations
 <https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle>
 
 
-<span markdown="0">$| A \cup B| = |A| + |B| - |A \cap B|$</span>
-<span markdown="0">$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|A\cap C|-|B\cap C|+|A\cap B\cap C|$</span>
+$\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
+$\vert A \cup B \cup C \vert = \vert A \vert + \vert B \vert + \vert C \vert - \vert A \cap B \vert - \vert A \cap C \vert - \vert B \cap C \vert + \vert A \cap B \cap C \vert$
 
 
 $$
-{\begin{aligned}\left|\bigcup _{i=1}^{n}A_{i}\right|={}&\sum _{i=1}^{n}|A_{i}|-\sum _{1\leq i<j\leq n}|A_{i}\cap A_{j}|+\dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}|A_{i}\cap A_{j}\cap A_{k}|-\dots +(-1)^{n-1}\left|A_{1}\cap \dots \cap A_{n}\right|.\end{aligned}}
+{\begin{aligned}\left\vert \bigcup _{i=1}^{n}A_{i} \right\vert ={}&\sum _{i=1}^{n} \vert A_{i} \vert - \sum_{1\leq i<j\leq n} \vert A_{i} \cap A_{j} \vert + \dots {}\\&{}\dots +\sum _{1\leq i<j<k\leq n}\vert A_{i}\cap A_{j}\cap A_{k}\vert -\dots +(-1)^{n-1}\left\vert A_{1}\cap \dots \cap A_{n}\right\vert .\end{aligned}}
 $$
 
 $$
-{\displaystyle \left|\bigcup _{i=1}^{n}A_{i}\right|=\sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n}|A_{i_{1}}\cap \cdots \cap A_{i_{k}}|\right)}
+{\displaystyle \left\vert \bigcup_{i=1}^{n}A_{i} \right\vert = \sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n} \vert A_{i_{1}}\cap \cdots \cap A_{i_{k}} \vert \right)}
 $$
 
 minimal set of ops: v, *, -; proof
@@ -88,9 +102,11 @@ minimal set of ops: v, *, -; proof
 
 - Truth-preserving <span markdown="0">$T_0 = \left\{ \, f \ : \ f(0,\dots ,0) = 0 \, \right\}$</span>, $\vee ,\wedge ,\top ,\rightarrow ,\leftrightarrow$
 - False-preserving <span markdown="0">$T_1 = \left\{ \, f \ : \ f(1,\dots ,1) = 1 \, \right\}$</span>, $\vee ,\wedge ,\bot ,\nrightarrow ,\nleftrightarrow$
-- Monotonic <span markdown="0">$M = \left\{ \, f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \, \right\}$</span>, $\vee ,\wedge ,\top ,\bot$
+- Monotonic <span markdown="0">$M = \left\{ \, f \ : \ \forall i(a_{i}\leq b_{i}) \ \ f(a_{1},\dots ,a_{n})\leq f(b_{1},\dots ,b_{n}) \, \right\}$</span>, $\vee ,\wedge ,\top ,\bot$; note they don't depend on order of variables
 - Self-dual <span markdown="0">$S = \left\{ \, f \ : \ f(\overline {x_{1}},\dots ,\overline {x_{n}})=\overline {f(x_{1},\dots ,x_{n})} \, \right\}$</span>, $\neg $, $MAJ(p, q, r)$
 - Linear <span markdown="0">$L = \left\{ \, f \ : \ f(x_{1},\dots ,x_{n})=a_{0}\oplus a_{1}x_{1}\oplus \dots \oplus a_{n}x_{n} \,  \right\}$</span> 
+
+- Q: Prove closure of the sets: $T_0, T_1, M, S, L$.
 
 ```
 Using non-false-preserving, non-monotonic, non-self-dual functions we get constants and invertor:
@@ -106,7 +122,17 @@ f not in T_0 ---> 1 ---> 0
 Now we have 0, 1, ~x, non-linear f   -->   we have xy   -->   we have x+y   -->   we have everything 
 ```
 
-- Q: Why are there only two operations like up arrow and stroke? --- A: 
+- Q: Prove these steps in proof of Post's functional completeness theorem:
+  - We have $f \notin T_0$, then we have either $1$, or $\neg x$.
+  - We have $f \notin T_1$, then we have either $0$, or $\neg x$.
+  - We have $\neg x$ and $f \notin S$, then we have either $0$, or $1$.
+  - We have $0, 1, f \notin M$, then we have $\neg x$.
+  - And finally, we have $0, 1, \neg x, f \notin L$, how to get $x \cdot y$?
+- A: 
+
+- Q: Weak functonal completeness???, hw2p56.
+
+
 
 <https://ru.wikipedia.org/wiki/Критерий_Поста>
 <https://en.wikipedia.org/wiki/Functional_completeness>
@@ -132,6 +158,8 @@ Monotone functions order? <https://en.wikipedia.org/wiki/Hasse_diagram>, n-dimen
 композиция монотонных функций монотонна
 линейный полином жегалкина
 
+
+
 - Q: How to check if a function is truth-preserving, false-preserving, self-dual, monotone (number of options to check?), linear?
 A cube for checking a function with three variables.
 The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <https://en.wikipedia.org/wiki/Zhegalkin_polynomial#The_method_of_indeterminate_coefficients>
@@ -144,6 +172,50 @@ The method of indeterminate coefficients: <https://wikimatik.ru/article/36>, <ht
 expressing functions from each other --- <http://www.calcsbox.com/post/bulevy-funkcii-ot-odnogo-i-dvuh-argumentov.html#toc6>
 
 
+- Q: Prove that it's impossible to express:
+  - $\neg$ using $\vee, \wedge$
+  - $\vee, \wedge$ usign $\neg, \equiv$
+  - $\wedge$ usign $\vee, \rightarrow$
+  
+- Q: 
+  - Find all truth-preserving and false-preserving functions with two variables.
+  - Prove number of truth-preserving functions is equal to number of false-preserving functions.
+
+- Q:
+  - How many functions with $n$ variables are there?
+  - How many linear?
+  - How many self-dual?
+  - How many truth-preserving, false-preserving?
+  - How many monotone? --- this question wasn't in the list
+  
+- Q: Prove that if $f$ is self-dual, then $\neg f$ is also self-dual.
+- Q: 
+  - Prove there are no self-dual functions that depend (significantly) on exactly two variables.
+  - Find all self-dual functions that significantly depend on three variables.
+  - Prove a linear function is self-dual $\Leftrightarrow$ it significantly depends on an odd number of variables.
+  
+- Q: 
+  - Find a linear function (Zhegalkin polynomial) for functions with 3 variables that is true only on inputs with prime indices.
+  - Same with 4 variables. How to use the previous result to find it?
+  
+- Q: hw2p49 --- Let $f$ a non-constant function. Prove that in it's truth-table:
+  - there is an even number of ones.
+  - number of ones is equal to number of zeros.
+
+- Q: hw2p50 --- Prove any monotone function can be expressed using $0, 1, \vee, \wedge$.
+
+- Q: Are the following sets of functions complete?
+  - $\vee, \wedge, \oplus$
+  - $\vee, \wedge, x \oplus y \oplus z \oplus 1$
+  - $1, \neg x, x \equiv y$
+  - $0, \neg x, x (y \oplus z) \oplus yz$
+  - $1, xy (x \oplus z)$
+  - $\leftarrow, \oplus$
+  
+- Q: Let $p(n)$ number of functions with $n$ variables, that alone constitute functionally complete systems.
+$$
+\lim_{n \rightarrow \inf}\frac{p(n)}{2^{2^n}} \ = \ ?
+$$
 
 
 ## dual functions
@@ -162,7 +234,7 @@ HW.01.05. $A = \{ 1, 2, 4, 5, 9 \}$, $B = \{ 2, 3, 5, 6, 9 \}$, $C = \{ 4, 5, 6,
 How to prove the latter can't be expressed?
 --- Если входит 2, то по там же причинам должна входить и 9 - делаются те же проверки.
 
-HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = |\sin x|$ and $\cos x = \tan{\tan x}$</span>.
+HW.01.07. Write an equation which has set of solutions equal to _intersection_ of solution sets of equations <span markdown="0">$\sin x = \vert \sin x \vert$ and $\cos x = \tan{\tan x}$</span>.
 - Q: What equation $u(f, g)=0$ has solution set that is _union_ of solution sets of $f=0$ and $g=0$? _Intersection_?
 $u(f, g) = 0 \Leftrightarrow f=0, g=0$
 $u=f^2+g^2$
@@ -180,9 +252,13 @@ HW.01.16. When proving set A is equal to set B, we have to prove $A \in B$ and $
 
 - Q: Prove distributivity law: $A \cap (B \cup C) \ = \ (A \cap B) \cup (A \cap C)$, $A \cup (B \cap C) \ = \ (A \cup B) \cap (A \cup C)$
 And absorbtion law: $(A \cup B) \cap A \ = \ A$, $(A \cap B) \cup A \ = \ A$
-A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
+- A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law>
 
-- Q: Prove these properties of compliment: double compliment law: $\overline{\overline A} = A$; $A \subseteq B \ \Rightarrow \ \overline B \subseteq \overline A$; and De Morgan's law: $\overline {A \cup B} \ = \ {\overline A} \cap {\overline B}$, $\overline {A \cap B} \ = \ {\overline A} \cup {\overline B}$. --- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
+- Q: Prove these properties of compliment:
+  - Double compliment law: $\overline{\overline A} = A$
+  - $A \subseteq B \ \Rightarrow \ \overline B \subseteq \overline A$
+  - De Morgan's law: $\overline {A \cup B} \ = \ {\overline A} \cap {\overline B}$, $\overline {A \cap B} \ = \ {\overline A} \cup {\overline B}$
+- A: <https://math.stackexchange.com/questions/937166/double-complement-of-a-set-proof>, <https://en.wikipedia.org/wiki/De_Morgan's_laws#Formal_proof> 
 
 - Q: Prove the following properties of set difference:
   - $A \subseteq B \quad \Leftrightarrow \quad A \setminus B \ = \ \emptyset$
@@ -193,24 +269,89 @@ A: <https://math.stackexchange.com/questions/239464/math-proof-of-absorption-law
   - $(A \setminus C) \setminus (B \setminus A) \quad \subseteq \quad (A \setminus C) \quad \subseteq \quad (A \setminus B) \cup (B \setminus C)$
 
 - Q: properties of $\subseteq$
-1. $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
-2. $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
 
-- Q: Properties of set difference $\triangle$: commutative, associative.
-1. commutative, associative
-2. $A = B \quad \Leftrightarrow \quad A \triangle B = \emptyset$
-3. $A \triangle B = C \quad \Leftrightarrow \quad A \triangle C = B \quad \Leftrightarrow \quad B \triangle C = A$
-4. $A \cap B = \emptyset \quad \Leftrightarrow \quad A \cup B = A \triangle B$
-5. $A \cup B \ = \ (A \triangle B) \triangle (A \cap B)$
-6. $A \setminus B \ = \ A \triangle (A \cap B)$
+- Q: Properties of set difference $\triangle$:
+  - It's commutative, associative.
+  - $A = B \quad \Leftrightarrow \quad A \triangle B = \emptyset$
+  - $A \triangle B = C \quad \Leftrightarrow \quad A \triangle C = B \quad \Leftrightarrow \quad B \triangle C = A$
+  - $A \cap B = \emptyset \quad \Leftrightarrow \quad A \cup B = A \triangle B$
+  - $A \cup B \ = \ (A \triangle B) \triangle (A \cap B)$
+  - $A \setminus B \ = \ A \triangle (A \cap B)$
+
+- Q: Prove properties of set compliment:
+  - Set compliment $B$ for $A$ is fully defined from these two conditions: $A \cup A^C = U$ and $A \cap A^C = \emptyset$.
+
+- Q: $A \cap B = \emptyset \quad \Leftrightarrow \quad B \subseteq \overline A$.
+
+- Q: Express set difference $\setminus$ using:
+  - intersection and compliment
+  - union and compliment
+
+- Q: Prove properties of $\subseteq$:
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cup B = B$
+  - $A \subseteq B \quad \Leftrightarrow \quad A \cap B = A$
+  - Let $A_1 \subseteq B_1$, $A_2 \subseteq B_2$:
+    - $A_1 \cup B_1 \ \subseteq \ A_2\cup B_2$ --- stability against union
+    - $A_1 \cap B_1 \ \subseteq \ A_2\cap B_2$ --- against intersection
+
+
+# Indicator functions
+
+$\chi_A(x) = 1$ when $x \in A$
+
+- Q: Prove for finite $U$ and $A$: $\sum_{x \in U} \chi_A(x) = \vert A \vert$
+
+- Q: Prove:
+  - $\chi_{ A \cap B }(x) \ = \ \chi_A(x) \wedge \chi_B(x)$, there's a hint, hw2p28a
+  - $\chi_{ A \cup B }(x) \ = \ \chi_A(x) \vee \chi_B(x)$
+  - $\chi_{\overline A}(x) = \neg \chi_A(x) = 1 - \chi_A(x)$
+  
+- Q: Fill in the gaps:
+  - $\chi_{A \setminus B} = \chi_A(x) \ldots \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \oplus \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \rightarrow \chi_B(x)$
+  - $\chi_{A \ldots B} = \chi_A(x) \equiv \chi_B(x)$
+  
+- Q: hw2p31,32 --- Prove $\vert A \cup B \vert = \vert A \vert + \vert B \vert - \vert A \cap B \vert$
+  Prove $\vert A \cup B \cup C \vert = \vert A \vert + \vert B \vert + \vert C \vert - \vert A \cap B \vert - \vert A \cap C \vert- \vert B \cap C \vert + \vert A \cap B \cap C \vert$
+  Prove the inclusion-exclusion principle for arbitrary number of sets.
+  <https://ru.wikipedia.org/wiki/Формула_включений-исключений#Доказательство>
+  <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Proof_of_main_statement>
+  <https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#Algebraic_proof>
+  Prove $\vert A \triangle B \vert = \vert A \vert + \vert B \vert - 2 \vert A \cap B \vert$
+  $\vert A \triangle B \triangle C \vert = \vert A \vert + \vert B \vert + \vert C \vert - 2 \left( \vert A \cap B \vert - \vert A \cap C \vert - \vert B \cap C \vert \right)+ \vert A \cap B \cap C \vert$
+  \*Prove for arbitrary number of sets.
+
+$$
+\begin{aligned}
+\chi_{A \cup B}(x) &= \chi_A(x) \vee \chi_B(x) = 1 - \overline{\chi_A(x) \vee \chi_B(x)} = \\
+&= 1 - \overline{\chi_A(x)} \cdot \overline{\chi_B(x)} = \\
+&= 1 - (1 - \chi_A(x)) \cdot (1 - \chi_B(x)) = \\
+&= \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\vert A \cup B \vert &= \sum_{x \in U} \chi_{A \cup B}(x) = \sum_{x \in U} \left( \chi_A(x) + \chi_B(x) - \chi_A(x) \cdot \chi_B(x) \right) = \\
+&= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_A(x) \cdot \chi_B(x) = \\
+&= \sum_{x \in U} \chi_A(x) + \sum_{x \in U} \chi_B(x) + \sum_{x \in U} \chi_{A \cap B}(x) = \\
+&= \vert A \vert + \vert B \vert - \vert A \cap B \vert
+\end{aligned}
+$$
 
 
 
-19, 20, 21, 23, 34
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- discrete math">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
+
+
 
 
