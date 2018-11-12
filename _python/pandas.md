@@ -151,8 +151,6 @@ Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#F
 - Q: Performance: `df.query` vs `df[boolean_expr]` vs `numexpr` vs `logical_and` --- A: <https://stackoverflow.com/questions/49936557/pandas-dataframe-loc-vs-query-performance>, <https://stackoverflow.com/questions/13611065/efficient-way-to-apply-multiple-filters-to-pandas-dataframe-or-series/30778300#30778300>
 - Q: How to use `isin` in `df.query()` like this? `df[df['id'].isin(id_list)]` --- A: <https://stackoverflow.com/questions/33990955/combine-pandas-dataframe-query-method-with-isin>
 
-- Q: How to get quantile of a DataFrame column? --- A: `dfc['height'].quantile(0.025)`
-
 - Q: What is `ufunc` in `numpy`? 
 - A: <https://jakevdp.github.io/PythonDataScienceHandbook/02.03-computation-on-arrays-ufuncs.html>, <https://docs.scipy.org/doc/numpy-1.12.0/reference/ufuncs.html>, <http://www.scipy-lectures.org/advanced/advanced_numpy/index.html#universal-functions>
 
@@ -177,4 +175,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
+
+
+# numpy
 

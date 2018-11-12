@@ -23,6 +23,15 @@ def login():
 <http://flask.pocoo.org/docs/1.0/quickstart/#sessions>
 <https://stackoverflow.com/questions/22463939/demystify-flask-app-secret-key/48596852#48596852>
 
+# Trailing slash in URLs
+
+From <http://flask.pocoo.org/docs/1.0/quickstart/#unique-urls-redirection-behavior>:
+
+The canonical URL for the projects endpoint has a trailing slash. It’s similar to a folder in a file system. If you access the URL without a trailing slash, Flask redirects you to the canonical URL with the trailing slash.
+
+The canonical URL for the about endpoint does not have a trailing slash. It’s similar to the pathname of a file. Accessing the URL with a trailing slash produces a 404 “Not Found” error. This helps keep URLs unique for these resources, which helps search engines avoid indexing the same page twice.
+
+
 
 # Application and request contexts
 

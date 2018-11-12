@@ -22,7 +22,7 @@ idempotence: $x = x \vee x = x \wedge x = x \rightarrow x$
 absorbtion: $(x \vee y) \wedge x = x$, $(x \wedge y) \vee x = x$
 $x \rightarrow y = \neg x \vee y = \neg (x \wedge \neg y) = 1 \oplus x \oplus xy$, $x \oplus y = (x \wedge \neg y) \vee (\neg x \wedge y) = (x \vee y) \wedge (\neg x \vee \neg y)$
 
-- Q: ^
+- Q: ^ --- should just memorize those
 
 - Q: Express:
   - $\vee, \wedge, \neg$ using $\neg, \rightarrow$

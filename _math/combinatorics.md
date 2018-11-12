@@ -7,6 +7,8 @@ layout: default
 # Combinations
 
 - Q: What are permutations, combinations, combinations with repetitions problems?
+- Q: Whow the number of combinations is $$\binom{n}{k}$$.
+
 
 ## Combinations with repetitions
 
