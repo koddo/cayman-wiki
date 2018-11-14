@@ -101,8 +101,6 @@ minimal set of ops: v, *, -; proof
 <https://en.wikipedia.org/wiki/Disjunctive_normal_form>
 
 
-- Q: Problem 1 from example exam problems 1. Sets $A, B, C$ contain $9, 11, 13$ elements. Their intersections --- $10, 8, 9$. $\vert A \cup B \cup C \vert \ = \ ?$
-- A: <https://www.dropbox.com/home/hse_math/combinatorics -- lecture 5?preview=IMG_20181109_202717.jpg>
 
 
 # Post's theorem on function completeness

@@ -20,23 +20,7 @@ layout: default
 
 <https://www.dropbox.com/home/hse_math?preview=exam+problems+-+old.pdf>
 
-- Q: Problem 6: How many numbers (strings of digits, not natural numbers) are there containing 53?
 
-$\vert A \cup B \cup C \cup D \cup E \cup F \vert = ?$
-
-$A$ --- `53****`
-$B$ --- `*53***`
-$C$ --- `**53**`
-$D$ --- `***53*`
-$E$ --- `****53`
-
-$$
-\begin{aligned}
-\vert A \cup B \cup C \cup D \cup E \cup F \vert &=  5 \vert A \vert - \vert A \cap C \vert - \vert A \cap D \vert - \vert A \cap E \vert - \\
-&\qquad - \vert B \cap D \vert - \vert B \cap E \vert - \vert C \cap E \vert + \vert A \cap C \cap E \vert = \\
-&= 5 \cdot 10^4 - 6 \cdot 10^2 + 1
-\end{aligned}
-$$
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- combinatorics">
