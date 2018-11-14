@@ -9,6 +9,8 @@ layout: default
 
 # Logic
 
+<https://en.wikipedia.org/wiki/Truth_table>
+
 If any doubts, draw a table and check it yourself. 
 
 $\neg(\neg x) = x$
@@ -91,12 +93,17 @@ $$
 $$
 
 $$
-{\displaystyle \left\vert \bigcup_{i=1}^{n}A_{i} \right\vert = \sum _{k=1}^{n}(-1)^{k+1}\left(\sum _{1\leq i_{1}<\cdots <i_{k}\leq n} \vert A_{i_{1}}\cap \cdots \cap A_{i_{k}} \vert \right)}
+{\displaystyle \left\vert \bigcup_{i=1}^{n}A_{i} \right\vert = \sum_{k=1}^{n}(-1)^{k+1}\left(\sum_{1\leq i_{1}<\cdots <i_{k}\leq n} \vert A_{i_{1}}\cap \cdots \cap A_{i_{k}} \vert \right)}
 $$
 
 minimal set of ops: v, *, -; proof
 
 <https://en.wikipedia.org/wiki/Disjunctive_normal_form>
+
+
+- Q: Problem 1 from example exam problems 1. Sets $A, B, C$ contain $9, 11, 13$ elements. Their intersections --- $10, 8, 9$. $\vert A \cup B \cup C \vert \ = \ ?$
+- A: <https://www.dropbox.com/home/hse_math/combinatorics -- lecture 5?preview=IMG_20181109_202717.jpg>
+
 
 # Post's theorem on function completeness
 
