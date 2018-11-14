@@ -34,7 +34,7 @@ $E$ --- `****53`
 $$
 \begin{aligned}
 \vert A \cup B \cup C \cup D \cup E \cup F \vert &=  5 \vert A \vert - \vert A \cap C \vert - \vert A \cap D \vert - \vert A \cap E \vert &- \\
-& &- \vert B \cap D \vert - \vert B \cap E \vert - \vert C \cap E \vert + \vert A \cap C \cap E \vert = \\
+-& \vert B \cap D \vert - \vert B \cap E \vert - \vert C \cap E \vert + \vert A \cap C \cap E \vert = \\
 &= 5 \cdot 10^4 - 6 \cdot 10^2 + 1
 \end{aligned}
 $$
