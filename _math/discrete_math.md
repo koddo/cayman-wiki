@@ -144,6 +144,7 @@ Now we have 0, 1, ~x, non-linear f   -->   we have xy   -->   we have x+y   --> 
 <https://www.academia.edu/12708709/Posts_functional_completeness_theorem>
 <https://en.wikipedia.org/wiki/Post%27s_lattice>
 Clones of closed classes, proof of equivalence of some of them: 1, `\oplus`, `\wedge`
+class of monotonic functions and algorithm of checking it: <https://ido.tsu.ru/iop_res/bulevfunc/text/g15_5.html>
 
 <https://en.wikipedia.org/wiki/Sheffer_stroke>
 Peirce's arrow $\downarrow$: <https://en.wikipedia.org/wiki/Logical_NOR>

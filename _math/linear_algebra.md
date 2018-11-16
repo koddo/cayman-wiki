@@ -107,20 +107,3 @@ $$
 TODO LOW: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-time-complexity-of-gaussian-elimination>
 
     
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- systems of linear equations">
-    <p>Your browser does not support iframes.</p>
-</iframe>
-
-<script>
- if(getCookie('superlearn')) {
-    console.log('hello');
-    var elements = document.getElementsByClassName('superlearn-iframe');
-    for (var i = 0; i < elements.length; ++i) {
-        var el = elements[i];
-        el.classList.remove("car");
-    } 
- } else {
-    console.log('nope');
-}
-</script>
-
