@@ -219,7 +219,7 @@ $$
 \end{pmatrix}
 $$
 
-- Q: Bad properties of matrices: non-commutativity, null divisors, some matrices taken to powers even give zero:
+- Q: Good properties of matrix operations: all those associativity, commutativity, distributivity of addition and multiplication by scalars. And bad properties: non-commutativity, null divisors, some matrices taken to powers even give zero:
 
 $$
 \begin{pmatrix}
@@ -274,3 +274,6 @@ $$
 \end{pmatrix}
 =0
 $$
+
+
+
