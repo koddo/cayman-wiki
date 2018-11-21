@@ -14,8 +14,6 @@ layout: default
 
 <https://en.wikipedia.org/wiki/Combination#Number_of_combinations_with_repetition>
 
-
-
 # Exam old problems
 
 <https://www.dropbox.com/home/hse_math?preview=exam+problems+-+old.pdf>

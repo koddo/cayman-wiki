@@ -107,3 +107,86 @@ $$
 TODO LOW: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-time-complexity-of-gaussian-elimination>
 
     
+# Problems
+
+<https://www.dropbox.com/home/hse_math?preview=linear_algebra+01+--+Seminar1_problems.pdf>
+
+- Q: hw1p4
+- Q: hw1p8 -- only the idea?
+- Q: hw1p9
+- Q: hw1p14
+- Q: hw1p15
+- Q: The following two matrices:
+
+$$
+\begin{pmatrix}
+{0}&{1}&{}&{}&{}\\
+{}&{0}&{1}&{}&{}\\
+{}&{}&{0}&{\ddots}&{}\\
+{}&{}&{}&{\ddots}&{1}\\
+{}&{}&{}&{}&{0}\\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+{0}&{1}&{}&{}&{}\\
+{}&{0}&{1}&{}&{}\\
+{}&{}&{0}&{\ddots}&{}\\
+{}&{}&{}&{\ddots}&{1}\\
+{1}&{}&{}&{}&{0}\\
+\end{pmatrix}
+$$
+
+- Q: Multiplication by blocks
+
+$$
+\begin{matrix}
+{}&{
+\begin{matrix}
+{k}&{s}
+\end{matrix}}\\
+{
+\begin{matrix}
+{m}\\
+{n}
+\end{matrix}}&{
+\begin{pmatrix}
+{A}&{B}\\
+{C}&{D}
+\end{pmatrix}}
+\end{matrix}
+\quad\quad
+\begin{matrix}
+{}&{
+\begin{matrix}
+{u}&{v}
+\end{matrix}}\\
+{
+\begin{matrix}
+{k}\\
+{s}
+\end{matrix}}&{
+\begin{pmatrix}
+{X}&{Y}\\
+{W}&{Z}
+\end{pmatrix}}
+\end{matrix}
+$$
+
+$$
+\begin{matrix}
+{}&{
+u\quad\quad\quad\quad\quad v
+}\\
+{
+\begin{matrix}
+{m}\\
+{n}
+\end{matrix}}&{
+\begin{pmatrix}
+{A X + B W}&{A Y + B Z}\\
+{C X + D W}&{C Y + D Z}
+\end{pmatrix}}
+\end{matrix}
+$$

@@ -148,7 +148,7 @@ Using format strings: <https://pandas.pydata.org/pandas-docs/stable/style.html#F
 
 - Q: `df[][] = 1` vs `df.loc['row', 'column'] = 1`? What is `SettingWithCopyWarning`? --- A: <https://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy>
 
-- Q: Performance: `df.query` vs `df[boolean_expr]` vs `numexpr` vs `logical_and` --- A: <https://stackoverflow.com/questions/49936557/pandas-dataframe-loc-vs-query-performance>, <https://stackoverflow.com/questions/13611065/efficient-way-to-apply-multiple-filters-to-pandas-dataframe-or-series/30778300#30778300>
+- Q: Performance: `df.query` vs `df[boolean_expr]` vs `numexpr` vs `logical_and` --- A: <https://stackoverflow.com/questions/49936557/pandas-dataframe-loc-vs-query-performance>, <https://stackoverflow.com/questions/13611065/efficient-way-to-apply-multiple-filters-to-pandas-dataframe-or-series/30778300#30778300>, <https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.query.html>
 - Q: How to use `isin` in `df.query()` like this? `df[df['id'].isin(id_list)]` --- A: <https://stackoverflow.com/questions/33990955/combine-pandas-dataframe-query-method-with-isin>
 
 - Q: What is `ufunc` in `numpy`? 
