@@ -261,7 +261,7 @@ $$
 =0
 $$
 
-$\exist A \quad A^n = 0$:
+$\exists A \quad A^n = 0$:
 
 $$
 \begin{pmatrix}
