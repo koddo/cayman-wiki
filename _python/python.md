@@ -1,0 +1,26 @@
+---
+title:  "Python"
+layout: default
+
+---
+
+- Q: How to test against True, False, None? --- A: <https://stackoverflow.com/questions/9494404/use-of-true-false-and-none-as-return-values-in-python-functions>
+- A: 
+This is a mess in the python language.
+But to simplify things let's just declare you should only use `if var: ...`.
+(And other forms when you know what you're doing.)
+
+According to PEP-8:
+
+```
+Don't compare boolean values to True or False using ==.
+
+Yes:   if greeting:
+No:    if greeting == True:
+Worse: if greeting is True:
+```
+
+The problem is that we sometimes want to distinguish truthy values like `True`, `1`, `['a']`, `range(10)`, etc.
+
+`if var is True: ...` actually works, but relies on 
+

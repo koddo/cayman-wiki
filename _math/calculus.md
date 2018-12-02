@@ -1,5 +1,5 @@
 ---
-title:  "Multivariable calculus"
+title:  "Calculus"
 layout: default
 
 ---

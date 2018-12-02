@@ -25,16 +25,3 @@ Cycle
 - A: page 3-4 of <https://www.math.hmc.edu/~kindred/cuc-only/math104/hmwk-solns/hm1sol.pdf>
 
 
-# Binary relations
-
-<https://en.wikipedia.org/wiki/Binary_relation>
-<https://ru.wikipedia.org/wiki/Бинарное_отношение>
-
-reflexive, inreflexive
-symmetric, asymmetric, antisymmetric
-transitive
-
-
-- Q: hw5 problems 113-131
-
-- Q: 
