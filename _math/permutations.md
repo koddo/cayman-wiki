@@ -17,17 +17,20 @@ $$\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 5 & 4 & 1 & 7 & 3 & 6 & 2 \end{pm
 multiply permutations:
 $$\left[\begin{pmatrix} 1 & 3 & 5 \end{pmatrix} \begin{pmatrix} 2 & 4 & 6 & 7 \end{pmatrix}\right] \  \cdot \ \left[\begin{pmatrix} 1 & 4 & 7 \end{pmatrix} \begin{pmatrix} 2 & 3 & 5 & 6 \end{pmatrix}\right] = \begin{pmatrix} 1 & 6 & 4 & 2 & 5 & 7 & 3 \end{pmatrix}$$
 
+$$
 \begin{align*}
 1 \to 4 \to 6&: \ \ \ \begin{pmatrix} 1 & 6 & \ldots \end{pmatrix} \\
 6 \to 2 \to 4&: \ \ \ \begin{pmatrix} 1 & 6 & 4 & \ldots \end{pmatrix} \\
 4 \to 7 \to 2&: \ \ \ \begin{pmatrix} 1 & 6 & 4 & 2 & \ldots \end{pmatrix}
 \end{align*}
-
+$$
 
 to inverse a permutation just interchange the two lines:
-$$\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ \boldsymbol 2 & \boldsymbol 5 & \boldsymbol 4 & \boldsymbol 3 & \boldsymbol 1 \end{pmatrix}^{-1}
+$$
+\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ \boldsymbol 2 & \boldsymbol 5 & \boldsymbol 4 & \boldsymbol 3 & \boldsymbol 1 \end{pmatrix}^{-1}
     =\begin{pmatrix} \boldsymbol 2 & \boldsymbol 5 & \boldsymbol 4 & \boldsymbol 3 & \boldsymbol 1 \\ 1 & 2 & 3 & 4 & 5 \end{pmatrix}
-    =\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 5 & 1 & 4 & 3 & 2\end{pmatrix}$$
+    =\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 5 & 1 & 4 & 3 & 2\end{pmatrix}
+$$
 
 
 inverted cycle: $\begin{pmatrix} i_1 & \ldots & i_n \end{pmatrix}^{-1} = \begin{pmatrix} i_n & \ldots & i_1 \end{pmatrix}$
