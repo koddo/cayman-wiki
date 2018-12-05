@@ -4,14 +4,26 @@ layout: default
 
 ---
 
-$$(\tau \sigma)(i) = \tau (\sigma (i)) = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 3 & 5 & 1 & 6 & 2 & 4 \end{pmatrix} \cdot \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 3 & 4 & 2 & 1 & 5 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 4 & 1 & 6 & 5 & 3 & 2 \end{pmatrix} \ \ \ \ \ \ \ \ \ (\text{right to left: } 1 \to 6 \to 4)$$
+$$
+\begin{align*}
+(\tau \sigma)(i) = \tau (\sigma (i)) &= \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 3 & 5 & 1 & 6 & 2 & 4 \end{pmatrix} \cdot \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 3 & 4 & 2 & 1 & 5 \end{pmatrix} = \\ 
+&= \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 4 & 1 & 6 & 5 & 3 & 2 \end{pmatrix} \ \ \ \ \ \ \ \ \ (\text{right to left: } 1 \to 6 \to 4)
+\end{align*}
+$$
    
 cycle --- $\begin{pmatrix}1 & 2 & 5 \end{pmatrix}$
 transposition --- cycle of length two: $\begin{pmatrix}3 & 4 \end{pmatrix}$
 
 
 write the permutation as a product of disjoint cycles
-$$\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 5 & 4 & 1 & 7 & 3 & 6 & 2 \end{pmatrix} = \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} = \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 6 \end{pmatrix} = \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} = \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 6 \end{pmatrix}$$
+$$
+\begin{align*}
+\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 5 & 4 & 1 & 7 & 3 & 6 & 2 \end{pmatrix} &= \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} = \\
+&= \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 6 \end{pmatrix} = \\
+&= \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} = \\
+&= \begin{pmatrix} 2 & 4 & 7 \end{pmatrix} \begin{pmatrix} 1 & 5 & 3 \end{pmatrix} \begin{pmatrix} 6 \end{pmatrix}
+\end{align*}
+$$
 
 
 multiply permutations:
@@ -107,7 +119,7 @@ $\begin{pmatrix} 1 & 2 & \ldots & n \end{pmatrix} = \begin{pmatrix} 1 & 2 \end{p
 
 in practice, in order to determine whether a given permutation is even or odd, one writes the permutation as a product of disjoint cycles
 $\sigma = c_1 \cdot \ldots \cdot c_n$, where $c_1, \ldots, c_n$ are cycles
-$\sgn \sigma = (-1)^{\operatorname{parity}(c_1) + \ldots + \operatorname{parity}(c_n)}$
+$\operatorname{sgn} \sigma = (-1)^{\operatorname{parity}(c_1) + \ldots + \operatorname{parity}(c_n)}$
 
 
 transposition changes parity of a permutation
@@ -135,10 +147,10 @@ otherwise, (i j)(k l) = (i j)(j k) (j k)(k l) = (i j k)(j k l)
 
 
 
-Any even permutation can be written as a product of these cycles: (1 2 3), (1 2 4), ... , (1 2 n):
+- Q: Any even permutation can be written as a product of these cycles: (1 2 3), (1 2 4), ... , (1 2 n):
 
-Any even permutation can be written as a product of cycles of length three: (a k l)
-
+- Q: Any even permutation can be written as a product of cycles of length three: (a k l)
+- A: 
 we've got these elementary cycles:
 (1 2 3),       (1 3 2) = (1 2 3)^2 
 (1 2 4),       (1 4 2) = (1 2 4)^2 
@@ -153,9 +165,13 @@ put a instead of 1:
         = (2 l a) (2 a k) =    interchange 1 and 2 in (1 k l) 
         = (2 1 a) (1 2 l) (2 1 k) (1 2 a)
 
-
+- Q: $\prod_{\sigma \in S_n} \operatorname{sgn}(\sigma) = ?$
 
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations -- problems">
     <p>Your browser does not support iframes.</p>
 </iframe>
