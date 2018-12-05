@@ -149,6 +149,24 @@ if j = k then (i j)(k l) = (i j l) is a 3-cycle
 otherwise, (i j)(k l) = (i j)(j k) (j k)(k l) = (i j k)(j k l)
 
 
+- Q: Properties of parity:
+  - $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
+  - $\operatorname{sgn}(1) = 1$
+  - $\operatorname{sgn}(\sigma^{-1}) = (\operatorname{sgn}(\sigma))^{-1} = \operatorname{sgn}(\sigma)$
+  - $\operatorname{sgn}(i_1 \ldots i_n) = (-1)^{n-1}$
+  - $\operatorname{sgn}(t) = -1$
+
+- Q: Number of vertices minus number of cycles minus number of fixed points. Which is number of vertices minus number of components if drawn as graph.
+
+- Q: There exists exactly one function $\operatorname{sgn}: S_n \to {\plusminus 1}$ not equivalent to one, with properties $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+- Q: $\prod_{\sigma \in S_n} \operatorname{sgn}(\sigma) = ?$
+- A: It equals to number of odd permutations, which is half of all permutations.
+
 
 - Q: Any even permutation can be written as a product of these cycles: (1 2 3), (1 2 4), ... , (1 2 n):
 
@@ -168,12 +186,15 @@ put a instead of 1:
         = (2 l a) (2 a k) =    interchange 1 and 2 in (1 k l) 
         = (2 1 a) (1 2 l) (2 1 k) (1 2 a)
 
-- Q: $\prod_{\sigma \in S_n} \operatorname{sgn}(\sigma) = ?$
+- Q: <https://en.wikipedia.org/wiki/Vandermonde_matrix>
 
+- Q: How to solve $x^2 = \sigma$?
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
-    <p>Your browser does not support iframes.</p>
-</iframe>
+- Q: Every $n$-cycle can be expressed as product of $n−1$ transpositions.
+
+- Q: How to find parity of a permutation?
+
+- Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^17$.
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations -- problems">
     <p>Your browser does not support iframes.</p>
