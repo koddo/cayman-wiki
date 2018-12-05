@@ -74,11 +74,14 @@ e.g. $\operatorname{sgn}(e) = 1$ and $\operatorname{sgn}(1\ 2) = -1$
 $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\cdot\operatorname{sgn}(\tau)$
 
 because
-$$\operatorname{sgn}(\sigma\tau) = \
-\frac{P(x_{\sigma(\tau(1))},\ldots,x_{\sigma(\tau(n))})}{P(x_1,\ldots,x_n)} = \
-\frac{P(x_{\sigma(\tau(1))},\ldots, x_{\sigma(\tau(n))})}{P(x_1,\ldots,x_n)} \cdot \frac{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})}{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})} = \
-\frac{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})}{P(x_1,\ldots,x_n)} \cdot \frac{P(x_{\sigma(\tau(1))},\ldots, x_{\sigma(\tau(n))})}{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})} = \
-\operatorname{sgn}(\sigma)\cdot\operatorname{sgn}(\tau)$$
+$$
+\begin{align*}
+\operatorname{sgn}(\sigma\tau) &= \frac{P(x_{\sigma(\tau(1))},\ldots,x_{\sigma(\tau(n))})}{P(x_1,\ldots,x_n)} = \\
+&= \frac{P(x_{\sigma(\tau(1))},\ldots, x_{\sigma(\tau(n))})}{P(x_1,\ldots,x_n)} \cdot \frac{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})}{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})} = \\
+&= \frac{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})}{P(x_1,\ldots,x_n)} \cdot \frac{P(x_{\sigma(\tau(1))},\ldots, x_{\sigma(\tau(n))})}{P(x_{\sigma(1)},\ldots,x_{\sigma(n)})} = \\
+&= \operatorname{sgn}(\sigma)\cdot\operatorname{sgn}(\tau)
+\end{align*}
+$$
 
 then if there are two representations $\sigma \ = \ a_1 \ldots a_n \ = \ b_1 \ldots b_k$
 then $\operatorname{sgn}(\sigma) = (-1)^n = (-1)^k$
