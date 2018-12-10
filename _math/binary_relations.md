@@ -14,13 +14,16 @@ symmetric, asymmetric, antisymmetric
 transitive
 
 
-- Q: hw5 problems 113-135
-
-
+- Q: hw problems 220-242
+  (in older homeworks 113-135)
 
 # Equivalence relations
 
 <https://en.wikipedia.org/wiki/Equivalence_relation>
 
-- Q: hw5 problems 136-148 
+- Q: hw problems 243-255
+  (in older 136-148) 
 
+# Partial orders
+
+- Q: hw problems 256-277
