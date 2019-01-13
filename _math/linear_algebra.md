@@ -8,6 +8,9 @@ layout: default
 
 reverse of 2x2 matrix `d & -b \\ -c & a`
 
+<https://en.wikipedia.org/wiki/Adjugate_matrix>
+
+Лемма о фальшивом разложении определителя 
 
 
 # test

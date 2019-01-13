@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+<https://gto76.github.io/python-cheatsheet/>
+
+
 - Q: How to test against True, False, None? --- A: <https://stackoverflow.com/questions/9494404/use-of-true-false-and-none-as-return-values-in-python-functions>
 - A: 
 This is a mess in the python language.
@@ -23,4 +26,5 @@ Worse: if greeting is True:
 The problem is that we sometimes want to distinguish truthy values like `True`, `1`, `['a']`, `range(10)`, etc.
 
 `if var is True: ...` actually works, but relies on 
+
 
