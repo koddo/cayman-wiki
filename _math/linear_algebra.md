@@ -331,7 +331,7 @@ everywhere it is assumed that $\operatorname{char}(F) \neq 2$
    
 ## characteristic of field
     
-TODO: what is character of F? http://ru.wikipedia.org/wiki/Характеристика_кольца
+TODO: what is characteristic of F? http://ru.wikipedia.org/wiki/Характеристика_кольца, 
 
 if exists, the characteristic $\operatorname{char}(R)$ is the smallest $n$ such that $\forall r \ : \ nr =0$ 
    
@@ -340,7 +340,9 @@ when $\operatorname{char}(R) = 1$, the ring is trivial set: {0, 1}
 
     
 $\operatorname{char} \mathbb{Z} = \operatorname{char} \mathbb{Q} = \operatorname{char} \mathbb{R} = 0$
+
 $\operatorname{char} \mathbb{Z}_n = n$
+
 $\operatorname{char}(\mathbb{F}_{p^m}) = p$
 
     
@@ -349,10 +351,10 @@ TODO: why characteristic of GF(p^m)=p?
 
 ## dim of kernel of bilinear form
 
-$\ker\alpha = \left\{y \ : \  \alpha(x,y) = 0 \right\}$
+$\ker\alpha = \left\{ y : \alpha(x,y) = 0 \right\}$
      
      
-$\ker\alpha = \left\{y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n \right\}$
+$\ker\alpha = \left\{ y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n \right\}$
 this gives a system of linear equations, which matrix is $A$ 
 then
 $\operatorname{dim}\ker\alpha = n - \operatorname{rank} A$
