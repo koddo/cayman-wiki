@@ -351,7 +351,7 @@ TODO: why characteristic of GF(p^m)=p?
 
 ## dim of kernel of bilinear form
 
-$\ker\alpha = \left\{ y : \alpha(x,y) = 0 \right\}$
+$\ker\alpha = \left{ y : \alpha(x,y) = 0 \right}$
      
      
 $\ker\alpha = \left\{ y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n \right\}$
