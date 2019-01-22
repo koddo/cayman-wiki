@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+* this line gets replaced with the generated table of contents
+{:toc}
+
 # TODOs
 
 reverse of 2x2 matrix `d & -b \\ -c & a`
