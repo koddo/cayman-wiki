@@ -353,7 +353,6 @@ TODO: why characteristic of GF(p^m)=p?
 
 $\ker\alpha = \left{ y : \alpha(x,y) = 0 \right}$
      
-     
 $\ker\alpha = \left\{ y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n \right\}$
 this gives a system of linear equations, which matrix is $A$ 
 then
@@ -463,7 +462,7 @@ Proof:
 if $\alpha$ is symmetric and skew-symmetric simultaneously, then $\alpha(x, y) = \alpha(y, x) = - \alpha(x, y) \ \Rightarrow \ 2\alpha(x, y) = 0 \ \Rightarrow \ \alpha(x, y) = 0$
     
 i.e. every bilinear form can be represented as a sum of symmetric and skew-symmetric bilinear forms:
-$\alpha(x,y) \  = \  \frac{1}{2}\left\{ \alpha(x,y) + \alpha(y,x) \right\} \  + \  \frac{1}{2}\left\{ \alpha(x,y) - \alpha(y,x) \right\}$
+$\alpha(x,y) \  = \  \frac{1}{2}\left{ \alpha(x,y) + \alpha(y,x) \right} \  + \  \frac{1}{2}\left{ \alpha(x,y) - \alpha(y,x) \right}$
 or in for their matrices: $A \ = \  \frac{1}{2}(A + A^\top) \ + \  \frac{1}{2}(A - A^\top)$   
     
     
