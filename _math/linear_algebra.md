@@ -536,7 +536,7 @@ a basis is orthogonal $\iff$ the matrix representation is a diagonal matrix, the
 ### Gram–Schmidt process --- orthonormalising a set of vectors
      $$\mathrm{proj}_{\mathbf{b}}\,\mathbf{a} = {\langle \mathbf{b}, \mathbf{a}\rangle\over\langle \mathbf{b}, \mathbf{b}\rangle}\mathbf{b}$$
      
-     
+$$
 \begin{align*}
 \mathbf{b}_1 & = \mathbf{a}_1, & \mathbf{e}_1 & = {\mathbf{b}_1 \over \|\mathbf{b}_1\|} \\
 \mathbf{b}_2 & = \mathbf{a}_2-\mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2,
@@ -546,6 +546,7 @@ a basis is orthogonal $\iff$ the matrix representation is a diagonal matrix, the
 & {}\ \  \vdots & & {}\ \  \vdots \\
 \mathbf{b}_k & = \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{b}_j}\,\mathbf{a}_k, & \mathbf{e}_k & = {\mathbf{b}_k\over \|\mathbf{b}_k \|}.
 \end{align*}
+$$
 
 $\mathbf{b}_1$ and $\mathbf{b}_2$ are orthogonal:
 $$\langle\mathbf{b}_1, \mathbf{b}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2-\mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - \langle\mathbf{b}_1, \mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - \langle\mathbf{b}_1, {\langle \mathbf{b}_1, \mathbf{a}_2\rangle\over\langle \mathbf{b}_1, \mathbf{b}_1\rangle} \mathbf{b}_1 \rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - {\langle \mathbf{b}_1, \mathbf{a}_2\rangle\over\langle \mathbf{b}_1, \mathbf{b}_1\rangle} \langle\mathbf{b}_1, \mathbf{b}_1 \rangle = 0$$ 
