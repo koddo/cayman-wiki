@@ -501,9 +501,9 @@ $ax^2+bxy+cy^2 = \left(\begin{array}{ccc} x & y \end{array}\right) \left(\begin{
 
 any symmetric bilinear form b defines a quadratic form: $q(x) = \alpha(x,x)$
    
-we can restore the bilinear function, this is called a polarization of a quadratic form: $\alpha(x,y)=\frac{1}{2}\left\{q(x+y)-q(x)-q(y)\right\} = x^\mathrm{T}Ay = y^\mathrm{T}Ax$
+we can restore the bilinear function, this is called a polarization of a quadratic form: $\alpha(x,y)=\frac{1}{2}\left{q(x+y)-q(x)-q(y)\right\} = x^\mathrm{T}Ay = y^\mathrm{T}Ax$
 this is from $\alpha(x+y, x+y) = q(x) + q(y) + 2\alpha(x,y)$
-these two processes are the inverses of one another $\alpha(x, -x)=\frac{1}{2}\left\{q(0)-q(x)-q(-x)\right\}$ $\Leftrightarrow$ $q(x) = \alpha(x,x) + \frac{1}{2}q(0)$. Substitute $x=0$ and get $q(0) = 0$, then $q(x) = \alpha(x,x)$
+these two processes are the inverses of one another $\alpha(x, -x)=\frac{1}{2}\left{q(0)-q(x)-q(-x)\right\}$ $\Leftrightarrow$ $q(x) = \alpha(x,x) + \frac{1}{2}q(0)$. Substitute $x=0$ and get $q(0) = 0$, then $q(x) = \alpha(x,x)$
    
    
 matrix of a polar bilinear form is equal to matrix of quadratic form
@@ -518,7 +518,7 @@ $x$ and $y$ are /orthogonal/ if $\alpha(x, y) = 0$
 when bilinear form is skew-symmetric, every vector is orthogonal to itself
 
 the orthogonal complement of a subspace $W$ of a vector space $V$ equipped with a bilinear form is the set $W^\bot$ of all vectors in $V$ that are orthogonal to every vector in $W$
-$W^\bot = \left\{x\in V \  : \  \forall y\in W \ \alpha(x, y) = 0 \right\}$
+$W^\bot = \left{x\in V \  : \  \forall y\in W \ \alpha(x, y) = 0 \right\}$
 
 $V^\bot = \operatorname{Ker}\alpha$
 
