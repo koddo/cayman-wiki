@@ -485,13 +485,181 @@ A bilinear form is alternating if and only if its coordinate matrix is skew-symm
 TODO: in bilinear forms section, what if $\operatorname{char} F = 2$ +? https://docs.google.com/a/egotv.ru/viewer?a=v&q=cache:2cBYrJa0egoJ:www.math.uregina.ca/~bailey/pjc60/slides/JIHtalk.pdf+&hl=en&gl=ru&pid=bl&srcid=ADGEESiFkiK-RE_grFgDgATUbJigqZNg55FUUXogfSgVP5uy1H2ONLVOwNkV_F-DME8oZlYc8aakE46cDwGcaUamOKz39EEZYkQRbswF7-J-NPotAv4bf6Bc2OCHaeRtsxAEIHtNPZ3j&sig=AHIEtbTQgPTST7GrVjPGu_XgwEySzql5Vw
                  
 
+
+
+# Quadratic forms
+   
+$q(x) = \sum a_{ij} \, x_i x_j \ : \ V \mapsto F$
+$A = (a_{ij})$ is the symmetric matrix of the quadratic form
+
+the matrix is symmetric when $\operatorname{char} F \neq 2$
+   
+examples:
+$$x^2 - 4xy + y^2 + 5xz + 2yz + z^2 \ = \  x^2 - 2xy -2yx + y^2 + \frac{5}{2}xz + \frac{5}{2}zx + yz + zy + z^2 \ = \  \left(\begin{array}{ccc} x & y & z\end{array}\right) \left(\begin{array}{ccc}1 & -2 & \frac{5}{2} \\ -2 & 1 & 1 \\ \frac{5}{2} & 1 & 1\end{array}\right)\left(\begin{array}{ccc} x \\ y \\ z\end{array}\right)$$
+$ax^2+bxy+cy^2 = \left(\begin{array}{ccc} x & y \end{array}\right) \left(\begin{array}{ccc} a & \frac{b}{2} \\ \frac{b}{2} & c\end{array}\right)\left(\begin{array}{ccc} x \\ y \end{array}\right)$
+   
+
+any symmetric bilinear form b defines a quadratic form: $q(x) = \alpha(x,x)$
+   
+we can restore the bilinear function, this is called a polarization of a quadratic form: $\alpha(x,y)=\frac{1}{2}\left\{q(x+y)-q(x)-q(y)\right\} = x^\mathrm{T}Ay = y^\mathrm{T}Ax$
+this is from $\alpha(x+y, x+y) = q(x) + q(y) + 2\alpha(x,y)$
+these two processes are the inverses of one another $\alpha(x, -x)=\frac{1}{2}\left\{q(0)-q(x)-q(-x)\right\}$ $\Leftrightarrow$ $q(x) = \alpha(x,x) + \frac{1}{2}q(0)$. Substitute $x=0$ and get $q(0) = 0$, then $q(x) = \alpha(x,x)$
+   
+   
+matrix of a polar bilinear form is equal to matrix of quadratic form
+as a consequence, when $\operatorname{char} F \neq 2$, the theories of symmetric bilinear forms and of quadratic forms in n variables are essentially the same
+   
+
+## orthogonal complement
+
+$\operatorname{char} F \neq 2$
+$\alpha(x, y)$ is a symmetric or skew-symmetric bilinear form
+$x$ and $y$ are /orthogonal/ if $\alpha(x, y) = 0$
+when bilinear form is skew-symmetric, every vector is orthogonal to itself
+
+the orthogonal complement of a subspace $W$ of a vector space $V$ equipped with a bilinear form is the set $W^\bot$ of all vectors in $V$ that are orthogonal to every vector in $W$
+$W^\bot = \left\{x\in V \  : \  \forall y\in W \ \alpha(x, y) = 0 \right\}$
+
+$V^\bot = \operatorname{Ker}\alpha$
+
+if $\alpha(x, y) \not\equiv 0$, then $\dim W + \dim {W^\bot} = \dim V$ 
+and $(W^\bot)^\bot = W$
+
+    
+## orthogonal basis for symmetric bilinear form
+
+A basis is orthogonal with respect to the bilinear function when basis vectors are mutually orthogonal
+When $\operatorname{char} F \neq 2$, for a symmetric bilinear form there is always an orthogonal basis
+a basis is orthogonal $\iff$ the matrix representation is a diagonal matrix, then bilinear and quadratic function look like this: $\alpha(x, y) = a_1 x_1 y_1 + \ldots + a_n x_n y_n$, $q(x) = a_1 x_1^2 + \ldots + a_n x_n^2$
+       
+    
+### Gram–Schmidt process --- orthonormalising a set of vectors
+     $$\mathrm{proj}_{\mathbf{b}}\,\mathbf{a} = {\langle \mathbf{b}, \mathbf{a}\rangle\over\langle \mathbf{b}, \mathbf{b}\rangle}\mathbf{b}$$
+     
+     
+\begin{align*}
+\mathbf{b}_1 & = \mathbf{a}_1, & \mathbf{e}_1 & = {\mathbf{b}_1 \over \|\mathbf{b}_1\|} \\
+\mathbf{b}_2 & = \mathbf{a}_2-\mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2,
+& \mathbf{e}_2 & = {\mathbf{b}_2 \over \|\mathbf{b}_2\|} \\
+\mathbf{b}_3 & = \mathbf{a}_3- \left( \mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_3+\mathrm{proj}_{\mathbf{b}_2}\,\mathbf{a}_3 \right), & \mathbf{e}_3 & = {\mathbf{b}_3 \over \|\mathbf{b}_3\|} \\
+\mathbf{b}_4 & = \mathbf{a}_4- \left( \mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_4+\mathrm{proj}_{\mathbf{b}_2}\,\mathbf{a}_4+\mathrm{proj}_{\mathbf{b}_3}\,\mathbf{a}_4 \right), & \mathbf{e}_4 & = {\mathbf{b}_4 \over \|\mathbf{b}_4\|} \\
+& {}\ \  \vdots & & {}\ \  \vdots \\
+\mathbf{b}_k & = \mathbf{a}_k-\sum_{j=1}^{k-1}\mathrm{proj}_{\mathbf{b}_j}\,\mathbf{a}_k, & \mathbf{e}_k & = {\mathbf{b}_k\over \|\mathbf{b}_k \|}.
+\end{align*}
+
+$\mathbf{b}_1$ and $\mathbf{b}_2$ are orthogonal:
+$$\langle\mathbf{b}_1, \mathbf{b}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2-\mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - \langle\mathbf{b}_1, \mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_2\rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - \langle\mathbf{b}_1, {\langle \mathbf{b}_1, \mathbf{a}_2\rangle\over\langle \mathbf{b}_1, \mathbf{b}_1\rangle} \mathbf{b}_1 \rangle = \langle\mathbf{b}_1, \mathbf{a}_2\rangle - {\langle \mathbf{b}_1, \mathbf{a}_2\rangle\over\langle \mathbf{b}_1, \mathbf{b}_1\rangle} \langle\mathbf{b}_1, \mathbf{b}_1 \rangle = 0$$ 
+    
+$\mathbf{b}_2$ and $\mathbf{b}_3$ are orthogonal similarly:
+$$\langle\mathbf{b}_2, \mathbf{b}_3\rangle = \langle\mathbf{b}_2, \mathbf{a}_3- \left( \mathrm{proj}_{\mathbf{b}_1}\,\mathbf{a}_3+\mathrm{proj}_{\mathbf{b}_2}\,\mathbf{a}_3 \right)\rangle = \langle\mathbf{b}_2, \mathbf{a}_3\rangle - 0 - \langle\mathbf{b}_2, \mathrm{proj}_{\mathbf{b}_2}\,\mathbf{a}_3\rangle$$
+    
+etc
+    
+     
+## canonical, or normal form of quadratic function
+
+If $F = \mathbb C$, coefficients $\alpha_i = 0, 1$, i.e. canonical quadratic function look like $q(x) = x_1^2 + \ldots + x_r^2$ after a suitable permutation of basis vectors, $r = \operatorname{rank} q$.
+    
+If $F = \mathbb R$, coefficients $\alpha_i = -1, 0, 1$, i.e. canonical quadratic function look like $q(x) = x_1^2 + \ldots + x_k^2 - x_{k+1}^2 - \ldots - x_{k+l}^2$ after a suitable permutation of basis vectors.
+$k+l = \operatorname{rank} q$
+
+a pair $(k,l)$ is called signature of $q$
+    
+    
+### law of inertia
+   
+$k$ and $l$ do not depend on a particular choice of diagonalizing basis
+
+// it's about invariant signature, the word "inertia" was used because no better word was found
+    
+$k$ is max dimention of a subspace on which $q(x)$ is positive definite
+(same for $l$)
+
+
+TODO: proof of law of inertia
+
+
+## positive definite and negative definite quadratic forms
+  
+$q(x) > 0$ for $x \neq 0$ is positive definite
+$q(x) < 0$ for $x \neq 0$ is negative definite
+    
+bilinear form $\alpha(x, y)$ is positive definite if associated quadratic form $q(x)$ is positive definite (same for negative)
+dot product $(x, y)$ of vectors is positive definite
+
+
+normal form of positive definite quadratic function is $q(x) = x_1^2 + \ldots + x_k^2$
+
+
+    
+    
+## Sylvester's criterion --- is a quadratic form positive definite
+  
+Sylvester's criterion states that a matrix $A$ is positive definite $\iff$ all the following matrices have a positive determinant:
+the upper left 1-by-1 corner
+the upper left 2-by-2 corner
+...
+the upper left n-by-n corner -- $A$ itself
+    
+$$A = \begin{pmatrix} a_{11} & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} & \ldots & a_{2n} \\ \ldots & \ldots & \ldots & \ldots \\ a_{n1} & a_{n2} & \ldots & a_{nn} \end{pmatrix}$$
+$$\Delta_1=a_{11}$$
+$$\Delta_2=\begin{vmatrix}a_{11} & a_{12} \\ a_{21} & a_{22}\end{vmatrix}$$
+$$\Delta_3=\begin{vmatrix}a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}\end{vmatrix}$$
+$$\Delta_i=\begin{vmatrix} a_{11} & a_{12} & \ldots & a_{1i} \\ a_{21} & a_{22} & \ldots & a_{2i} \\ \ldots & \ldots & \ldots & \ldots \\ a_{i1} & a_{i2} & \ldots & a_{ii}\end{vmatrix}$$
+$$\Delta_n = |A|$$
+    
+    
+in another words, all leading principal minors are positive
+    
+
+    
+if every $\Delta_k$ is non-zero then the negative index of inertia is equal to the number of sign changes in the sequence $\Delta_0=1, \Delta_1, \ldots, \Delta_n=\det A$
+
+    
+    
+
+TODO: do i need $F = Z_p$?
+
+TODO: do i need skew-symmetric bilinear functions? symplectic basic?
+
+
 # superlearn
+
+- Q: What is orthogonal matrix? Examples.
+- Q: Gram–Schmidt orthogonalization.
+TODO:
+$$
+\begin{aligned}
+u_1 &= v_1
+u_2 &= v_2 - \operatorname(proj)_{v_1}(v_2)
+u_3 &= v_3 - \operatorname(proj)_{v_1}(v_3) - \operatorname(proj)_{v_2}(v_3)
+&\cdots
+\end{aligned}
+$$
+Discard zeroes.
+<https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process>
+
+- Q: Cauchy–Bunyakovsky–Schwarz inequality.
+A: $|\langle \mathbf {u} ,\mathbf {v} \rangle |^{2}\leq \langle \mathbf {u} ,\mathbf {u} \rangle \cdot \langle \mathbf {v} ,\mathbf {v} \rangle$
+TODO: proof <https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality>
+
+- Q: Vandermonde matrix.
+A: TODO: proof <https://en.wikipedia.org/wiki/Vandermonde_matrix>
+
+- Q: Orthogonal matrix.
+A: TODO: <https://en.wikipedia.org/wiki/Orthogonal_matrix>
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra">
     <p>Your browser does not support iframes.</p>
 </iframe>
 
+- Q: Describe orthogonal matrices with integer numbers; with non-negative real numbers.
+A: <http://sci.alnam.ru/book_alin.php?id=27>
+
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- problems">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+
+
 
