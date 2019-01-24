@@ -495,7 +495,12 @@ $A = (a_{ij})$ is the symmetric matrix of the quadratic form
 the matrix is symmetric when $\operatorname{char} F \neq 2$
 
 examples:
-$$x^2 - 4xy + y^2 + 5xz + 2yz + z^2 \ = \  x^2 - 2xy -2yx + y^2 + \frac{5}{2}xz + \frac{5}{2}zx + yz + zy + z^2 \ = \  \left(\begin{array}{ccc} x & y & z\end{array}\right) \left(\begin{array}{ccc}1 & -2 & \frac{5}{2} \\ -2 & 1 & 1 \\ \frac{5}{2} & 1 & 1\end{array}\right)\left(\begin{array}{ccc} x \\ y \\ z\end{array}\right)$$
+$$
+\begin{aligned}
+x^2 - 4xy + y^2 + 5xz + 2yz + z^2 \ &= \  x^2 - 2xy -2yx + y^2 + \frac{5}{2}xz + \frac{5}{2}zx + yz + zy + z^2 \ = \\
+&= \left(\begin{array}{ccc} x & y & z\end{array}\right) \left(\begin{array}{ccc}1 & -2 & \frac{5}{2} \\ -2 & 1 & 1 \\ \frac{5}{2} & 1 & 1\end{array}\right)\left(\begin{array}{ccc} x \\ y \\ z\end{array}\right)
+\end{aligned}
+$$
 
 $$
 ax^2+bxy+cy^2 = \left(\begin{array}{ccc} x & y \end{array}\right) \left(\begin{array}{ccc} a & \frac{b}{2} \\ \frac{b}{2} & c\end{array}\right)\left(\begin{array}{ccc} x \\ y \end{array}\right)
