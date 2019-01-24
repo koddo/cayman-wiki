@@ -4,6 +4,9 @@ layout: default
 
 ---
 
+* this line gets replaced with the generated table of contents
+{:toc}
+
 # TODOs
 
 reverse of 2x2 matrix `d & -b \\ -c & a`
@@ -351,10 +354,9 @@ TODO: why characteristic of GF(p^m)=p?
 
 ## dim of kernel of bilinear form
 
-$\ker\alpha = \left{ y : \alpha(x,y) = 0 \right}$
+$\ker\alpha = { y : \alpha(x,y) = 0 }$
      
-     
-$\ker\alpha = \left\{ y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n \right\}$
+$\ker\alpha = { y \ : \  \alpha(e_i,y) = 0, \ i = 1, \ldots, n }$
 this gives a system of linear equations, which matrix is $A$ 
 then
 $\operatorname{dim}\ker\alpha = n - \operatorname{rank} A$
@@ -463,8 +465,8 @@ Proof:
 if $\alpha$ is symmetric and skew-symmetric simultaneously, then $\alpha(x, y) = \alpha(y, x) = - \alpha(x, y) \ \Rightarrow \ 2\alpha(x, y) = 0 \ \Rightarrow \ \alpha(x, y) = 0$
     
 i.e. every bilinear form can be represented as a sum of symmetric and skew-symmetric bilinear forms:
-$\alpha(x,y) \  = \  \frac{1}{2}\left\{ \alpha(x,y) + \alpha(y,x) \right\} \  + \  \frac{1}{2}\left\{ \alpha(x,y) - \alpha(y,x) \right\}$
-or in for their matrices: $A \ = \  \frac{1}{2}(A + A^\top) \ + \  \frac{1}{2}(A - A^\top)$   
+$\alpha(x,y) \  = \  \frac{1}{2}{ \alpha(x,y) + \alpha(y,x) } \  + \  \frac{1}{2}{ \alpha(x,y) - \alpha(y,x) }$
+or in for their matrices: $A \ = \  \frac{1}{2}(A + A^\top) \ + \  \frac{1}{2}(A - A^\top)$
     
     
     
