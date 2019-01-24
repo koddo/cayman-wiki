@@ -167,3 +167,8 @@ Graph diameter
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- graph theory">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- graph theory -- problems">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+

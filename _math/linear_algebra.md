@@ -483,3 +483,13 @@ A bilinear form is alternating if and only if its coordinate matrix is skew-symm
 TODO: in bilinear forms section, what if $\operatorname{char} F = 2$ +? https://docs.google.com/a/egotv.ru/viewer?a=v&q=cache:2cBYrJa0egoJ:www.math.uregina.ca/~bailey/pjc60/slides/JIHtalk.pdf+&hl=en&gl=ru&pid=bl&srcid=ADGEESiFkiK-RE_grFgDgATUbJigqZNg55FUUXogfSgVP5uy1H2ONLVOwNkV_F-DME8oZlYc8aakE46cDwGcaUamOKz39EEZYkQRbswF7-J-NPotAv4bf6Bc2OCHaeRtsxAEIHtNPZ3j&sig=AHIEtbTQgPTST7GrVjPGu_XgwEySzql5Vw
                  
 
+# superlearn
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- problems">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+

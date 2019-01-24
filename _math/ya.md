@@ -69,5 +69,23 @@ precision recall curve, AUC of PR-curve (same as AUC-PR)
 вывод постановки задачи для разделимого и неразделимого случаев
 kernels and kernel tricks --- ядровый переход?
 
-7. 
+7. Decision tree, definition -- <https://en.wikipedia.org/wiki/Decision_tree_learning>
+_Greedy_ learning algorithm -- <https://en.wikipedia.org/wiki/ID3_algorithm>
+Функционал качества (?) при выборе предиката.
+Критерий информативности (?), его общий вид (через функцию потерь)
+Примеры критерия информативности для регрессии (дисперсия) и классификации (критерий Джини и энтропийный критерий)
 
+8. Bias-variance decomposition -- <https://en.wikipedia.org/wiki/Bias–variance_tradeoff>
+<https://habr.com/en/company/ods/blog/323890/#razlozhenie-oshibki-na-smeschenie-i-razbros-bias-variance-decomposition>
+
+9. Bagging -- <https://en.wikipedia.org/wiki/Bootstrap_aggregating>
+<https://en.wikipedia.org/wiki/Random_forest>
+
+10. <https://en.wikipedia.org/wiki/Gradient_boosting>
+<http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/>
+<https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/>
+Обучение базовых алгоритмов для произвольной дифференцируемой функции потерь
+Сокращение шага. Выбор прогнозов в листьях деревьев в градиентном бустинге.
+
+11. Stacking and blending -- <https://en.wikipedia.org/wiki/Ensemble_learning#Stacking>
+<https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning>
