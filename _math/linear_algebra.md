@@ -542,7 +542,8 @@ a basis is orthogonal $\iff$ the matrix representation is a diagonal matrix, the
        
     
 ### Gram–Schmidt process --- orthonormalising a set of vectors
-     $$\mathrm{proj}_{\mathbf{b}}\,\mathbf{a} = {\langle \mathbf{b}, \mathbf{a}\rangle\over\langle \mathbf{b}, \mathbf{b}\rangle}\mathbf{b}$$
+
+$$\mathrm{proj}_{\mathbf{b}}\,\mathbf{a} = {\langle \mathbf{b}, \mathbf{a}\rangle\over\langle \mathbf{b}, \mathbf{b}\rangle}\mathbf{b}$$
      
 $$
 \begin{align*}
