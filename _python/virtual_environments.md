@@ -11,6 +11,7 @@ First install a python version you'd like your venv to be. E.g., using macports.
 ```
 $ python3.7 -m venv ~/.python_venv/test
 $ source ~/.python_venv/test/bin/activate
+$ pip install --upgrade pip
 $ pip install pandas
 ```
 
