@@ -118,6 +118,32 @@ TODO LOW: <http://cstheory.stackexchange.com/questions/3921/what-is-the-actual-t
 
 <https://en.wikipedia.org/wiki/Block_matrix>
 
+
+# Solution set of Homogeneous systems
+    
+$$
+\left\{\begin{array}{ccc}
+a_{11}x_1+\ldots+a_{1n}x_n &=& 0 \\
+\ldots & & \\
+a_{m1}x_1+\ldots+a_{mn}x_n &=& 0
+\end{array}\right.
+\iff A_{m\times n} \ \vec{x}=\vec{0},\quad A_{m\times n}=\left(\begin{array}{ccc}a_{11} & \ldots & a_{1n}\\ \ldots & & \\ a_{m1} & \ldots & a_{mn}
+\end{array}\right)
+$$
+
+if $\operatorname{rank}(A) = n$ then there is only trivial solution: $\vec{x} = \vec{0}$ 
+if $\operatorname{rank}(A) < n$ then there is a basis of $(n - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1\vec{x}^1+\ldots+c_{n-r}\vec{x}^{n-r}$ 
+    
+http://ru.wikipedia.org/wiki/Решение_систем_линейных_алгебраических_уравнений
+
+    
+if $x_1$, $x_2$ are solutions for $Ax=b$
+then $x_1 - x_2$ is solution for the homogenous system $Ax=0$
+$A (x_1 - x_2) = b - b = 0$
+    
+TODO: [#B] proof of theorem about solution set of homogeneous system of linear equations
+
+
 ## Elementary row operations
 
 блочное преобразование матриц
