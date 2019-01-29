@@ -131,10 +131,13 @@ a_{m1}x_1+\ldots+a_{mn}x_n &=& 0
 \end{array}\right)
 $$
 
+Every homogeneous system has at least the zero solution.
+
 if $\operatorname{rank}(A) = n$ then there is only trivial solution: $\vec{x} = \vec{0}$ 
 if $\operatorname{rank}(A) < n$ then there is a basis of $(n - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1\vec{x}^1+\ldots+c_{n-r}\vec{x}^{n-r}$ 
     
 http://ru.wikipedia.org/wiki/Решение_систем_линейных_алгебраических_уравнений
+
 
 if $x_1$, $x_2$ are solutions for $Ax=0$
 then $x_1 + x_2$ is solution for the homogenous system $Ax=0$
