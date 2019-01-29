@@ -138,8 +138,8 @@ http://ru.wikipedia.org/wiki/Решение_систем_линейных_алг
 
     
 if $x_1$, $x_2$ are solutions for $Ax=b$
-then $x_1 + x_2$ is solution for the homogenous system $Ax=0$
-$A (x_1 + x_2) = b + b = 0$
+then $x_1 - x_2$ is solution for the homogenous system $Ax=0$
+$A (x_1 - x_2) = b - b = 0$
     
 TODO: proof of theorem about solution set of homogeneous system of linear equations
 
