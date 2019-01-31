@@ -15,6 +15,9 @@ reverse of 2x2 matrix `d & -b \\ -c & a`
 
 Лемма о фальшивом разложении определителя 
 
+<https://en.wikipedia.org/wiki/Gramian_matrix>
+
+<https://ru.wikipedia.org/wiki/Сопряжённый_оператор>, <https://en.wikipedia.org/wiki/Hermitian_adjoint>
 
 # test
 
