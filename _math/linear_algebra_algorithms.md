@@ -14,15 +14,15 @@ A:
 
 - Q: Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
 
-- Q: Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldot , \e_n$.
+- Q: Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldots , e_n$.
 
 - Q: Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$.
 A: TODO: <https://en.wikipedia.org/wiki/System_of_linear_equations#Homogeneous_systems>
 
 Every homogeneous system has at least the zero solution.
 
-If $\operatorname{rank}(A) = m$ then there is trivial solution only: $x = 0$. 
-If $\operatorname{rank}(A) < m$ then there is a basis of $(m - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1 x^1 + \ldots + c_{m-r}x^{m-r}$. 
+If $\operatorname{rank}(A) = n$ then there is trivial solution only: $x = 0$. 
+If $\operatorname{rank}(A) < n$ then there is a basis of $(n - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1 x^1 + \ldots + c_{n-r}x^{n-r}$. 
 
 Example:
 
