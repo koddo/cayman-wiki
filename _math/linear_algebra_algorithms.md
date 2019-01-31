@@ -64,6 +64,17 @@ Find projection operator on subspace along another subspace.
 
 - Q: Gram–Schmidt process.
 
+- Q: Find operator of orthoprojection. Find orthoprojection of vector on subspace.
+
+- Q: Find eigenvalues and eigenvectors.
+
+- Q: Find value of parallelepiped $v_1, \ldots, v_k$.
+A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G = (v_i, v_j)$.
+
+- Q: Find angle between vectors. Find angle and distance between vector and subspace.
+
+- Q: SVD
+
 
 # Questions
 
