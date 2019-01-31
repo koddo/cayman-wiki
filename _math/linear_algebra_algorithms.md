@@ -79,18 +79,18 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 A:
 $A = C \Lambda D^T$, but we only find some of this infomation.
 
-Find eigenvalues of $S = AA^T = C \Labmda^2 C^T$, they are $(\sigma_1, n_1), ... (\sigma_k, n_k)$. Then 
+Find eigenvalues of $S = AA^T = C \Labmda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$. Then 
 
 $$
 \Lambda = 
 \begin{pmatrix}
-{\lambda_1}&{}&{}\\
+{\sqrt{\sigma_1}}&{}&{}\\
 {}&{\ddots}&{}\\
-{}&{}&{\lambda_k}
+{}&{}&{\sqrt{\sigma_k}}
 \end{pmatrix}
 $$
 
-For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$. Put them into columns of the $C$ matrix: $C = (v_1^1, \ldots, v_{n_1}^2, \ldots, v_1^1, \ldots, v_{n_1}^2, \ldots)$.
+For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put them into columns of the $C$ matrix: $C = (v_1^1, \ldots, v_{n_1}^2, \ldots, v_1^1, \ldots, v_{n_1}^2, \ldots)$.
 
 Solve $D^T = \Lambda^{-1} C^T A$.
 
