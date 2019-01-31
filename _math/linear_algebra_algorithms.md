@@ -12,17 +12,17 @@ layout: default
 - Q: In a set of vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ find a basis and express others as linear combinations.
 A: 
 
-- Q: Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R^n}$.
+- Q: Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
 
 - Q: Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldot , \e_n$.
 
-- Q: Find solutions to homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$
+- Q: Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$.
 A: TODO: <https://en.wikipedia.org/wiki/System_of_linear_equations#Homogeneous_systems>
 
 Every homogeneous system has at least the zero solution.
 
-If $\operatorname{rank}(A) = n$ then there is trivial solution only: $x = 0$. 
-If $\operatorname{rank}(A) < n$ then there is a basis of $(n - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1 x^1 + \ldots + c_{n-r}x^{n-r}$. 
+If $\operatorname{rank}(A) = m$ then there is trivial solution only: $x = 0$. 
+If $\operatorname{rank}(A) < m$ then there is a basis of $(m - \operatorname{rank}(A))$ linear independent solutions, general solution looks like $c_1 x^1 + \ldots + c_{m-r}x^{m-r}$. 
 
 Example:
 
@@ -75,9 +75,9 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 
 - Q: Find angle between vectors. Find angle and distance between vector and subspace.
 
-- Q: Reduced SVD for horizontal oriented matrices.
+- Q: Reduced SVD for horizontally oriented matrices. How to get SVD of vertically oriented matrices?
 A:
-$A = C \Lambda D^T$, but we only find some of this infomation.
+$A = C \Lambda D^T$, but we only get reduced matrices.
 
 Find eigenvalues of $S = AA^T = C \Lambda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$.
 
@@ -93,6 +93,8 @@ $$
 For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put these bases into columns of the $C$ matrix.
 
 Solve $D^T = \Lambda^{-1} C^T A$.
+
+For vertically oriented matrices get SVD for horizonally $A^T$, which is $A^T = C \Lambda D^T$, then $A = D \Lambda^T C^T$.
 
 # Questions
 
