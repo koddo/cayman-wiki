@@ -45,7 +45,7 @@ $Ax = b$
 $Ax = 0$
 
 Let's say $p$ is a solution to the first one: $Ap = b$.
-Then entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap + Av = b$
+Then the entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap + Av = b$
 
 # Find basis in null space of matrix, i.e., ${x \vert Ax = 0}$.
 
