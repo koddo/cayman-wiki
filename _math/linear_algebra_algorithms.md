@@ -79,7 +79,7 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 A:
 $A = C \Lambda D^T$, but we only find some of this infomation.
 
-Find eigenvalues of $S = AA^T = C \Lambda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$. Then 
+Find eigenvalues of $S = AA^T = C \Lambda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$.
 
 $$
 \Lambda = 
@@ -90,7 +90,7 @@ $$
 \end{pmatrix}
 $$
 
-For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put them into columns of the $C$ matrix: $C = (v_1^1, \ldots, v_{n_1}^2, \ldots, v_1^1, \ldots, v_{n_1}^2, \ldots)$.
+For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put these bases into columns of the $C$ matrix.
 
 Solve $D^T = \Lambda^{-1} C^T A$.
 
