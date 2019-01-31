@@ -1,5 +1,5 @@
 ---
-title:  "Linear algebra"
+title:  "Linear algebra algorithms"
 layout: default
 
 ---
@@ -79,7 +79,7 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 A:
 $A = C \Lambda D^T$, but we only find some of this infomation.
 
-Find eigenvalues of $S = AA^T = C \Labmda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$. Then 
+Find eigenvalues of $S = AA^T = C \Lambda^2 C^T$, they are $\sigma_1, ..., \sigma_k$, their degrees are $n_1, \ldots, n_k$. Then 
 
 $$
 \Lambda = 
