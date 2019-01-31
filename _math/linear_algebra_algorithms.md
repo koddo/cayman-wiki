@@ -56,6 +56,8 @@ Find projection operator on subspace along another subspace.
 
 - Q: Change of basis of bilinear form.
 
+- Q: Polarization of quadratic form.
+
 - Q: Find left and right orthogonal complements to subspace.
 
 - Q: Diagonilize a quadratic form. Find it's signature. Find it's signature using principal minors method. Silvester's criterion.
@@ -73,8 +75,24 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 
 - Q: Find angle between vectors. Find angle and distance between vector and subspace.
 
-- Q: SVD
+- Q: Reduced SVD for horizontal oriented matrices.
+A:
+$A = C \Lambda D^T$, but we only find some of this infomation.
 
+Find eigenvalues of $S = AA^T = C \Labmda^2 C^T$, they are $(\sigma_1, n_1), ... (\sigma_k, n_k)$. Then 
+
+$$
+\Lambda = 
+\begin{pmatrix}
+{\lambda_1}&{}&{}\\
+{}&{\ddots}&{}\\
+{}&{}&{\lambda_k}
+\end{pmatrix}
+$$
+
+For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$. Put them into columns of the $C$ matrix: $C = (v_1^1, \ldots, v_{n_1}^2, \ldots, v_1^1, \ldots, v_{n_1}^2, \ldots)$.
+
+Solve $D^T = \Lambda^{-1} C^T A$.
 
 # Questions
 
