@@ -47,23 +47,42 @@ $Ax = 0$
 Let's say $p$ is a solution to the first one: $Ap = b$.
 Then the entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap + Av = b$
 
-# Find basis in null space of matrix, i.e., ${x \vert Ax = 0}$.
+# Find basis in null space of matrix, i.e., ${x \vert Ax = 0}$
 
-# Express a vector space $V = \langle v_1, \ldots ,v_m \rangle, \  v_i \in \mathbb{R^n}$ as matrix equation $Ax = 0$. I.e., $V = \{ x \vert Ax = 0 \}$. 
+
+
+# Express a vector space $V = \langle v_1, \ldots ,v_m \rangle, \  v_i \in \mathbb{R^n}$ as matrix equation $Ax = 0$. I.e., $V = \{ x \vert Ax = 0 \}$ 
+
+
 
 # Change of basis for vector and for matrix.
 
-# Find sum and intersection of vetror subspaces $V = \langle v_1,\ldots,v_m\rangle$, $U = \langle u_1,\ldots,u_k\rangle$, where $v_i, u_j\in \mathbb{R^n}$.
-Find sum and intersection of vetror subspaces when they are expressed as matrix equations.
 
-# Find projection of a vector on a subspace along another subspace.
+
+# Find sum and intersection of vetror subspaces $V = \langle v_1,\ldots,v_m\rangle$, $U = \langle u_1,\ldots,u_k\rangle$, where $v_i, u_j\in \mathbb{R^n}$
+
+
+
+# Find sum and intersection of vetror subspaces when they are expressed as matrix equations.
+
+$U = \{ x \vert Ax = 0 \}$, $U = \{ x \vert Bx = 0 \}$
+$U \cap V = \{ x \vert Ax = 0\,, Bx = 0 \}$
+$C = \left(\frac{A}{B}\right)$
+Find linear linear independent set of vectors in $C$.
+
+# Find projection of a vector on a subspace along another subspace
+
 Find projection operator on subspace along another subspace.
 
-# Find out if there is a linear operator $\phi\colon V\to U$ such that $\phi(v_i) = u_i$.
+# Find out if there is a linear operator $\phi\colon V\to U$ such that $\phi(v_i) = u_i$
 
-# Find basis of image and basis of kernel of linear map.
+# Find basis of image and basis of kernel of linear map
 
-# Change of basis of bilinear form.
+# Change of basis of bilinear form
+
+$(f_1,\ldots,f_n) = (e_1,\ldots,e_n)C$
+
+$B' = C^T B C$
 
 # Polarization of quadratic form.
 
