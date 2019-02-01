@@ -9,7 +9,9 @@ layout: default
 
 # 2018
 
-## <https://efiminem.github.io/supershad/09-06-2018/>
+## 09-06-2018
+
+<https://efiminem.github.io/supershad/09-06-2018/>
 
 ### 1
 
