@@ -13,6 +13,8 @@ layout: default
 
 <https://efiminem.github.io/supershad/26-05-2018/>
 
+<file:///Users/alex/Disk.Yandex/DISK/ШАД/2_Exams/ШАД-Решения-VR/2018-1.pdf>
+
 ### 1
 
 Существуют ли ортогональные кососимметричные матрицы $2019 \times 2019$? А $2018 \times 2018$?
@@ -54,6 +56,8 @@ $$(A \bigstar B)_{ij} = \begin{cases} (AB)_{ij}, & \text{если $i$ нечет
 ## 02-06-2018
 
 <https://efiminem.github.io/supershad/02-06-2018/>
+
+<file:///Users/alex/Disk.Yandex/DISK/ШАД/2_Exams/ШАД-Решения-VR/2018-2.pdf>
 
 ### 1
 
@@ -100,6 +104,8 @@ $$\iint\limits_{-a \leqslant x,y \leqslant a} f \left( \frac{x+y}{2} \right) dx 
 ## 09-06-2018
 
 <https://efiminem.github.io/supershad/09-06-2018/>
+
+<file:///Users/alex/Disk.Yandex/DISK/ШАД/2_Exams/ШАД-Решения-VR/2018-3.pdf>
 
 ### 1
 
