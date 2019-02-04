@@ -8,17 +8,22 @@ layout: default
 {:toc}
 
 
-# In a set of vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ find a basis and express others as linear combinations.
+# In a set of vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ find a basis and express others as linear combinations. Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
 
+SL-
 
-# Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
+To find some basis, put vectors in matrix horizontally and get reduced row echelon form.
 
+To find out what vectors in a set form a basis and express others a linear combination, put them in matrix vertically and get row echelon form.
 
 # Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldots , e_n$.
 
+SL-
+
+Put them in matrix horizontally and get reduced row echelon form.
+???
 
 # Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$
-A: TODO: <https://en.wikipedia.org/wiki/System_of_linear_equations#Homogeneous_systems>
 
 Every homogeneous system has at least the zero solution.
 
@@ -58,6 +63,14 @@ Then the entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap +
 # Change of basis for vector and for matrix.
 
 
+# Check if there's a basis in which operator $\phi$ is represented as diagonal matrix
+
+SS- SL-
+
+<https://en.wikipedia.org/wiki/Diagonalizable_matrix>
+<file:///Users/alex/Dropbox/hse_math/linear_algebra 07 -- Seminar7.pdf#page=3>
+<https://math.stackexchange.com/questions/1469461/finding-the-basis-b-of-the-matrix-t-in-which-b-is-diagonal-i-think-ive-got-it>
+<https://math.stackexchange.com/questions/293172/linear-algebra-eigenvalues-and-diagonalizable-matrix>
 
 # Find sum and intersection of vetror subspaces $V = \langle v_1,\ldots,v_m\rangle$, $U = \langle u_1,\ldots,u_k\rangle$, where $v_i, u_j\in \mathbb{R^n}$
 
@@ -67,16 +80,20 @@ Then the entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap +
 
 $U = \{ x \vert Ax = 0 \}$, $U = \{ x \vert Bx = 0 \}$
 $U \cap V = \{ x \vert Ax = 0\,, Bx = 0 \}$
-$C = \left(\frac{A}{B}\right)$
-Find linear linear independent set of vectors in $C$.
+$C' = \left(\frac{A}{B}\right)$
+Find linear linear independent set of vectors in $C'$, this is the matrix $C$ we need.
 
-# Find projection of a vector on a subspace along another subspace
+# Find projection of a vector onto a subspace along another subspace, projection operator onto subspace along another subspace
 
-Find projection operator on subspace along another subspace.
+
 
 # Find out if there is a linear operator $\phi\colon V\to U$ such that $\phi(v_i) = u_i$
 
+
+
 # Find basis of image and basis of kernel of linear map
+
+
 
 # Change of basis of bilinear form
 

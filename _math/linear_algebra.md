@@ -666,6 +666,7 @@ TODO: do i need skew-symmetric bilinear functions? symplectic basic?
 
 # superlearn
 
+- Q: <https://en.wikipedia.org/wiki/Lagrange_polynomial>
 - Q: What is orthogonal matrix? Examples.
 - Q: Gram–Schmidt orthogonalization.
 TODO:
