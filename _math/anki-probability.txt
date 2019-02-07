@@ -1,0 +1,134 @@
+binomial distribution — expectation and variance<br /><br />[$]\xi \sim \mathrm{Bin}(n,p)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+"[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= np \\<br />\mathsf{D} \xi &amp;= npq <br />\end{align*}<br />[/latex]<br /><br /><br /><br /><br /><img src=""hVh58Sqg_500px-Binomial_distribution_pmf.svg.png"" />"
+binomial_distribution discrete_distribution expectation probability variance
+
+geometric (shifted) distribution — expectation and variance<br /><br />[$]\xi \sim \mathrm{Geom}(p)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \frac{1}{p} \\<br />\mathsf{D} \xi &amp;= \frac{q}{p^2} <br />\end{align*}<br />[/latex]
+discrete_distribution expectation geometric_disribution probability variance
+
+Poisson distribution — expectation and variance<br /><br />[$]\xi \sim \mathrm{Pois} (\lambda)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*}<br />\mathsf{E} \xi &amp;= \lambda \\<br />\mathsf{D} \xi &amp;= \lambda <br />\end{align*}<br />[/latex]
+Poisson_distribution discrete_distribution expectation probability variance
+
+normal distribution — expectation and variance<br /><br />[$]\xi \sim N(\mu, \sigma^2)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \mu \\<br />\mathsf{D} \xi &amp;= \sigma^2<br />\end{align*}<br />[/latex]
+continuous_distribution expectation normal_distribution probability variance
+
+exponential distribution — expectation and variance<br /><br />[$]\xi \sim \mathrm{Exp}(\lambda)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \frac{1}{\lambda} \\<br />\mathsf{D} \xi &amp;= \frac{1}{\lambda^2} <br />\end{align*}<br />[/latex]
+continuous_distribution expectation exponential_distribution probability variance
+
+uniform distribution (continuous) — expectation and variance<br /><br />[$]\xi \sim U(a, b)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \frac{a+b}{2} \\<br />\mathsf{D} \xi &amp;= \frac{(b-a)^2}{12}<br />\end{align*}<br />[/latex]
+continuous_distribution expectation probability uniform_distribution variance
+
+hypergeometric distribution — expectation and variance<br /><br />[$]\xi \sim \mathrm{Hypergeometric}(N, D, n)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= np \\<br />\mathsf{D} \xi &amp;= npq \cdot \frac{N-n}{N-1} \\<br />\\<br />p &amp;= \frac{D}{N} <br />\end{align*}<br />[/latex]
+discrete_distribution expectation hypergeometric_disribution probability variance
+
+hypergeometric distribution — probability mass function<br /><br />[$]\xi \sim \mathrm{Hypergeometric}(N, D, n)[/$]<br /><br /><br />[$$]\Prob(\xi = k) = \ ?[/$$]
+"[$$]\Prob(\xi = k) = \frac{C_D^k\, C_{N-D}^{n-k}}{C_N^n}[/$$]<br /><br /><br /><img src=""probability.org.20120911-1031-400XTE.screenshot.png"" />"
+discrete_distribution hypergeometric_disribution probability probability_mass_function
+
+binomial distribution — probability mass function<br /><br />[$]\xi \sim \mathrm{Bin}(n, p)[/$]<br /><br /><br />[$$]\Prob(\xi = k) = \ ?[/$$]
+"[$$]\Prob(\xi = k) \ = \ C_n^k \; p^k q^{n-k}[/$$]<br /><br /><br /><br /><img src=""hVh58Sqg_500px-Binomial_distribution_pmf.svg.png"" />"
+binomial_distribution discrete_distribution probability probability_mass_function
+
+uniform distribution (discrete) — probability mass function<br /><br />[$]\xi \sim \mathrm{U}(a, b)[/$]<br /><br /><br />[$$]\Prob(\xi = k) = \ ?[/$$]
+"[$$]\Prob(\xi = k) \ = \ \frac{1}{n}[/$$]<br /><br /><br /><br /><br />[$]n = b-(a-1)[/$]<br /><br /><br /><img src=""mP7PCTkP_320px-DUniform_distribution_PDF.png"" />"
+discrete_distribution probability probability_mass_function uniform_distribution
+
+uniform distribution (continuous) — probability density function and cumulative distribution function<br /><br />[$]\xi \sim \mathrm{U}(a, b)[/$]<br /><br /><br />[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \ ? \\<br />F_\xi (x) &amp;= \ ?<br />\end{align*}<br />[/latex]<br />
+"[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= <br />&nbsp;&nbsp;&nbsp;\begin{cases}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\frac{1}{b-a}&nbsp;&nbsp;&nbsp;&amp; \ x\in [a,b] \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;<br />&nbsp;&nbsp;&nbsp;\end{cases} \\<br />\\<br />F_\xi (x) &amp;=<br />&nbsp;&nbsp;&nbsp;\begin{cases}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp; \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\frac{x-a}{b-a}&nbsp;&nbsp;&nbsp;&amp; \ x \in [a,b) \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp; <br />&nbsp;&nbsp;&nbsp;\end{cases}<br />\end{align*}<br />[/latex]<br /><br /><br /><br /><img src=""R4bLzB3B_350px-Uniform_distribution_PDF.png"" /><br /><br /><img src=""j9FPA4Q7_350px-Uniform_distribution_CDF.png"" /><br />"
+cumulative_distribution_function discrete_distribution probability probability_density_function uniform_distribution
+
+normal (standard) distribution — probability density function and cumulative distribution function<br /><br />[$]\xi \sim \mathrm{N}(0, 1)[/$]<br /><br /><br />[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \ ? \\<br />F_\xi (x) &amp;= \ ?<br />\end{align*}<br />[/latex]<br />
+"[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \phi(x) = \frac{1}{\sqrt{2\pi}} \; e^{ - \frac{x^2}{2} } \\<br />\\<br />F_\xi (x) &amp;= \Phi(x) = \frac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^x e^{ - \frac{t^2}{2} } \; dt&nbsp;&nbsp;<br />\end{align*}<br />[/latex]<br /><br /><br /><br /><img src=""jzQ9JJ5E_720px-Normal_Distribution_PDF.svg.png"" /><br /><br /><img src=""h2zAU2C2_720px-Normal_Distribution_CDF.svg.png"" /><br />"
+continuous_distribution cumulative_distribution_function normal_distribution probability probability_density_function
+
+normal distribution — probability density function and cumulative distribution function<br /><br />[$]\xi \sim \mathrm{N}(\mu, \sigma^2)[/$]<br /><br /><br />[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \ ? \\<br />F_\xi (x) &amp;= \ ?<br />\end{align*}<br />[/latex]<br />
+"[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \frac{1}{\sigma} \; \phi\left(\frac{x-\mu}{\sigma}\right) \ \ \ \ \ \ \ \ \phi(x) = \frac{1}{\sqrt{2\pi}} \; e^{ - \frac{x^2}{2} } \\<br />\\<br />F_\xi (x) &amp;= \Phi\left(\frac{x-\mu}{\sigma}\right) \ \ \ \ \ \ \ \ \ \ \ \Phi(x) = \frac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^x e^{ - \frac{t^2}{2} } \; dt&nbsp;&nbsp;<br />\end{align*}<br />[/latex]<br /><br /><br /><br /><img src=""jzQ9JJ5E_720px-Normal_Distribution_PDF.svg.png"" /><br /><br /><img src=""h2zAU2C2_720px-Normal_Distribution_CDF.svg.png"" /><br />"
+continuous_distribution cumulative_distribution_function normal_distribution probability probability_density_function
+
+exponential distribution — probability density function and cumulative distribution function<br /><br />[$]\xi \sim \mathrm{Exp}(\lambda)[/$]<br /><br /><br />[latex]<br />\begin{align*}<br />f_\xi (x) &amp;= \ ? \\<br />F_\xi (x) &amp;= \ ?<br />\end{align*}<br />[/latex]<br />
+"[latex]<br />\begin{align*}<br />f_\xi (x) &amp;=<br />&nbsp;&nbsp;&nbsp;\begin{cases}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\lambda \; e^{-\lambda x} &amp; \ \ \ \ \ \ \ \&nbsp;&nbsp;x \ge 0 \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &amp;<br />&nbsp;&nbsp;&nbsp;\end{cases} \\<br />\\<br />F_\xi (x) &amp;=<br />&nbsp;&nbsp;&nbsp;\begin{cases}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 - e^{-\lambda x} &amp; \ \ \ \ \&nbsp;&nbsp;x \ge 0 \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 &amp;<br />&nbsp;&nbsp;&nbsp;\end{cases}<br />\end{align*}<br />[/latex]<br /><br /><br /><img src=""bc5Cff7S_640px-Exponential_distribution_pdf.png"" /><br /><br /><img src=""v3Ju8kG9_640px-Exponential_distribution_cdf.png"" /><br />"
+continuous_distribution cumulative_distribution_function exponential_distribution probability probability_density_function
+
+uniform distribution (discrete) — expectation and variance<br /><br />[$]\xi \sim U(a, b)[/$]<br /><br /><br />[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \ ? \\<br />\mathsf{D} \xi &amp;= \ ? <br />\end{align*}<br />[/latex]
+"[latex]<br />\begin{align*} <br />\mathsf{E} \xi &amp;= \frac{a+b}{2} \\<br />\mathsf{D} \xi &amp;= \frac{n^2 - 1}{12}<br />\end{align*}<br />[/latex]<br /><br /><br /><br /><br /><br />[$]n = b - (a-1)[/$]<br /><br /><br /><img src=""mP7PCTkP_320px-DUniform_distribution_PDF.png"" />"
+discrete_distribution expectation probability uniform_distribution variance
+
+normal distribution — properties<br /><br />[$]\xi \sim \mathrm{N}(\mu, \sigma^2)[/$]<br /><br /><br />[$]a\xi + b\ \sim\ \mathcal{N}(?,\ ?)[/$]<br />
+[$]a\xi + b\ \sim\ \mathcal{N}(a\mu+b,\, a^2\sigma^2)[/$]<br />
+continuous_distribution normal_distribution probability properties
+
+normal distribution — properties<br /><br />[latex]<br />\begin{align*}<br />\xi_1 &amp;\sim \mathrm{N}(\mu_1, \sigma_1^2) \\<br />\xi_2 &amp;\sim \mathrm{N}(\mu_2, \sigma_2^2) \\<br />\end{align*}<br />[/latex]<br /><br /><br />[$]a\xi_1 + b\xi_2 \ \sim\ \mathcal{N}(?,\ ?)[/$]<br />
+[$]a\xi_1 + b\xi_2 \ \sim\ \mathcal{N}(a\mu_1 + b\mu_2, \ a^2\sigma_1^2 + b^2\sigma_2^2)[/$]
+continuous_distribution normal_distribution probability properties
+
+Poisson distribution — probability mass function<br /><br />[$]\xi \sim \mathrm{Pois} (\lambda)[/$]<br /><br /><br />[$$]\Prob(\xi = k) = \ ?[/$$]
+"law of rare events<br /><br />[$$]\Prob(\xi = k) \ = \ \frac{\lambda^k}{k!} \; e^{-\lambda}[/$$]<br /><br /><br /><br /><img src=""uU286c4Q_probability.org.20120323-1359-1114o8r.screenshot.png"" />"
+Poisson_distribution discrete_distribution probability probability_mass_function
+
+geometric (shifted) distribution — probability mass function<br /><br />[$]\xi \sim \mathrm{Geom}(p)[/$]<br /><br /><br />[$]\Prob(\xi = k) = \ ?[/$]
+[$]\Prob(\xi = k) \ = \ p \, q^{k-1}[/$]
+discrete_distribution geometric_disribution probability probability_mass_function
+
+сentral limit theorem
+[$]\xi_1,\dots, \xi_n[/$] — independent and identically distributed<br /><br />[$]\mathsf{E}(\xi_i) = \mu[/$]<br />[$]\mathsf{D}(\xi_i) = \sigma^2[/$]<br /><br />[$]S_n = \sum \xi_i[/$]<br /><br /><br /><br /><br />[$$]\frac{S_n - n \mu}{\sqrt n} \ \xrightarrow{\ d\ } \ N(0, \sigma^2)[/$$]<br />
+probability theorem
+
+Chebyshev's inequality
+"[$]\mathsf{E}(\xi_i) = \mu[/$]<br />[$]\mathsf{D}(\xi_i) = \sigma^2[/$]<br /><br /><br />""Nearly all"" values are close to the mean:<br />[$$]\Prob\left(\; |\xi-\mu| \; \geq \; k\sigma \; \right) \ \leq \&nbsp;&nbsp;\frac{1}{k^2}[/$$]<br /><br /><br /><br />Because it can be applied to completely arbitrary distributions (unknown except for mean and variance), the inequality generally gives a poor bound compared to what might be possible if something is known about the distribution involved."
+probability theorem
+
+law of large numbers (weak)
+[$]\xi_1, \ \xi_2, \ \xi_3, \dots[/$] — <i>uncorrelated</i> and identically distributed<br /><br />[$]\mathsf{E}(\xi_i) = \mu[/$]<br /><br />[$]S_n = \sum\limits_{i=1}^n \xi_i[/$]<br /><br /><br /><br /><br />[$$]\frac{S_n}{n} \xrightarrow{ \ \Prob \ } \mu[/$$]
+probability theorem
+
+law of large numbers (strong)
+[$]\xi_1, \ \xi_2, \ \xi_3, \dots[/$] — independent and identically distributed<br /><br />[$]\mathsf{E}(\xi_i) = \mu[/$]<br /><br />[$]S_n = \sum\limits_{i=1}^n \xi_i[/$]<br /><br /><br /><br /><br />[$$]\frac{S_n}{n} \xrightarrow{ \ \text{a.s.} \ } \mu[/$$]
+probability theorem
+
+exponential distribution — interpretation<br /><br />[$]\xi \sim \mathrm{Exp}(\lambda)[/$]
+[$]\lambda = \frac{n}{t}[/$] is a number of events per time unit<br /><br /><br />[$]\frac{1}{\lambda} = \mathsf{E} \xi[/$] is mean time between events
+continuous_distribution exponential_distribution interpretation probability
+
+definition of probability space
+[$](\Omega,\mathfrak{F},\mathsf{P})[/$]<br /><br /><br /><br />[$]\Omega[/$] — sample space, a set of possible outcomes<br /><br />[$]\mathfrak{F}[/$] — [$]\sigma[/$]-algebra of subsets of [$]\Omega[/$]<br /><br />[$]\mathsf{P}[/$] — probability measure<br /><br /><br /><br />??? details
+definition probability
+
+law of total probability
+[$$]\Prob(A) \&nbsp;&nbsp;= \&nbsp;&nbsp;\sum_i \&nbsp;&nbsp;\Prob(A \mid H_i) \&nbsp;&nbsp;\Prob(H_i)[/$$]<br /><br /><br /><br /><br /><br /><br /><br />[$$]H_1 \sqcup \ldots \sqcup H_n = \Omega[/$$]<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />proof:<br /><br />[latex]<br />\begin{align*}<br />A &amp;= AH_i + \ldots + AH_n \\<br />P(A) &amp;= \sum P(AH_i) = \sum P(A|H_i)P(H_i)<br />\end{align*}<br />[/latex]<br />
+conditional_probability definition probability
+
+Bayes' theorem
+[$$]\Prob(H_i|A) = \frac{\Prob(A | H_i) \&nbsp;&nbsp;\Prob(H_i)}{\Prob(A)}[/$$]<br /><br /><br /><br /><br /><br /><br /><br />[$$]H_1 \sqcup \ldots \sqcup H_n = \Omega[/$$]<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />proof:<br /><br />[latex]<br />\begin{align*}<br />P(AH_i) &amp;= P(A|H_i)P(H_i) = \\<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;= P(H_i|A)P(A)<br />\end{align*}<br />[/latex]
+conditional_probability definition probability
+
+definition of conditional probability
+[$$]\Prob(A|B) = \frac{\Prob(AB)}{\Prob(B)}[/$$]<br />
+conditional_probability definition probability
+
+birthday problem probability and approximation
+"<div><div><div>[$$]P(A_n) \ = \ 1 \,- \, 1 \cdot \left(1-\frac{1}{365}\right) \cdot \left(1-\frac{2}{365}\right) \cdot \ldots \cdot \left(1-\frac{n-1}{365}\right)[/$$]</div><div>&nbsp;&nbsp;</div><div><br /></div><div>using the fact that [$]e^x \approx 1 + x[/$], we get</div><div><br /></div><div>&nbsp;&nbsp;</div><div>[$$]P(A_n) \, \approx \, 1 - e^{-1/365} \cdot e^{-2/365} \cdot \ldots \cdot e^{-(n-1)/365} = 1 - e^{n(n-1)/(2 \cdot 365)}[/$$]</div></div></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><img src=""20130313-2004-493Axh.screenshot.png"" /></div>"
+birthday_problem probability
+
+entropy
+[$$]H \ = \ &nbsp;- \sum p_i \log{p_i}[/$$]<div><br /></div><div>see my notes</div>
+
+
+<div>A drawer contains red socks and black socks.</div><div>When two socks are drawn at random, the probability that both are red is [$]\frac{1}{2}[/$].</div><div>How small can the number of socks in the drawer be?</div><div>How small if the number of black socks is even?</div>
+notes
+problem
+
+To encourage Elmer’s promising tennis career, his father offers him a prize if he wins (at least) two tennis sets in a row in a three-set series to be played with his father and the club champion alternately: father-champion-father or champion-father-champion, according to Elmer’s choice. The champion is a better player than Elmer’s father. Which series should Elmer choose?
+notes
+problem
+
+capture-recapture and remove-capture techniques for counting frogs in the pond
+TODO
+
+
+what is underfitting and overfitting model?
+http://datascience.stackexchange.com/a/628
