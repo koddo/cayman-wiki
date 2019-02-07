@@ -1099,3 +1099,26 @@ $$\det (A^\mathrm{T} B - B^\mathrm{T} A) = \det (A+B) \cdot \det (A- B).$$
 $$\sum_{n=1}^\infty P \left(\xi_n > \sqrt{2 \ln n + 2\ln \ln n} \right)?$$
 
 
+
+# hse olympiad
+
+2018
+<https://olymp.hse.ru/data/2018/03/26/1164857612/020_ПМиИ_18.pdf>, solutions: <https://olymp.hse.ru/data/2018/04/13/1150726781/020.pdf>
+demo: <https://olymp.hse.ru/data/2017/12/27/1160665207/020_ПМиИ++.pdf>, solutions: <https://olymp.hse.ru/data/2017/12/27/1160665105/020_ПМиИ (решения и ответы)++.pdf>
+
+2017
+<https://olymp.hse.ru/data/2017/03/23/1169853863/020_ПМиИ_17.pdf>
+demo: <https://olymp.hse.ru/data/2017/02/27/1166157005/020_ПМИ.pdf>
+
+2016
+<https://olymp.hse.ru/data/2016/03/02/1126050702/020_ПМиИ_16.pdf>, solutions: <https://olymp.hse.ru/data/2016/04/05/1126245113/020_ПМиИ.pdf>
+demo: <https://olymp.hse.ru/data/2015/12/01/1080100692/020_ПМиИ.pdf>
+
+2015
+<https://www.hse.ru/data/2015/02/27/1091534439/020_Прикл_мат_информ_15.pdf>, solutions: <https://olymp.hse.ru/data/2015/03/31/1095874457/020_ПМиИ.pdf>
+demo: <https://olymp.hse.ru/data/2014/12/31/1103706703/020_Прикладная математика и информатика.pdf>
+
+2014
+data science: <https://olymp.hse.ru/data/2014/04/01/1317133521/111_Науки_о_данных_2014.pdf>, solutions: <https://olymp.hse.ru/data/2014/04/15/1320736338/111 Решения и критерии.pdf>
+demo: <https://olymp.hse.ru/data/2014/03/11/1333282846/Науки о данных.pdf>
+
