@@ -7,6 +7,11 @@ layout: default
 * this line gets replaced with the generated table of contents
 {:toc}
 
+# print
+
+<https://en.wikipedia.org/wiki/Trace_(linear_algebra)>
+
+
 # 2012
 
 ## 27-05-2012
@@ -351,6 +356,15 @@ $$a_{ij} = \begin{cases}1,& \textrm{ если }i\textrm{ делит }j,\\0,& \te
 
 Пусть $A$ --- квадратная матрица, у которой сумма матричных элементов в каждом столбце равна $\lambda$. 
 Докажите, что $\lambda$ является собственным значением матрицы $A$.
+
+#### Solution
+
+Column sums of matrix $A - \lambda E$ are zero, sum of rows are zero vector, and rows are linearly dependent, therefore columns are linearly dependent as well.
+$\exists x \ne 0 : (A - \lambda E) x = 0$
+
+Or use the fact matrices $A$ and $A^T$ have same eigenvalues.
+<http://math.hashcode.ru/questions/155052/алгебра-матрицы-собственные-числа>
+AZ
 
 ### 2 -- [se- ss- sl- ll-]
 
@@ -1123,3 +1137,9 @@ demo: <https://olymp.hse.ru/data/2014/12/31/1103706703/020_Прикладная 
 data science: <https://olymp.hse.ru/data/2014/04/01/1317133521/111_Науки_о_данных_2014.pdf>, solutions: <https://olymp.hse.ru/data/2014/04/15/1320736338/111 Решения и критерии.pdf>
 demo: <https://olymp.hse.ru/data/2014/03/11/1333282846/Науки о данных.pdf>
 
+
+# Questions
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- shad problems">
+    <p>Your browser does not support iframes.</p>
+</iframe>
