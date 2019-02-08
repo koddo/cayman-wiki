@@ -77,9 +77,6 @@ $$
 - Q: What is gradient? What is its direction and magnitude? What are contour lines and their relation to gradient?
 - Q: What is directional derivative? Its relation to gradient?
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus">
-    <p>Your browser does not support iframes.</p>
-</iframe>
 
 
 
