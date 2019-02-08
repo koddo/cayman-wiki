@@ -4,6 +4,8 @@ layout: default
 
 ---
 
+# permutations, their properties
+
 $$
 \begin{align*}
 (\tau \sigma)(i) = \tau (\sigma (i)) &= \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 3 & 5 & 1 & 6 & 2 & 4 \end{pmatrix} \cdot \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 \\ 6 & 3 & 4 & 2 & 1 & 5 \end{pmatrix} = \\ 
@@ -48,6 +50,12 @@ $$
 inverted cycle: $\begin{pmatrix} i_1 & \ldots & i_n \end{pmatrix}^{-1} = \begin{pmatrix} i_n & \ldots & i_1 \end{pmatrix}$
 
 
+Any even permutation can be written as a product of cycles of length three:
+
+if j = k then (i j)(k l) = (i j l) is a 3-cycle
+otherwise, (i j)(k l) = (i j)(j k) (j k)(k l) = (i j k)(j k l)
+
+# parity of permutations
 
 there are two equivalent definitions of /parity/
 
@@ -140,30 +148,37 @@ the following rules follow directly from addition of numbers of transpositions:
 permutation is odd $\iff$ disjoint cycles factorization contains an odd number of odd cycles
 
 
+Properties of parity:
+ - $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
+ - $\operatorname{sgn}(1) = 1$
+ - $\operatorname{sgn}(\sigma^{-1}) = (\operatorname{sgn}(\sigma))^{-1} = \operatorname{sgn}(\sigma)$
+ - $\operatorname{sgn}(i_1 \ldots i_n) = (-1)^{n-1}$
+ - $\operatorname{sgn}(t) = -1$
+
+# conjugation
 
 
 
 
-Any even permutation can be written as a product of cycles of length three:
-
-if j = k then (i j)(k l) = (i j l) is a 3-cycle
-otherwise, (i j)(k l) = (i j)(j k) (j k)(k l) = (i j k)(j k l)
 
 
-- Q: Properties of parity:
-  - $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
-  - $\operatorname{sgn}(1) = 1$
-  - $\operatorname{sgn}(\sigma^{-1}) = (\operatorname{sgn}(\sigma))^{-1} = \operatorname{sgn}(\sigma)$
-  - $\operatorname{sgn}(i_1 \ldots i_n) = (-1)^{n-1}$
-  - $\operatorname{sgn}(t) = -1$
+# Superlearn
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+- Q: Properties of parity
+  - $\operatorname{sgn}(\sigma \tau) = ?$
+  - $\operatorname{sgn}(1) = ?$
+  - $\operatorname{sgn}(\sigma^{-1}) = ?$
+  - $\operatorname{sgn}(i_1 \ldots i_n) = ?$
+  - $\operatorname{sgn}(t) = ?$
 
 - Q: Number of vertices minus number of cycles minus number of fixed points. Which is number of vertices minus number of components if drawn as graph.
 
 - Q: There exists exactly one function $\operatorname{sgn}: S_n \to {\pm 1}$ not equivalent to one, with properties $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
-    <p>Your browser does not support iframes.</p>
-</iframe>
 
 - Q: $\prod_{\sigma \in S_n} \operatorname{sgn}(\sigma) = ?$
 - A: It equals to number of odd permutations, which is half of all permutations.
@@ -187,10 +202,6 @@ put a instead of 1:
         = (2 l a) (2 a k) =    interchange 1 and 2 in (1 k l) 
         = (2 1 a) (1 2 l) (2 1 k) (1 2 a)
 
-
-
-# Superlearn
-
 - Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$.
 
 - Q: Compute $\sigma^2019$
@@ -208,37 +219,32 @@ A: Using disjoing cycles, using decremtn.
 
 - Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^17$.
 
-- Q: prove that permutations conjugate [$]\iff[/$] they have the same cycle structure
+- Q: prove that permutations conjugate $\iff$ they have the same cycle structure
 A:
-   [$]\boxed{\Rightarrow}[/$]
+   $\boxed{\Rightarrow}$
 
-   [$]\sigma(i) = k[/$]
-   [$]\left(\pi \sigma \pi^{-1}\right) \left(\pi(i)\right) = \pi(k)[/$]  
+   $\sigma(i) = k$
+   $\left(\pi \sigma \pi^{-1}\right) \left(\pi(i)\right) = \pi(k)$  
  
 
    e.g.
-   [$]\pi \ \cdot \ \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix} 4 & 5\end{pmatrix} \ \cdot \ \pi^{-1} \ = \ \left( \begin{smallmatrix}\pi(1) & \pi(2) & \pi(3)\end{smallmatrix} \right) \left( \begin{smallmatrix}\pi(4) & \pi(5)\end{smallmatrix}  \right)[/$]
+   $\pi \ \cdot \ \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix} 4 & 5\end{pmatrix} \ \cdot \ \pi^{-1} \ = \ \left( \begin{smallmatrix}\pi(1) & \pi(2) & \pi(3)\end{smallmatrix} \right) \left( \begin{smallmatrix}\pi(4) & \pi(5)\end{smallmatrix}  \right)$
 
-   [$]\boxed{\Leftarrow}[/$]
+   $\boxed{\Leftarrow}$
 
    we can easily get conjugating permutation of two permutations with same structure
    by just writing one under another
 
 
-[latex]
-   \begin{align*}
+$$
+\begin{align*}
    \sigma &= \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix}4 & 5\end{pmatrix} \\
    \pi \sigma \pi^{-1} &= \begin{pmatrix}1 & 5 & 2\end{pmatrix} \begin{pmatrix}3 & 4\end{pmatrix} \\
    \\
    \Rightarrow \pi &=  \begin{pmatrix}2 & 5 & 4 & 3\end{pmatrix}
    \end{align*}
-[/latex]
+$$
 
-
-
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
-    <p>Your browser does not support iframes.</p>
-</iframe>
 
 multiply permutations [$$]\begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 3 &amp; 5 &amp; 1 &amp; 6 &amp; 2 &amp; 4 \end{pmatrix} \cdot \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 6 &amp; 3 &amp; 4 &amp; 2 &amp; 1 &amp; 5 \end{pmatrix} \ = \ ?[/$$]
 [$$](\tau \sigma)(i) = \tau (\sigma (i)) = \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 3 &amp; 5 &amp; 1 &amp; 6 &amp; 2 &amp; 4 \end{pmatrix} \cdot \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 6 &amp; 3 &amp; 4 &amp; 2 &amp; 1 &amp; 5 \end{pmatrix} = \begin{pmatrix} 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\ 4 &amp; 1 &amp; 6 &amp; 5 &amp; 3 &amp; 2 \end{pmatrix} \ \ \ \ \ \ \ \ \ (\text{right to left: } 1 \to 6 \to 4)[/$$]
