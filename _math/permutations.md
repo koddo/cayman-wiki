@@ -124,7 +124,7 @@ in practice, in order to determine whether a given permutation is even or odd, o
 $\sigma = c_1 \cdot \ldots \cdot c_n$, where $c_1, \ldots, c_n$ are cycles
 $\operatorname{sgn} \sigma = (-1)^{\operatorname{parity}(c_1) + \ldots + \operatorname{parity}(c_n)}$
 
-Also, parity is $(-1)^{\operatorname{dec}}$, where decrement $\operatorname{dec}(\sigma) = n - \text{number of cycles} - \text{number of fixed points} = \text{number of points} - \text{number of graph components}$.
+Also, parity is $(-1)^{\operatorname{dec}(\sigma)}$, where decrement $\operatorname{dec}(\sigma) = n - \text{number of cycles} - \text{number of fixed points} = \text{number of points} - \text{number of graph components}$
 
 transposition changes parity of a permutation
 
@@ -159,7 +159,7 @@ otherwise, (i j)(k l) = (i j)(j k) (j k)(k l) = (i j k)(j k l)
 
 - Q: Number of vertices minus number of cycles minus number of fixed points. Which is number of vertices minus number of components if drawn as graph.
 
-- Q: There exists exactly one function $\operatorname{sgn}: S_n \to {\plusminus 1}$ not equivalent to one, with properties $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
+- Q: There exists exactly one function $\operatorname{sgn}: S_n \to {\pm 1}$ not equivalent to one, with properties $\operatorname{sgn}(\sigma \tau) = \operatorname{sgn}(\sigma) \operatorname{sgn}(\tau)$
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- permutations">
     <p>Your browser does not support iframes.</p>
@@ -187,7 +187,14 @@ put a instead of 1:
         = (2 l a) (2 a k) =    interchange 1 and 2 in (1 k l) 
         = (2 1 a) (1 2 l) (2 1 k) (1 2 a)
 
+
+
 # Superlearn
+
+- Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$.
+
+- Q: Compute $\sigma^2019$
+A: Disjoint cycles decomposition, then $(1 \ \ldots \ n)^k = ()()()$ --- it breaks into $\frac{n}{\operatorname{gcd}(n, k)}$ parts, with $\operatorname{gcd}(n, k)$ elements in each part. 
 
 - Q: <https://en.wikipedia.org/wiki/Vandermonde_matrix>
 
