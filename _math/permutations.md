@@ -168,6 +168,8 @@ Properties of parity:
     <p>Your browser does not support iframes.</p>
 </iframe>
 
+- Q: 
+
 - Q: Properties of parity
   - $\operatorname{sgn}(\sigma \tau) = ?$
   - $\operatorname{sgn}(1) = ?$
@@ -202,7 +204,8 @@ put a instead of 1:
         = (2 l a) (2 a k) =    interchange 1 and 2 in (1 k l) 
         = (2 1 a) (1 2 l) (2 1 k) (1 2 a)
 
-- Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$.
+- Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$
+A: <file:///Users/alex/Dropbox/hse_math/linear_algebra 04 -- Comments_permtation_root.pdf>
 
 - Q: Compute $\sigma^2019$
 A: Disjoint cycles decomposition, then $(1 \ \ldots \ n)^k = ()()()$ --- it breaks into $\frac{n}{\operatorname{gcd}(n, k)}$ parts, with $\operatorname{gcd}(n, k)$ elements in each part. 
