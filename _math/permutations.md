@@ -124,6 +124,7 @@ in practice, in order to determine whether a given permutation is even or odd, o
 $\sigma = c_1 \cdot \ldots \cdot c_n$, where $c_1, \ldots, c_n$ are cycles
 $\operatorname{sgn} \sigma = (-1)^{\operatorname{parity}(c_1) + \ldots + \operatorname{parity}(c_n)}$
 
+Also, parity is $(-1)^{\operatorname{dec}}$, where decrement $\operatorname{dec}(\sigma) = n - \text{number of cycles} - \text{number of fixed points} = \text{number of points} - \text{number of graph components}$.
 
 transposition changes parity of a permutation
 
@@ -195,6 +196,7 @@ put a instead of 1:
 - Q: Every $n$-cycle can be expressed as product of $n−1$ transpositions.
 
 - Q: How to find parity of a permutation?
+A: Using disjoing cycles, using decremtn.
 
 - Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^17$.
 
