@@ -77,8 +77,8 @@ $(\cos x)' = \ ?$
 $(\cos x)' = - \sin x$
 
 
-$(\tg x)' = \ ?$
-$$(\tg x)' = \frac{1}{\cos^2 x}$$
+$(\operatorname{tg} x)' = \ ?$
+$$(\operatorname{tg} x)' = \frac{1}{\cos^2 x}$$
 
 
 $(\arcsin x)' = \ ?$
@@ -89,8 +89,8 @@ $(\arccos x)' = \ ?$
 $$(\arccos x)' = \frac{-1}{\sqrt{1-x^2}}$$
 
 
-$(\arctg x)' = \ ?$
-$(\arctg x)' = \frac{1}{1+x^2}$
+$(\operatorname{arctg} x)' = \ ?$
+$(\operatorname{arctg} x)' = \frac{1}{1+x^2}$
 
 
 $(af + bg)' = \ ?$
@@ -136,15 +136,15 @@ $$\int \cos x \; dx \ = \ \sin x$$
 
 
 $$\int \frac{1}{\cos^2 x} \; dx = \ ?$$
-$$\int \frac{1}{\cos^2 x} \; dx \ = \ \tg x$$
+$$\int \frac{1}{\cos^2 x} \; dx \ = \ \operatorname{tg} x$$
 
 
 $$\int \frac{1}{\sin^2 x} \; dx = \ ?$$
-$$\int \frac{1}{\sin^2 x} \; dx \ = \ - \ctg x$$
+$$\int \frac{1}{\sin^2 x} \; dx \ = \ - \operatorname{ctg} x$$
 
 
 $$\int \frac{1}{a^2 + x^2} \; dx = \ ?$$
-$$\int \frac{1}{a^2 + x^2} \; dx \ = \ \frac{1}{a} \; \arctg \frac{x}{a}$$
+$$\int \frac{1}{a^2 + x^2} \; dx \ = \ \frac{1}{a} \; \operatorname{arctg} \frac{x}{a}$$
 
 $$\int \frac{1}{a^2 - x^2} \; dx = \ ?$$
 $$\int \frac{1}{a^2 - x^2} \; dx \ = \ \frac{1}{2a} \; \ln \left| \frac{a+x}{a-x} \right|$$
@@ -212,17 +212,17 @@ $$\int \frac{\cos x}{x} \; dx \ = \ \text{special function} \ (x)$$
 $$\int \frac{e^x}{x} \; dx = \ ?$$
 $$\int \frac{e^x}{x} \; dx \ = \ \text{special function} \ (x)$$
 
-$$\int \sh x \; dx = \ ?$$
-$$\int \sh x \; dx \ = \ \ch x$$
+$$\int \operatorname{sh} x \; dx = \ ?$$
+$$\int \operatorname{sh} x \; dx \ = \ \operatorname{ch} x$$
 
-$$\int \ch x \; dx = \ ?$$
-$$\int \ch x \; dx \ = \ \sh x$$
+$$\int \operatorname{ch} x \; dx = \ ?$$
+$$\int \operatorname{ch} x \; dx \ = \ \operatorname{sh} x$$
 
-$$\int \frac{1}{\sh^2 x} \; dx = \ ?$$
-$$\int \frac{1}{\sh^2 x} \; dx \ = \ - \mathrm{cth} x$$
+$$\int \frac{1}{\operatorname{sh}^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\operatorname{sh}^2 x} \; dx \ = \ - \mathrm{cth} x$$
 
-$$\int \frac{1}{\ch^2 x} \; dx = \ ?$$
-$$\int \frac{1}{\ch^2 x} \; dx \ = \ \mathrm{th} x$$
+$$\int \frac{1}{\operatorname{ch}^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\operatorname{ch}^2 x} \; dx \ = \ \mathrm{th} x$$
 
 five special functions in calculus
 $$\int \frac{1}{\ln x} \; dx$$
