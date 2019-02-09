@@ -132,7 +132,7 @@ $$\int \sin x \; dx \ = \ - \cos x$$
 
 $$\int \cos x \; dx = \ ?$$
 
-$$\int \cos x \; dx \ = \&nbsp;&nbsp;\sin x$$
+$$\int \cos x \; dx \ = \ \sin x$$
 
 
 $$\int \frac{1}{\cos^2 x} \; dx = \ ?$$
