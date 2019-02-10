@@ -21,7 +21,7 @@ To find out what vectors in a set form a basis and express others a linear combi
 SL-
 
 Put them in matrix horizontally and get reduced row echelon form.
-???
+<https://math.stackexchange.com/questions/465870/how-to-extend-a-basis>
 
 # Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$
 
@@ -120,7 +120,7 @@ A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G =
 
 # Find angle between vectors. Find angle and distance between vector and subspace.
 
-# Reduced SVD for horizontally oriented matrices. How to get SVD of vertically oriented matrices?
+# Reduced SVD for horizontally oriented matrices. What if an eigenvalue is zero? Are eigenvalues used once in \Lambda or repeated if their degree is not one? How to get SVD of vertically oriented matrices?
 A:
 $A = C \Lambda D^T$, but we only get reduced matrices.
 
@@ -134,6 +134,8 @@ $$
 {}&{}&{\sqrt{\sigma_k}}
 \end{pmatrix}
 $$
+
+If an eigenvalue is zero, we ignore it. Eigenvalues $\sqrt{\sigma_i}$ are repeated $n_i$ times in $\Lambda$.
 
 For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put these bases into columns of the $C$ matrix.
 
