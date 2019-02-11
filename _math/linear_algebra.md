@@ -279,17 +279,21 @@ $$
 {A}&{v}\\
 {0}&{\lambda}
 \end{pmatrix}
-=
+
 \begin{pmatrix}
 {A^2}&{Av + v\lambda}\\
 {0}&{\lambda^2}
 \end{pmatrix}
+
 =
+
 \begin{pmatrix}
 {A^2}&{Av + \lambda v}\\
 {0}&{\lambda^2}
 \end{pmatrix}
+
 =
+
 \begin{pmatrix}
 {A^2}&{(A + \lambda E) v}\\
 {0}&{\lambda^2}
@@ -307,7 +311,9 @@ $$
 {0}&{0}\\
 {1}&{0}
 \end{pmatrix}
+
 =
+
 \begin{pmatrix}
 {1}&{0}\\
 {0}&{0}
