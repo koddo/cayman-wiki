@@ -19,6 +19,8 @@ reverse of 2x2 matrix `d & -b \\ -c & a`
 
 <https://ru.wikipedia.org/wiki/Сопряжённый_оператор>, <https://en.wikipedia.org/wiki/Hermitian_adjoint>
 
+Effect of multiplying a matrix by a diagonal matrix -- <https://solitaryroad.com/c108.html>
+
 # test
 
 When \\(a \ne 0\\), $a \ne 0$, there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
