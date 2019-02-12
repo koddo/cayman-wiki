@@ -4,89 +4,255 @@ layout: default
 
 ---
 
-# Partial derivatives and second partial derivatives
+* this line gets replaced with the generated table of contents
+{:toc}
 
-## Symmetry of second partial derivatives
+# TODO
 
-Under certain conditions:
-
-$${\frac {\partial }{\partial x}}\left({\frac {\partial f}{\partial y}}\right)={\frac {\partial }{\partial y}}\left({\frac {\partial f}{\partial x}}\right)$$
-
-TODO LOW: symmetry of second derivatives, example when it's not true, <https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity>
-
-# Gradient
-
-$$
-\nabla f = 
-\begin{pmatrix}
-\frac {\partial f}{\partial x_1} \\
-\vdots \\
-\frac {\partial f}{\partial x_n}
-\end{pmatrix}
-$$
-
-It tells you which direction to go to get the greatest rate of increase of the function.
-Its magnitude is the slope of the graph in that direction.
-
-Gradient vector is perpendicular to contour lines.
-
-# Directional derivative
-
-Directional derivative along $v$ is
-
-$$\nabla_v f(x) = \lim_{h \to 0} \frac{f(x + hv) - f(x)}{h |v|}$$
-
-It's a dot-product of gradient and the direction:
-
-$$\nabla_v f = \nabla f \cdot v$$
-
-More detailed explanation:
-
+The Taylor series of $f(x)$ that is infinitely differentiable in a neighborhood of $a$
 $$
 \begin{align*}
-\nabla_v f & = \nabla_v f(x_1, \ldots, x_n) = \\ 
-& = v_1 \frac {\partial f}{\partial x_1}(x_1) + \ldots + v_1 \frac {\partial f}{\partial x_1}(x_1) = \\
-& =
-\begin{pmatrix}
-\frac {\partial f}{\partial x_1} \\
-\vdots \\
-\frac {\partial f}{\partial x_n}
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-v_1 \\
-\vdots \\
-v_n
-\end{pmatrix} = \\
-& = \nabla_v f(x_1, \ldots, x_n) \cdot v = \\
-& = \nabla f \cdot v
+&f(a)+\frac {f^{(1)}(a)}{1!} (x-a)+ \frac{f^{(2)}(a)}{2!} (x-a)^2+\frac{f^{(3)}(a)}{3!}(x-a)^3+ \cdots = \\
+\\
+&=\sum_{n=0}^{\infty} \frac {f^{(n)}(a)}{n!} \, (x-a)^{n}
 \end{align*}
 $$
 
+Maclaurin series of $e^x$
+$$e^{x} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots + \frac{x^n}{n!} + o(x^n)$$
 
-# TODO LOW: Divergence, curl, Laplacian, Jacobian
+Maclaurin series of $\sin x$
+$$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + o(x^8)$$
 
-<https://www.khanacademy.org/math/multivariable-calculus>
 
-# TODO: Gradient descent
+
+$$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \frac{x^9}{9!} + o(x^{10})$$
+
+
+Maclaurin series of $\cos x$
+$$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \frac{x^8}{8!} + o(x^9)$$
+
+
+
+$$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \frac{x^8}{8!} - \frac{x^{10}}{10!} + o(x^{11})$$
+
+
+
+Maclaurin series of $\ln (1+x)$
+$$\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + o(x^4)$$
+
+Maclaurin series of $(1+x)^m$
+$$
+\begin{align*}
+(1+x)^m &= 1 + mx + \frac{m(m-1)}{2!} x^2 + \frac{m(m-1)(m-2)}{3!} x^3 + \cdots + \\
+\\
+&+ \frac{m(m-1)\cdots(m-n+1)}{n!} x^n + o(x^n)
+\end{align*}
+$$
+
+$(e^x)' = \ ?$
+$(e^x)' = e^x$
+
+$(1)' = \ ?$
+$(1)' = 0$
+
+
+$(x^a)' = \ ?$
+$(x^a)' = a\; x^{a-1}$
+
+
+$(\log_a x)' = \ ?$
+$(\log_a x)' = \frac{1}{x \ln a}$
+
+
+$(\ln x)' = \ ?$
+$(\ln x)' = \frac{1}{x}$
+
+
+$(\sin x)' = \ ?$
+$(\sin x)' = \cos x$
+
+
+$(\cos x)' = \ ?$
+$(\cos x)' = - \sin x$
+
+
+$(\operatorname{tg} x)' = \ ?$
+$$(\operatorname{tg} x)' = \frac{1}{\cos^2 x}$$
+
+
+$(\arcsin x)' = \ ?$
+$$(\arcsin x)' = \frac{1}{\sqrt{1-x^2}}$$
+
+
+$(\arccos x)' = \ ?$
+$$(\arccos x)' = \frac{-1}{\sqrt{1-x^2}}$$
+
+
+$(\operatorname{arctg} x)' = \ ?$
+$(\operatorname{arctg} x)' = \frac{1}{1+x^2}$
+
+
+$(af + bg)' = \ ?$
+$(af + bg)' = af' + bg'$
+
+
+$(fg)' = \ ?$
+$(fg)' = f 'g + fg'$
+
+
+$\left(\frac{f}{g} \right)' = \ ?$
+$\left(\frac{f}{g} \right)' = \frac{f'g - fg'}{g^2}$
+
+
+$\left(f (g) \right)' = \ ?$
+$\left(f (g) \right)' = f'(g) \cdot g'$
+
+$$\int x^{\alpha} \, dx = \ ?$$
+$$\int x^{\alpha} \, dx \ = \ \frac{x^{\alpha+1}}{\alpha+1}, \ \ \ \ \ \alpha \neq -1$$
+
+
+
+
+$$\int x^{-1} \, dx \ = \int \frac{1}{x} \, dx \ = \ \ln |x|$$
+
+$$\int \frac{1}{x} \, dx = \ ?$$
+$$\int \frac{1}{x} \, dx \ = \ \ln |x|$$
+
+
+$$\int a^x \, dx = \ ?$$
+$$\int a^x \, dx \ = \ \frac{a^x}{\ln a}$$
+
+$$\int e^x \, dx = \ ?$$
+$$\int e^x \, dx \ = \ e^x$$
+
+$$\int \sin x \; dx = \ ?$$
+$$\int \sin x \; dx \ = \ - \cos x$$
+
+
+$$\int \cos x \; dx = \ ?$$
+
+$$\int \cos x \; dx \ = \ \sin x$$
+
+
+$$\int \frac{1}{\cos^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\cos^2 x} \; dx \ = \ \operatorname{tg} x$$
+
+
+$$\int \frac{1}{\sin^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\sin^2 x} \; dx \ = \ - \operatorname{ctg} x$$
+
+
+$$\int \frac{1}{a^2 + x^2} \; dx = \ ?$$
+$$\int \frac{1}{a^2 + x^2} \; dx \ = \ \frac{1}{a} \; \operatorname{arctg} \frac{x}{a}$$
+
+$$\int \frac{1}{a^2 - x^2} \; dx = \ ?$$
+$$\int \frac{1}{a^2 - x^2} \; dx \ = \ \frac{1}{2a} \; \ln \left| \frac{a+x}{a-x} \right|$$
+
+
+$$\int \frac{1}{ \sqrt{a^2-x^2} } \; dx = \ ?$$
+$$\int \frac{1}{ \sqrt{a^2-x^2} } \; dx \ = \ \arcsin \frac{x}{a}$$
+
+
+$$\int \frac{1}{\sqrt{x^2 + a}} \; dx = \ ?$$
+$$\int \frac{1}{\sqrt{x^2 + a}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a} \right|$$
+
+integration by parts
+
+$$\int u\, dv = \ ?$$
+$$\int u \; dv \ = \ uv \ - \ \int v \; du$$
+
+integration by parts
+
+$$\int\limits_a^b u \; dv = \ ?$$
+$$\int\limits_a^b u \; dv \ = \ u\,v \ \bigg|_a^b \ - \ \int\limits_a^b v \; du$$
+
+
+integration by substitution
+
+$$\int f(x) \; dx = F(x)$$
+
+
+$$\int f\left( \varphi(x) \right) \; d \varphi(x) = \ ?$$
+$$\int f\left( \varphi(x) \right) \; d \varphi(x) \ = \ F\left( \varphi(x) \right)$$
+
+$$\int a \; f(x) \; dx = \ ?$$
+$$\int a \; f(x) \; dx \ = \ a \int f(x) \; dx$$
+
+$$\int \left[ f(x) \pm g(x) \right] \; dx = \ ?$$
+$$\int \left[ f(x) \pm g(x) \right] \; dx \ = \ \int f(x) \; dx \ \pm \ \int g(x) \; dx$$
+
+$$\int 0\; dx = \ ?$$
+$$\int 0\; dx \ = \ 0 \ + \ C$$
+
+$$\int a \; dx = \ ?$$
+$$\int a \; dx \ = \ ax$$
+
+$$\int e^{-x^2}\; dx = \ ?$$
+$$\int e^{-x^2}\; dx \ = \ \text{special function} \ (x)$$
+
+$$\int e^{x^2}\; dx = \ ?$$
+$$\int e^{x^2}\; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \frac{1}{\ln x} \; dx = \ ?$$
+$$\int \frac{1}{\ln x} \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \sin x^2 \; dx = \ ?$$
+$$\int \sin x^2 \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \cos x^2 \; dx = \ ?$$
+$$\int \cos x^2 \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \frac{\sin x}{x} \; dx = \ ?$$
+$$\int \frac{\sin x}{x} \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \frac{\cos x}{x} \; dx = \ ?$$
+$$\int \frac{\cos x}{x} \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \frac{e^x}{x} \; dx = \ ?$$
+$$\int \frac{e^x}{x} \; dx \ = \ \text{special function} \ (x)$$
+
+$$\int \operatorname{sh} x \; dx = \ ?$$
+$$\int \operatorname{sh} x \; dx \ = \ \operatorname{ch} x$$
+
+$$\int \operatorname{ch} x \; dx = \ ?$$
+$$\int \operatorname{ch} x \; dx \ = \ \operatorname{sh} x$$
+
+$$\int \frac{1}{\operatorname{sh}^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\operatorname{sh}^2 x} \; dx \ = \ - \mathrm{cth} x$$
+
+$$\int \frac{1}{\operatorname{ch}^2 x} \; dx = \ ?$$
+$$\int \frac{1}{\operatorname{ch}^2 x} \; dx \ = \ \mathrm{th} x$$
+
+five special functions in calculus
+$$\int \frac{1}{\ln x} \; dx$$
+
+
+
+$$\int e^{x^2}\; dx$$
+
+
+
+$$\int \sin x^2 \; dx$$
+
+
+
+$$\int \frac{e^x}{x} \; dx$$
+
+
+
+$$\int \frac{\sin x}{x} \; dx$$
+
+$$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx = \ ?$$
+$$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a^2} \right|$$
+
+
+$$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx = \ ?$$
+$$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \right|$$
 
 
 # Questions
 
-- Q: What is partial derivative? What is second partial derivative? What is symmetry of second partial derivatives? 
-- Q: What is gradient? What is its direction and magnitude? What are contour lines and their relation to gradient?
-- Q: What is directional derivative? Its relation to gradient?
-
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus">
     <p>Your browser does not support iframes.</p>
 </iframe>
-
-
-
-
-
-
-
-
-
-

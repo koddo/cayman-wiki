@@ -1,0 +1,82 @@
+definition of group
+"[$](G, \; * \; )[/$]<br /><br /><br /><br />[$](a*b)*c = a*(b*c)[/$]<br /><br />[$]\exists e[/$]<br /><br />[$]\exists a^{-1}[/$]<div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div style=""font-size: small;"">there is also an additive definition of a group</div>"
+algebra definition
+
+definition of ring
+"[$](R, +, *)[/$]<br /><br /><br /><br /><br />[$](R, +)[/$] — abelian group<br /><br /><br /><i>distributivity</i> of [$]*[/$]<br />[$]a*(b+c) = a*b + a*c[/$]<br />[$](a+b)*c = a*c + b*c[/$]<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><span style=""font-size:small;"">existance of 1 is optional</span>"
+algebra definition
+
+definition of field
+[$](F, +, *)[/$]<br /><br /><br /><br />associative commutative ring<br /><br />[$]\exists 1 \ne 0[/$]<br /><br />[$]\exists a^{-1}[/$]
+algebra definition
+
+definition of algebra
+"<br /><i>algebra is a ring with ""multiplication by numbers""</i><br /><br />-----------------------------------------------------------------<br /><br /><br /><br /><br /><br /><br /><br /><br />algebra A over field F:<br /><br /><br /><br /><br />vector space over F<br /><br />ring [$](A, +, *)[/$]<br /><br />[$](\lambda a) b = a (\lambda b) = \lambda (ab)[/$]"
+algebra definition
+
+definition of injective function
+"<div>[$]\forall g \ne h \ \ f(g) \ne f(h)[/$]</div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><img src=""20130401-0104-4699wiy.screenshot.png"" style=""max-width: 90%; "" /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><img src=""illustration_of_injection.hCK7v6K4.png"" />"
+algebra set_theory
+
+definition of surjective function
+"<div>[$]\forall y \ \exists x: f(x) = y[/$]</div><div><br /></div><div><br /></div><div><img src=""20130401-0105-4699v2H.screenshot.png"" /></div><div><br /></div><div><br /></div><img src=""illustration_of_surjection.hCK7v6K4.png"" />"
+algebra set_theory
+
+definition of bijective function
+"<div>bijective is injective and surjective</div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div>a bijective function gives an exact pairing of the elements of two sets</div><div><br /></div><img src=""illustration_of_bijection.hCK7v6K4 (1).png"" />"
+algebra set_theory
+
+
+Euclidian algorithm
+see my notes
+
+
+Bezout's identity
+see my notes
+
+
+linear Diophantine equations
+see my notes
+
+
+
+
+
+=======================
+
+how to construct [$]\sqrt{x}[/$]&nbsp;using compass and ruler, when 1 is given
+***
+complex_numbers geometry
+
+how to get rid of complex number in denominator<div><br /></div><div>[$$]\frac{(5+i)(7-6i)}{3+i} = ?[/$$]</div>
+[$$]\frac{(5+i)(7-6i)}{3+i} = \frac{(5+i)(7-6i)}{3+i} \cdot \frac{3-i}{3-i} = \frac{(5+i)(7-6i)(3-i)}{3^2 - i^2} = \frac{(5+i)(7-6i)(3-i)}{10} = \cdots[/$$]
+algebra complex_numbers example
+
+
+z is a complex number.&nbsp;<div><br /></div><div>[$]\frac{1}{z} = \ ?[/$]</div>
+[$]\frac{1}{z}=\frac{1}{z} \cdot \frac{\bar{z}}{\bar{z}}=\frac{\bar{z}}{|z|^2}[/$]
+algebra complex_numbers
+
+polar form of a complex number&nbsp;[$]z=a+ib[/$]
+[$]z=a+bi=r(\cos\varphi+i\sin\varphi)[/$]
+algebra complex_numbers
+
+[$]z=r(\cos\varphi+i\sin\varphi)[/$]<div><br /></div><div>[$]z^n = ?[/$]</div>
+[$]z^n=r^n(\cos n\varphi+i\sin n\varphi)[/$]
+algebra complex_numbers
+
+[$]e^{ix} = \ ?[/$]
+[$]e^{ix} = \cos x + i\sin x[/$]<div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div>[$]e^{ix}e^{iy} = e^{i(x+y)}[/$]</div><div><br /></div><div>[$]\left( e^{ix} \right)^n = e^{inx} = e^{i(nx)} = \cos (nx) + i\sin (nx)[/$]</div>
+algebra complex_numbers
+
+[$]z=r(\cos\varphi+i\sin\varphi)[/$]<div><br /></div><div>[$]\sqrt[n]{z} = \ ?[/$]</div>
+"[$]z^{1/n}=[r(\cos (\varphi+2\pi k) +i\sin (\varphi+2\pi k))]^{1/n} = r^{1/n}\left(\cos \frac{\varphi+2\pi k}{n} +i\sin \frac{\varphi+2\pi k}{n}\right)[/$]<div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div><br /></div><div>illustration for&nbsp;[$](\cos\frac{\pi}{4}+i\sin\frac{\pi}{4})^{1/3}[/$]</div><div><img src=""algebra.org.20120913-0945-15871Mqh.screenshot.png"" />&nbsp;<img src=""algebra.org.20120913-0945-15871Z0n.screenshot.png"" /></div>"
+algebra complex_numbers
+
+[$]\sqrt{a+ib} = \ ?[/$]
+[$]\sqrt{a+ib} \ \ = \ \ \pm\left(\sqrt{\frac{\sqrt{a^2 + b^2} + a}{2}} \ + \ i \operatorname{sgn} b \cdot \sqrt{\frac{\sqrt{a^2 + b^2} - a}{2}}\right)[/$]
+algebra complex_numbers
+
+solve equation<div><br /></div><div>[$]z^2 + (2i-7)z + 13-i = 0[/$]</div>
+[$]z_1 = 5-3i[/$], [$]z_2 = 2+i[/$]
+algebra complex_numbers

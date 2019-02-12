@@ -7,17 +7,23 @@ layout: default
 * this line gets replaced with the generated table of contents
 {:toc}
 
-# ?
 
-- Q: In a set of vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ find a basis and express others as linear combinations.
-A: 
+# In a set of vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ find a basis and express others as linear combinations. Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
 
-- Q: Find some basis in a span $V = \langle v_1, \ldots ,v_m \rangle$, where $v_i \in \mathbb{R}$.
+SL-
 
-- Q: Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldots , e_n$.
+To find some basis, put vectors in matrix horizontally and get reduced row echelon form.
 
-- Q: Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$.
-A: TODO: <https://en.wikipedia.org/wiki/System_of_linear_equations#Homogeneous_systems>
+To find out what vectors in a set form a basis and express others a linear combination, put them in matrix vertically and get row echelon form.
+
+# Extend a set of linear independent vectors $v_1, \ldots, v_m \in \mathbb{R^n}$ to basis of the $\mathbb{R^n}$ using standard basis vectors $e_1, \ldots , e_n$.
+
+SL-
+
+Put them in matrix horizontally and get reduced row echelon form.
+<https://math.stackexchange.com/questions/465870/how-to-extend-a-basis>
+
+# Find solutions of homogeneous system $Ax=0$, where $A \in \mathrm{M}_{mn}(\mathbb{R})$
 
 Every homogeneous system has at least the zero solution.
 
@@ -38,44 +44,83 @@ $$
 $u_1 = \begin{pmatrix}{-a_{51}}&{-a_{52}}&{0}&{-a_{53}}&{1}\end{pmatrix}$
 $u_2 = \begin{pmatrix}{-a_{31}}&{-a_{32}}&{1}&{0}&{0}\end{pmatrix}$
 
-- Q: Find basis in null space of matrix, i.e., ${x \vert Ax = 0}$.
+## Relation to nonhomogeneous systems
 
-- Q: Express a vector space $V = \langle v_1, \ldots ,v_m \rangle, \  v_i \in \mathbb{R^n}$ as matrix equation $Ax = 0$. I.e., $V = \{ x \vert Ax = 0 \}$. 
+$Ax = b$
+$Ax = 0$
 
-- Q: Change of basis for vector and for matrix.
+Let's say $p$ is a solution to the first one: $Ap = b$.
+Then the entire solution set is $\{p + v \vert Av = 0\}$, because $A(p+v) = Ap + Av = b$
 
-- Q: Find sum and intersection of vetror subspaces $V = \langle v_1,\ldots,v_m\rangle$, $U = \langle u_1,\ldots,u_k\rangle$, where $v_i, u_j\in \mathbb{R^n}$.
-Find sum and intersection of vetror subspaces when they are expressed as matrix equations.
+# Find basis in null space of matrix, i.e., ${x \vert Ax = 0}$
 
-- Q: Find projection of a vector on a subspace along another subspace.
-Find projection operator on subspace along another subspace.
 
-- Q: Find out if there is a linear operator $\phi\colon V\to U$ such that $\phi(v_i) = u_i$.
 
-- Q: Find basis of image and basis of kernel of linear map.
+# Express a vector space $V = \langle v_1, \ldots ,v_m \rangle, \  v_i \in \mathbb{R^n}$ as matrix equation $Ax = 0$. I.e., $V = \{ x \vert Ax = 0 \}$ 
 
-- Q: Change of basis of bilinear form.
 
-- Q: Polarization of quadratic form.
 
-- Q: Find left and right orthogonal complements to subspace.
+# Change of basis for vector and for matrix.
 
-- Q: Diagonilize a quadratic form. Find it's signature. Find it's signature using principal minors method. Silvester's criterion.
+
+# Check if there's a basis in which operator $\phi$ is represented as diagonal matrix
+
+SS- SL-
+
+<https://en.wikipedia.org/wiki/Diagonalizable_matrix>
+<file:///Users/alex/Dropbox/hse_math/linear_algebra 07 -- Seminar7.pdf#page=3>
+<https://math.stackexchange.com/questions/1469461/finding-the-basis-b-of-the-matrix-t-in-which-b-is-diagonal-i-think-ive-got-it>
+<https://math.stackexchange.com/questions/293172/linear-algebra-eigenvalues-and-diagonalizable-matrix>
+
+# Find sum and intersection of vetror subspaces $V = \langle v_1,\ldots,v_m\rangle$, $U = \langle u_1,\ldots,u_k\rangle$, where $v_i, u_j\in \mathbb{R^n}$
+
+
+
+# Find sum and intersection of vetror subspaces when they are expressed as matrix equations.
+
+$U = \{ x \vert Ax = 0 \}$, $U = \{ x \vert Bx = 0 \}$
+$U \cap V = \{ x \vert Ax = 0\,, Bx = 0 \}$
+$C' = \left(\frac{A}{B}\right)$
+Find linear linear independent set of vectors in $C'$, this is the matrix $C$ we need.
+
+# Find projection of a vector onto a subspace along another subspace, projection operator onto subspace along another subspace
+
+
+
+# Find out if there is a linear operator $\phi\colon V\to U$ such that $\phi(v_i) = u_i$
+
+
+
+# Find basis of image and basis of kernel of linear map
+
+
+
+# Change of basis of bilinear form
+
+$(f_1,\ldots,f_n) = (e_1,\ldots,e_n)C$
+
+$B' = C^T B C$
+
+# Polarization of quadratic form.
+
+# Find left and right orthogonal complements to subspace.
+
+# Diagonilize a quadratic form. Find it's signature. Find it's signature using principal minors method. Silvester's criterion.
 <https://en.wikipedia.org/wiki/Sylvester%27s_criterion>
 <file:///Users/alex/Disk.Yandex/DISK/Алгебра.by_Винберг.pdf#page=210>
 
-- Q: Gram–Schmidt process.
+# Gram–Schmidt process.
 
-- Q: Find operator of orthoprojection. Find orthoprojection of vector on subspace.
+# Find operator of orthoprojection. Find orthoprojection of vector on subspace.
 
-- Q: Find eigenvalues and eigenvectors.
+# Find eigenvalues and eigenvectors.
 
-- Q: Find value of parallelepiped $v_1, \ldots, v_k$.
+# Find value of parallelepiped $v_1, \ldots, v_k$.
 A: Find linear independent subset, get $\det G$, determinant of Gram matrix $G = (v_i, v_j)$.
 
-- Q: Find angle between vectors. Find angle and distance between vector and subspace.
+# Find angle between vectors. Find angle and distance between vector and subspace.
 
-- Q: Reduced SVD for horizontally oriented matrices. How to get SVD of vertically oriented matrices?
+# Reduced SVD for horizontally oriented matrices. What if an eigenvalue is zero? Are eigenvalues used once in \Lambda or repeated if their degree is not one? How to get SVD of vertically oriented matrices?
 A:
 $A = C \Lambda D^T$, but we only get reduced matrices.
 
@@ -89,6 +134,8 @@ $$
 {}&{}&{\sqrt{\sigma_k}}
 \end{pmatrix}
 $$
+
+If an eigenvalue is zero, we ignore it. Eigenvalues $\sqrt{\sigma_i}$ are repeated $n_i$ times in $\Lambda$.
 
 For each $\sigma_i$ orthogonalize and normalize basis of $(S - \sigma_i E) x = 0$, lets call them $v_1^i, \ldots, v_{n_i}^i$ (check yourself that their number is the degree $n_i$ of eigenvalue). Put these bases into columns of the $C$ matrix.
 
