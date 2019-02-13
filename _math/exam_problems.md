@@ -926,17 +926,15 @@ $$\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}.$$
 ------------------
 
 Show the following matrix has eigenvalues $0, 2 a_1, 2 a_2, 2 a_3$
-Hint how to find it: find eigenvalues for 2x2 matrix.
-Then for 2k matrix notice lines that are linearly dependent.
 
 $$
 \begin{pmatrix}
-a_1 & 0 & 0 & 0 & 0 & a_1 \\ 
-0 & a_2 & 0 & 0 & a_2 & 0 \\
-0 & 0 & a_3 & a_3 & 0 & 0 \\
-0 & 0 & a_3 & a_3 & 0 & 0 \\
-0 & a_2 & 0 & 0 & a_2 & 0 \\
-a_1 & 0 & 0 & 0 & 0 & a_1 
+a_1 &   &   &   &   & a_1 \\ 
+  & a_2 &   &   & a_2 &   \\
+  &   & a_3 & a_3 &   &   \\
+  &   & a_3 & a_3 &   &   \\
+  & a_2 &   &   & a_2 &   \\
+a_1 &   &   &   &   & a_1 
 \end{pmatrix}
 $$
 
