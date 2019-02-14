@@ -968,12 +968,18 @@ Then by "rotatable" we mean $A = VA^T$, since rotation is two reflections.
 Let's apply it on itself: $A = V A^T = V (V A^T)^T = V A V$.
 $V V = E$, so $V A = A V$, they commute, this fact is used below.
 
-We know that eigenvalues of symmetric matrices are orthogonal, this is 
+We know that eigenvalues of symmetric matrices are orthogonal.
+We don't use this fact, but we know this can be proven by using dot product: for any $A, x, y$ we have $(Ax, y) = (x, A^T y)$, this is literally $x^T A y$ written.
+Let's see what we get with "rotatable" matrices:
 $(Ax, y) = (x, A^T y)$
 $(Ax, y) = (x, (VA^T)^T y)$
 $(Ax, y) = (x, AV y)$
 $(Ax, y) = (x, V Ay)$
 
+So for any eigenvectors with non-zero eigenvalues $Ax = \am
+$(\lambda x, y)  = (x, H \mu y)$
+(x, y)  = (x, Hy)
+(x, Hy - y) = 0
 ### 8 -- [se- ss- sl- graphs]
 
 В неориентированном графе без петель и кратных ребер $2n$ вершин и $n^2+1$ ребро.
