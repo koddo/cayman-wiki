@@ -980,8 +980,8 @@ So for any eigenvectors with non-zero eigenvalues $Ax = \lambda x$ and $Ay = \la
 $(\lambda x, y)  = (x, H \mu y)$
 $k (x, y) = (x, Hy)$
 $(x, Hy - y) = 0$
-$\forall x \Rightarrow Hy = y$
-
+$\forall x \Rightarrow Hy - y = 0$
+Which is what we are looking for.
 
 ### 8 -- [se- ss- sl- graphs]
 
