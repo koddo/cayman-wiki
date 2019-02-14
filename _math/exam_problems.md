@@ -979,8 +979,12 @@ So for any eigenvectors with non-zero eigenvalue $Ax = \lambda x$ and $Ay = \lam
 $(\lambda x, y)  = (x, H \lambda y)$
 $(x, y) = (x, Hy)$
 $(x, Hy - y) = 0$
-$\forall x \Rightarrow Hy - y = 0$
+Here $x, y, Hy \in V_\lambda$, because, again, $A$ and $H$ commute, proof is below.
+$\forall x \in V_\lambda \ \Rightarrow \ Hy - y = 0$
 Which is what we are looking for.
+
+We only have to prove that commuting matrices $AB = BA$ have a property: if $x$ is an eigenvalue of $A$, then $Bx$ is one as well.
+$A(Bx) = BAx = B \lambda x = \lambda (Bx)$
 
 ### 8 -- [se- ss- sl- graphs]
 
