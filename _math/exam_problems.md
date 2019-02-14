@@ -952,11 +952,19 @@ $$
 
 We can thus construct a "rotatable" matrix with given values.
 
-(b) Let $V$ be matrix of horizon
-$%A = VA^T$%
+(b) Let $V$ be matrix of vertical reflection, for example:
 
-$%A = VA^{T} = V ( VA^{T} )^T = VAV$%
+$$
+V =
+\begin{pmatrix}
+  &   &   & 1 \\
+  &   & 1 &   \\
+  & 1 &   &   \\
+1 &   &   &   \\
+\end{pmatrix}
+$$
 
+Then by "rotatable" we mean $A = VA^T$, since rotation is two reflections.
 
 
 ### 8 -- [se- ss- sl- graphs]
