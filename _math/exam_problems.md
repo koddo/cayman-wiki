@@ -975,9 +975,9 @@ $(Ax, y) = (x, (VA^T)^T y)$
 $(Ax, y) = (x, AV y)$
 $(Ax, y) = (x, V Ay)$
 
-So for any eigenvectors with non-zero eigenvalues $Ax = \lambda x$ and $Ay = \lambda y$:
-$(\lambda x, y)  = (x, H \mu y)$
-$k (x, y) = (x, Hy)$
+So for any eigenvectors with non-zero eigenvalue $Ax = \lambda x$ and $Ay = \lambda y$:
+$(\lambda x, y)  = (x, H \lambda y)$
+$(x, y) = (x, Hy)$
 $(x, Hy - y) = 0$
 $\forall x \Rightarrow Hy - y = 0$
 Which is what we are looking for.
