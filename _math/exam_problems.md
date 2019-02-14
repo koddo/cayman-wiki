@@ -965,7 +965,14 @@ V =
 $$
 
 Then by "rotatable" we mean $A = VA^T$, since rotation is two reflections.
+Let's apply it on itself: $A = V A^T = V (V A^T)^T = V A V$.
+$V V = E$, so $V A = A V$, they commute, this fact is used below.
 
+We know that eigenvalues of symmetric matrices are orthogonal, this is 
+$(Ax, y) = (x, A^T y)$
+$(Ax, y) = (x, (VA^T)^T y)$
+$(Ax, y) = (x, AV y)$
+$(Ax, y) = (x, V Ay)$
 
 ### 8 -- [se- ss- sl- graphs]
 
