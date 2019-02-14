@@ -976,10 +976,13 @@ $(Ax, y) = (x, (VA^T)^T y)$
 $(Ax, y) = (x, AV y)$
 $(Ax, y) = (x, V Ay)$
 
-So for any eigenvectors with non-zero eigenvalues $Ax = \am
+So for any eigenvectors with non-zero eigenvalues $Ax = \lambda x$ and $Ay = \lambda y$:
 $(\lambda x, y)  = (x, H \mu y)$
-(x, y)  = (x, Hy)
-(x, Hy - y) = 0
+$k (x, y) = (x, Hy)$
+$(x, Hy - y) = 0$
+$\forall x \Rightarrow Hy = y$
+
+
 ### 8 -- [se- ss- sl- graphs]
 
 В неориентированном графе без петель и кратных ребер $2n$ вершин и $n^2+1$ ребро.
