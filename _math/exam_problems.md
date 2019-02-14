@@ -925,7 +925,7 @@ $$\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}.$$
 
 ------------------
 
-(a) Notice a simple "rotatabe" matrix has eigenvalues $0$ and $2a$:
+(a) Notice a simple "rotatable" matrix has eigenvalues $0$ and $2a$:
 
 $$
 \begin{pmatrix}
