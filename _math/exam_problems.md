@@ -925,8 +925,7 @@ $$\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}.$$
 
 ------------------
 
-(a) Рассмотрим простую "вращательную" матрицу 2х2, она переходит в себя при вращении относительно центра:
-Notice a simple "rotatabe" matrix has eigenvalues $0$ and $2a$:
+(a) Notice a simple "rotatabe" matrix has eigenvalues $0$ and $2a$:
 
 $$
 \begin{pmatrix}
