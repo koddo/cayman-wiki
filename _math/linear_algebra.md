@@ -717,6 +717,204 @@ TODO: do i need $F = Z_p$?
 TODO: do i need skew-symmetric bilinear functions? symplectic basic?
 
 
+# eigenvalues and eigenvectors
+
+** Eigenvectors and eigenvalues
+
+   
+                
+http://setosa.io/ev/eigenvectors-and-eigenvalues/
+    
+https://www.google.com/search?q=eigenvalue+explanation&ie=utf-8&oe=utf-8
+    
+http://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector
+http://math.stackexchange.com/questions/36815/a-simple-explanation-of-eigenvectors-and-eigenvalues-with-big-picture-ideas-of
+http://www.quora.com/What-is-the-best-way-to-intuitively-explain-what-eigenvectors-and-eigenvalues-are
+https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/
+http://anothermathgeek.hubpages.com/hub/What-the-Heck-are-Eigenvalues-and-Eigenvectors
+                
+
+"Eigen" is German for "peculiar to"
+some authors call these characteristic values and vectors
+
+[[file:.images/algebra.org.20121108-1456-402JmH.screenshot.png]]
+
+operator $\mathcal A$ has a scalar /eigenvalue/ $\lambda$ if there is a nonzero /eigenvector/ $x$ such that $Ax = \lambda x$
+
+
+if $\lambda$ is an eigenvalue of $A$ then $\lambda^k$ is an eigenvalue of $A^k$:  $Ax = \lambda x \ \Rightarrow \  A^k x = \lambda^k x$
+$A^k x = A^{k-1} \lambda x = \lambda A^{k-1} x = \cdots = \lambda^k x$
+
+
+if $x$ is an eigenvector, then $kx$ is an eigenvector too: $A(kx) = \lambda (kx)$
+
+*** eigenspace   
+/eigenspace/ associated with an eigenvalue $V^{\lambda} = \left\{ \ x \  : \  A x = \lambda x \  \right\}$ consists of $\boldsymbol 0$ and all eigenvectors associated with the eigenvalue
+eigenspace is a subspace since nonempty and $Ax = \lambda x, \  Ay = \lambda y \  \Rightarrow \  A(\alpha x + \beta y) = \lambda (\alpha x + \beta y)$
+
+eigenspaces are linearly independent
+i.e. eigenvectors corresponding to different eigenvalues are linearly independent
+
+$\dim V^{\lambda}$ is /geometric multiplicity/ of an eigenvalue $\lambda$
+
+*** characteristic polynomial
+The eigenvalues of a matrix A are precisely the solutions $\lambda$ to the equation
+$\det(A - \lambda I) = 0$
+
+$Ax = \lambda x \ \Leftrightarrow \ Ax - \lambda I x = 0  \ \Leftrightarrow \ (A - \lambda I) x = 0$
+If there exists an inverse $(A - \lambda I)^{-1}$ then both sides can be left-multiplied by it to obtain $x=0$. 
+Therefore, if $\lambda$ is such that $(A - \lambda I)$ is invertible, $\lambda$ cannot be an eigenvalue.
+If it is not invertible, $\lambda$ is an eigenvalue.
+
+$$\det(A-\lambda I) = \begin{vmatrix} a_{11} - \lambda & a_{12} & \ldots & a_{1n} \\ a_{21} & a_{22} - \lambda & \ldots & a_{2n} \\ \ldots & \ldots & \ldots & \ldots \\ a_{n1} & a_{n2} & \ldots & a_{nn} - \lambda \end{vmatrix}$$
+
+/characteristic polynomial/ $\chi_{\mathcal A}(t) = \det(tI - A)$             ( $= (-1)^n \, \det(A-tI)$ )
+The solutions of the /characteristic equation/ $\chi_A(t) = 0$ are precisely the eigenvalues.
+
+
+Two similar matrices have the same characteristic polynomial: $\chi_{C^{-1}AC} (t)=\chi_{A}(t)$
+/similar/: $C$ is invertible change of basis. $A' = C^{-1}AC$. Then $\det(tI - A') = \det(tC^{-1}IC - C^{-1}AC) = \det\left( C^{-1} (tI -A) C \right) = \det C^{-1} \det(tI - A) \det C = \det(tI - A)$
+
+We can assume $\chi_{\mathcal A}(t) = \chi_A(t)$
+characteristic polynominal does not depend on the choice of a basis
+
+**************** TODO [#B] prove $\chi_A(t) = t^n - \operatorname{tr}A \ t^{n-1} + \ldots + (-1)^n \det A$
+[[file:.images/algebra.org.20121113-2217-402pcW.screenshot.png]]
+
+:LOGBOOK:
+- Added [2012-12-27 Thu 16:07]
+:END:
+**************** END
+
+
+*** in practice
+in practice the characteristic polynomial is used rarely
+
+ironic thing is that the relationship between polynomial roots and eigenvalues is often exploited in the opposite direction
+roots of a polynomial, one approach is to construct its companion matrix, and then find its eigenvalues
+there are some methods that work by iteratively transforming the matrix in some way (e.g., Householder transformations, or Jacobi transformations)
+this approach is used in the root finder in the Chebfun system, for example --- it routinely finds roots of polynomials whose degrees are in the hundreds
+in some sense, finding eigenvalues is easier than finding polynomial roots --- certainly more high-quality numerical methods software is available to help out
+
+
+
+*** examples of getting eigenvalues and eigenvectore
+$$
+A =
+\begin{pmatrix}
+2 & 0 & 0 \\
+0 & 3 & 4 \\
+0 & 4 & 9
+\end{pmatrix}
+$$
+
+characteristic polynomial:
+
+$$
+\det (A-\lambda I) \ = \  
+\det \left(\begin{bmatrix}
+2 & 0 & 0 \\
+0 & 3 & 4 \\
+0 & 4 & 9
+\end{bmatrix} - \lambda
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}\right) \;=\;
+\det \begin{bmatrix}
+2 - \lambda & 0 & 0 \\
+0 & 3 - \lambda & 4 \\
+0 & 4 & 9 - \lambda
+\end{bmatrix} =  (2 - \lambda) \bigl[ (3 - \lambda) (9 - \lambda) - 16 \bigr] = \lambda^3 -14\lambda^2 + 35\lambda - 22
+$$
+
+eigenvalues are 1, 2, 11
+
+when we have eigenvalues, we can get corresponding eigenvectors from a system of linear equations:
+$Ax = \lambda x$
+
+
+
+
+
+another example
+$$A = \begin{bmatrix} 4 & 1\\6 & 3 \end{bmatrix}$$
+
+$\lambda_1 = 1, \ \lambda_2 = 6$
+
+$$\begin{bmatrix} 4 & 1\\6 & 3 \end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix} = 6 \cdot \begin{bmatrix}x\\y\end{bmatrix}$$
+
+$$
+\left\{\begin{matrix} 4x + {\ }y &{}= 6x\\6x + 3y &{}=6 y\end{matrix}\right.
+\quad\quad\quad
+$$
+
+$y = 2x$
+
+$\Rightarrow$ for an eigenvalue 6 the eigenvectors are $(a, 2a)$ for nonzero $a$
+
+*** properties of eigenvalues
+[$]f(x) = (x - \lambda_1)^{d_1} \ldots (x - \lambda_k)^{d_k}[/$] 
+[$]\operatorname{tr}(A) = d_1 \lambda_1 + \cdots + d_k \lambda_k[/$]
+
+$\det A = \prod \lambda_i$
+More generally, $\operatorname{tr}(A^k) = \sum \lambda_i^k$
+
+matrix is invertible $\iff$ no zero eigenvalue
+
+if $A$ is invertible, then eigenvalues of $A^{-1}$ are $\frac{1}{\lambda_1}, \ldots, \frac{1}{\lambda_n}$
+
+
+
+**************** TODO [#B] http://en.wikipedia.org/wiki/Eigenvalue_algorithm
+http://en.wikipedia.org/wiki/Divide-and-conquer_eigenvalue_algorithm 
+:LOGBOOK:
+- Added [2012-12-27 Thu 16:06]
+:END:
+**************** END
+
+
+**************** TODO [#B] see also Complexification of vector space. Vinberg 222
+:LOGBOOK:
+- Added [2012-12-27 Thu 16:05]
+:END:
+**************** END
+
+
+*** diagonizable
+diagonalizable matrices and maps are of interest because diagonal matrices are especially easy to handle: their eigenvalues and eigenvectors are known and one can raise a diagonal matrix to a power by simply raising the diagonal entries to that same power. 
+
+
+a square matrix is called /diagonalizable/ if it is similar to a diagonal matrix: $C^{-1} A C = D$
+linear operator is called /diagonalizable/ if there exists a basis with respect to which the operator is represented by a diagonal matrix
+
+linear operator is diagonalizable 
+$\iff$ 
+the sum of the dimensions of its eigenspaces is equal to $\operatorname{dim}V$ 
+$\iff$ 
+there exists a basis of $V$ consisting of eigenvectors.
+
+With respect to such a basis, operator will be represented by a diagonal matrix. The diagonal entries of this matrix are the eigenvalues.
+
+[[.images/algebra.org.20121114-0007-402pjK.screenshot.png]]
+Vinberg p226
+
+
+
+
+$P^{-1}AP = D$
+\begin{align*} A^k &= (PDP^{-1})^k = (PDP^{-1}) \cdot (PDP^{-1}) \cdots (PDP^{-1}) \\&= PD(P^{-1}P) D (P^{-1}P) \cdots (P^{-1}P) D P^{-1} \\&= PD^kP^{-1} \end{align*}
+
+
+*** illustration
+[[.images/20150601-1533-486w0z.image.jpg]]
+
+[[.images/20150601-1534-486i-C.image.png]]
+
+The  vertical axis here is sum-of-eigenvalues. The horizontal axis is  product-of-eigenvalues. So points on this "plane" could have come from a  high-dimensional matrix repeating on a system. It's helpful to know, due to theorems, that (1) the sum of diagonal entries = the sum of the eigenvalues, and (2) the product of diagonal entries = the determinant. So neither axis is super hard to compute.
+
+
 # superlearn
 
 - Q: <https://en.wikipedia.org/wiki/Lagrange_polynomial>
