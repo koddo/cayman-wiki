@@ -717,22 +717,15 @@ TODO: do i need $F = Z_p$?
 TODO: do i need skew-symmetric bilinear functions? symplectic basic?
 
 
-# eigenvalues and eigenvectors
+# Eigenvalues and Eigenvectors
 
-** Eigenvectors and eigenvalues
-
-   
-                
 http://setosa.io/ev/eigenvectors-and-eigenvalues/
-    
-https://www.google.com/search?q=eigenvalue+explanation&ie=utf-8&oe=utf-8
-    
+
 http://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector
 http://math.stackexchange.com/questions/36815/a-simple-explanation-of-eigenvectors-and-eigenvalues-with-big-picture-ideas-of
 http://www.quora.com/What-is-the-best-way-to-intuitively-explain-what-eigenvectors-and-eigenvalues-are
 https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/
 http://anothermathgeek.hubpages.com/hub/What-the-Heck-are-Eigenvalues-and-Eigenvectors
-                
 
 "Eigen" is German for "peculiar to"
 some authors call these characteristic values and vectors
@@ -748,7 +741,7 @@ $A^k x = A^{k-1} \lambda x = \lambda A^{k-1} x = \cdots = \lambda^k x$
 
 if $x$ is an eigenvector, then $kx$ is an eigenvector too: $A(kx) = \lambda (kx)$
 
-*** eigenspace   
+## eigenspace
 /eigenspace/ associated with an eigenvalue $V^{\lambda} = \left\{ \ x \  : \  A x = \lambda x \  \right\}$ consists of $\boldsymbol 0$ and all eigenvectors associated with the eigenvalue
 eigenspace is a subspace since nonempty and $Ax = \lambda x, \  Ay = \lambda y \  \Rightarrow \  A(\alpha x + \beta y) = \lambda (\alpha x + \beta y)$
 
@@ -757,7 +750,7 @@ i.e. eigenvectors corresponding to different eigenvalues are linearly independen
 
 $\dim V^{\lambda}$ is /geometric multiplicity/ of an eigenvalue $\lambda$
 
-*** characteristic polynomial
+## characteristic polynomial
 The eigenvalues of a matrix A are precisely the solutions $\lambda$ to the equation
 $\det(A - \lambda I) = 0$
 
@@ -778,16 +771,10 @@ Two similar matrices have the same characteristic polynomial: $\chi_{C^{-1}AC} (
 We can assume $\chi_{\mathcal A}(t) = \chi_A(t)$
 characteristic polynominal does not depend on the choice of a basis
 
-**************** TODO [#B] prove $\chi_A(t) = t^n - \operatorname{tr}A \ t^{n-1} + \ldots + (-1)^n \det A$
+TODO: [#B] prove $\chi_A(t) = t^n - \operatorname{tr}A \ t^{n-1} + \ldots + (-1)^n \det A$
 [[file:.images/algebra.org.20121113-2217-402pcW.screenshot.png]]
 
-:LOGBOOK:
-- Added [2012-12-27 Thu 16:07]
-:END:
-**************** END
-
-
-*** in practice
+## in practice
 in practice the characteristic polynomial is used rarely
 
 ironic thing is that the relationship between polynomial roots and eigenvalues is often exploited in the opposite direction
@@ -798,7 +785,7 @@ in some sense, finding eigenvalues is easier than finding polynomial roots --- c
 
 
 
-*** examples of getting eigenvalues and eigenvectore
+## examples of getting eigenvalues and eigenvectore
 $$
 A =
 \begin{pmatrix}
@@ -854,7 +841,7 @@ $y = 2x$
 
 $\Rightarrow$ for an eigenvalue 6 the eigenvectors are $(a, 2a)$ for nonzero $a$
 
-*** properties of eigenvalues
+## properties of eigenvalues
 [$]f(x) = (x - \lambda_1)^{d_1} \ldots (x - \lambda_k)^{d_k}[/$] 
 [$]\operatorname{tr}(A) = d_1 \lambda_1 + \cdots + d_k \lambda_k[/$]
 
@@ -867,22 +854,14 @@ if $A$ is invertible, then eigenvalues of $A^{-1}$ are $\frac{1}{\lambda_1}, \ld
 
 
 
-**************** TODO [#B] http://en.wikipedia.org/wiki/Eigenvalue_algorithm
+TODO: [#B] http://en.wikipedia.org/wiki/Eigenvalue_algorithm
 http://en.wikipedia.org/wiki/Divide-and-conquer_eigenvalue_algorithm 
-:LOGBOOK:
-- Added [2012-12-27 Thu 16:06]
-:END:
-**************** END
 
 
-**************** TODO [#B] see also Complexification of vector space. Vinberg 222
-:LOGBOOK:
-- Added [2012-12-27 Thu 16:05]
-:END:
-**************** END
+TODO: [#B] see also Complexification of vector space. Vinberg 222
 
 
-*** diagonizable
+## diagonizable
 diagonalizable matrices and maps are of interest because diagonal matrices are especially easy to handle: their eigenvalues and eigenvectors are known and one can raise a diagonal matrix to a power by simply raising the diagonal entries to that same power. 
 
 
@@ -907,7 +886,7 @@ $P^{-1}AP = D$
 \begin{align*} A^k &= (PDP^{-1})^k = (PDP^{-1}) \cdot (PDP^{-1}) \cdots (PDP^{-1}) \\&= PD(P^{-1}P) D (P^{-1}P) \cdots (P^{-1}P) D P^{-1} \\&= PD^kP^{-1} \end{align*}
 
 
-*** illustration
+## illustration
 [[.images/20150601-1533-486w0z.image.jpg]]
 
 [[.images/20150601-1534-486i-C.image.png]]
@@ -1352,3 +1331,8 @@ algebra eigenvector
 definition of vector space
 <br /><i>vector space V over field F is an abelian group (V, +) with multiplication by elements of F</i><br /><br />----------------------------------------------------------------------------------------------------------------------<br /><br /><br /><br /><br /><br /><br /><br /><br />vector space V over field F:<br /><br /><br /><br /><br />abelian group (V, +)<br /><br /><br /><br /><br />multiplication by elements of F<br /><br />[$]\lambda (a+b) = \lambda a + \lambda b[/$]<br /><br />[$](\lambda + \mu) a = \lambda a + \mu a[/$]<br /><br />[$]\lambda (\mu a) = (\lambda \mu) a[/$]<br /><br />[$]1 \cdot a = a[/$]
 algebra definition vector_space
+
+
+
+
+
