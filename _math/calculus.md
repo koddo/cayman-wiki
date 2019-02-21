@@ -249,10 +249,13 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 
 <!--- sl- --->
 
-$$\sum 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots = \frac{1}{1-q}$$
+$$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots \right) = \frac{1}{1-q}$$
 
-$$\sum 1
+$$\sum \left( 1 + 2 + 3 + \ldots + n \right) = \frac{(n+1)n}{2}$$
 
+$$\sum \left( 1 + 2^2 + 3^2 + 4^2 + \ldots + n^2 \right) = \frac{n(n+1)(2n+1)}{6}$$
+
+$$\sum \left( 1 + 2^3 + 3^3 + 4^3 + \ldots + n^3 \right) = \left( \frac{(n+1)n}{2} \right)^2$$
 
 # Questions
 
