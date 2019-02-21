@@ -245,6 +245,24 @@ $$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a^2} \rig
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx = \ ?$$
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \right|$$
 
+# Misc
+
+## Bernoulli's inequality
+
+<!--- sl- --->
+
+It approximates exponentiation of $1+x$:
+
+$$(1+x)^n \geq 1+nx$$ for $x \geq -1$
+
+Or this:
+
+$$(1+x_1)(1+x_2)\cdots(1+x_n) \ge 1+x_1+x_2+\ldots+x_n$$
+
+## More
+
+
+
 # Sequences
 
 <!--- sl- --->
@@ -252,6 +270,8 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 $$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots \right) = \frac{1}{1-q}$$, when $\vert q \vert \ < 1$
 
 $$\sum \left( 1 + 2 + 3 + \ldots + n \right) = \frac{(n+1)n}{2}$$
+
+$$\sum \left( 1 + 2 + 2^2 + 2^3 + 2^4 + 2^5 + \ldots + 2^{n-1} \right) = 2^n - 1$$
 
 $$\sum \left( 1 + 2^2 + 3^2 + 4^2 + \ldots + n^2 \right) = \frac{n(n+1)(2n+1)}{6}$$
 
@@ -270,6 +290,8 @@ $$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \ldots = \inf$$
 Alternating harmonic series --- special case of Taylor series of logarithm; it's conditionally convergent, not absolutely though, if rearranged the sum becomes different:
 
 $$1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + \ldots = \ln 2$$
+
+<https://en.wikipedia.org/wiki/Telescoping_series>
 
 
 
