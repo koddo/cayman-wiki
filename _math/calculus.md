@@ -263,7 +263,15 @@ $$\sum \left( 1 + 2^k + 3^k + 4^k + \ldots + n^k \right)$$ is a polynomial $p(k)
 
 <!--- sl- --->
 
-$$\lim_{n\to\inf} \left( 1 + \frac{1}{2} + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{n} \right) = \frac{(n+1)n}{2}$$
+Harmonic series, <https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)#Divergence>:
+
+$$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \ldots = \inf$$
+
+Alternating harmonic series --- special case of Taylor series of logarithm; it's conditionally convergent, not absolutely though, if rearranged the sum becomes different:
+
+$$1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + \ldots = \ln 2$$
+
+
 
 # Questions
 
