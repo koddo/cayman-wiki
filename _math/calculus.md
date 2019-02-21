@@ -225,17 +225,12 @@ $$\int \frac{1}{\operatorname{ch}^2 x} \; dx = \ ?$$
 $$\int \frac{1}{\operatorname{ch}^2 x} \; dx \ = \ \mathrm{th} x$$
 
 five special functions in calculus
+
 $$\int \frac{1}{\ln x} \; dx$$
-
-
 
 $$\int e^{x^2}\; dx$$
 
-
-
 $$\int \sin x^2 \; dx$$
-
-
 
 $$\int \frac{e^x}{x} \; dx$$
 
@@ -250,9 +245,23 @@ $$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a^2} \rig
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx = \ ?$$
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \right|$$
 
+# Sequences
+
+<!--- sl- --->
+
+$$\sum 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots = \frac{1}{1-q}$$
+
+$$\sum 1
+
 
 # Questions
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=multivariable calculus">
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- calculus -- sequences">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- calculus -- derivatives">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+
