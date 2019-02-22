@@ -266,7 +266,7 @@ Limit of summand: if $$\lim_{n \to \infty}a_n = 0$$ then converges.
 
 Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
 
-Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|},$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
+Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$
 
 Direct comparison: $|a_n|\le |b_n|$
 
@@ -285,6 +285,8 @@ Is it Taylor series?
 ## Root test
 
 <https://en.wikipedia.org/wiki/Root_test>
+
+$$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
 
 ## Telescoping test
 
@@ -334,7 +336,7 @@ $$\sum \left( 1 + 2^k + 3^k + 4^k + \ldots + n^k \right)$$ is a polynomial $p(k)
 
 Harmonic series, <https://en.wikipedia.org/wiki/Harmonic_series_(mathematics)#Divergence>:
 
-$$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \ldots = \inf$$
+$$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \ldots = \infty$$
 
 Alternating harmonic series --- special case of Taylor series of logarithm; it's conditionally convergent, not absolutely though, if rearranged the sum becomes different:
 
