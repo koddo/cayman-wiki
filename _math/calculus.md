@@ -300,7 +300,7 @@ Geometric series: $$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} 
 
 Alternating series $$\sum _{n=k}^{\infty }(-1)^{n}a_{n}$$
 
-Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
+Telescoping test: $$\sum_{n=1}^\infty \frac{1}{n(n+1)} = \sum_{n=1}^\infty \left( \frac{1}{n} - \frac{1}{n+1} \right)$$, summands cancel out in partial sums.
 
 Taylor series test: is it Taylor series?
 
