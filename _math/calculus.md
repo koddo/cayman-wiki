@@ -248,6 +248,8 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 # Series convergence
 
 <http://www.math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf>
+<http://www.toomey.org/tutor/harolds_cheat_sheets/Harolds_Series_Convergence_Tests_Cheat_Sheet_2016.pdf>
+
 <http://tutorial.math.lamar.edu/Classes/CalcII/SeriesStrategy.aspx>
 <http://www.furius.ca/cqfpub/doc/series/series.pdf>
 <http://www.toomey.org/tutor/harolds_cheat_sheets/Harolds_Calculus_Notes_Cheat_Sheet_2017.pdf>
