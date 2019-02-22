@@ -279,6 +279,8 @@ $$\sum \left( 1 + 2^3 + 3^3 + 4^3 + \ldots + n^3 \right) = \left( \frac{(n+1)n}{
 
 $$\sum \left( 1 + 2^k + 3^k + 4^k + \ldots + n^k \right)$$ is a polynomial $p(k)$ of degree $k+1$
 
+
+
 # Limits
 
 <!--- sl- --->
