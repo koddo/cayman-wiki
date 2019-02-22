@@ -262,7 +262,7 @@ Limit of summand: $$\lim_{n \to \infty}a_n \ne 0$$, then diverges.
 
 Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
 
-Root test: $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
+Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|},$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
 
 Direct comparison: $|a_n|\le |b_n|$
 
