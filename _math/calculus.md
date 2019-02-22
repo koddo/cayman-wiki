@@ -280,6 +280,8 @@ Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(
 
 Abel's test: $$\sum a_nb_n $$
 
+Cauchy condensation test: $$\sum_{n=0}^\infty 2^n a_{2^n}$$
+
 <br/>
 <br/>
 <br/>
@@ -301,6 +303,10 @@ $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$ or $$r=\limsup_{n\to \infty }{\sqrt
 <https://en.wikipedia.org/wiki/Telescoping_series>
 
 <https://math.stackexchange.com/questions/104918/how-to-analyze-convergence-and-sum-of-a-telescopic-series-i-cant-find-a-generi>
+
+## Abel's test
+
+<https://en.wikipedia.org/wiki/Abel's_test>
 
 # Misc
 
