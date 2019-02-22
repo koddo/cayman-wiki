@@ -266,17 +266,17 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 
 Nesessary condition: if $$\lim_{n \to \infty}a_n \ne 0$$ then diverges
 
-Absolute convergence: does $$\sum_{n=0}^\infty \left|a_n\right|$$ converge?
+Absolute convergence: does $$\sum_{n=0}^\infty \left\verta_n\right\vert$$ converge?
 
 Conditional convergence
 
 <br/>
 
-Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
+Ratio test: $$ \lim _{n\to \infty }\left\vert{\frac {a_{n+1}}{a_{n}}}\right\vert=r$$
 
-Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$
+Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{\verta_n\vert}$$
 
-Direct comparison: $|a_n|\le |b_n|$
+Direct comparison: $\verta_n\vert\le \vertb_n\vert$
 
 Limit comparision: $$\lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}$$
 
@@ -310,7 +310,7 @@ Taylor series test: is it Taylor series?
 
 <https://en.wikipedia.org/wiki/Root_test>
 
-$$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
+$$\lim_{n\rightarrow\infty}\sqrt[n]{\verta_n\vert}$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{\verta_{n}\vert}}$$
 
 ## Telescoping test
 
