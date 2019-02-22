@@ -270,9 +270,11 @@ Limit comparision: $$\lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}$$
 
 Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(x)\,dx<\infty$$
 
+<br/>
+<br/>
+<br/>
 
-
-Telescoping test: 
+Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, s
 
 ## Root test
 
