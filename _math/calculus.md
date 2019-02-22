@@ -258,6 +258,8 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 
 <!--- sl- --->
 
+## Summary
+
 Absolute convergence: does $$\sum_{n=0}^\infty \left|a_n\right|$$ converge?
 
 <br/>
@@ -286,6 +288,10 @@ Cauchy condensation test: $$\sum_{n=0}^\infty 2^n a_{2^n}$$
 <br/>
 <br/>
 
+p-series
+
+geometric series
+
 Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
 Taylor series test: is it Taylor series?
@@ -303,6 +309,10 @@ $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$ or $$r=\limsup_{n\to \infty }{\sqrt
 <https://en.wikipedia.org/wiki/Telescoping_series>
 
 <https://math.stackexchange.com/questions/104918/how-to-analyze-convergence-and-sum-of-a-telescopic-series-i-cant-find-a-generi>
+
+## Cauchy condensation test
+
+<https://en.wikipedia.org/wiki/Cauchy_condensation_test>
 
 ## Abel's test
 
