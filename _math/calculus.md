@@ -268,6 +268,8 @@ Direct comparison: $|a_n|\le |b_n|$
 
 Limit comparision: $$\lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}$$
 
+Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(x)\,dx<\infty$$
+
 ## Root test
 
 <https://en.wikipedia.org/wiki/Root_test>
