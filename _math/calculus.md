@@ -264,7 +264,9 @@ Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
 
 Root test: $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
 
-Direct comparison: 
+Direct comparison: $|a_n|\le |b_n|$
+
+Limit comparision: $$\lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}$$
 
 ## Root test
 
