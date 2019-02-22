@@ -276,6 +276,8 @@ Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(
 
 Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
+Is it Taylor series of something?
+
 ## Root test
 
 <https://en.wikipedia.org/wiki/Root_test>
