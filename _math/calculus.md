@@ -258,11 +258,11 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 
 <!--- sl- --->
 
-Absolute convergence
+Absolute convergence: does $$\sum_{n=0}^\infty \left|a_n\right|$$ converge?
 
 <br/>
 
-Limit of summand: $$\lim_{n \to \infty}a_n \ne 0$$, then diverges.
+Limit of summand: if $$\lim_{n \to \infty}a_n = 0$$ then converges.
 
 Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
 
