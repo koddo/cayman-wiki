@@ -274,11 +274,17 @@ Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(
 <br/>
 <br/>
 
-Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, s
+Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
 ## Root test
 
 <https://en.wikipedia.org/wiki/Root_test>
+
+## Telescoping test
+
+<https://en.wikipedia.org/wiki/Telescoping_series>
+
+<https://math.stackexchange.com/questions/104918/how-to-analyze-convergence-and-sum-of-a-telescopic-series-i-cant-find-a-generi>
 
 # Misc
 
