@@ -296,7 +296,7 @@ Harmonic series: $$\sum n^p$$ converges if $p>1$, diverges if $p \le 1$
 
 Geometric series: $$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots \right) = \frac{1}{1-q}$$, when $\vert q \vert \ < 1$
 
-Alternating series 
+Alternating series $$\sum _{n=k}^{\infty }(-1)^{n}a_{n}$$
 
 Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
