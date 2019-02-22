@@ -256,6 +256,12 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 <https://www.math.wvu.edu/~hjlai/Teaching/Math156_Website/Series Cheat Sheet.pdf>
 <https://www.math.hmc.edu/calculus/tutorials/convergence/>
 
+<!--- sl- --->
+
+Limit of summand: $\lim_{n \to \infty}a_n \ne 0$, then diverges.
+
+
+
 # Misc
 
 ## Bernoulli's inequality
