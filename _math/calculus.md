@@ -245,6 +245,15 @@ $$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a^2} \rig
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx = \ ?$$
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \right|$$
 
+# Series convergence
+
+<http://www.math.hawaii.edu/~ralph/Classes/242/SeriesConvTests.pdf>
+<http://tutorial.math.lamar.edu/Classes/CalcII/SeriesStrategy.aspx>
+<http://www.furius.ca/cqfpub/doc/series/series.pdf>
+<http://www.toomey.org/tutor/harolds_cheat_sheets/Harolds_Calculus_Notes_Cheat_Sheet_2017.pdf>
+<https://www.math.wvu.edu/~hjlai/Teaching/Math156_Website/Series Cheat Sheet.pdf>
+<https://www.math.hmc.edu/calculus/tutorials/convergence/>
+
 # Misc
 
 ## Bernoulli's inequality
