@@ -278,9 +278,17 @@ Integral test: $$\int _{1}^{\infty }f(x)\,dx=\lim _{t\to \infty }\int _{1}^{t}f(
 <br/>
 <br/>
 
+Abel's test: $$\sum a_nb_n $$
+
+<br/>
+<br/>
+<br/>
+
 Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
-Is it Taylor series?
+Taylor series test: is it Taylor series?
+
+
 
 ## Root test
 
