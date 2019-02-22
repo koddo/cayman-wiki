@@ -290,7 +290,9 @@ Cauchy condensation test: $$\sum_{n=0}^\infty 2^n a_{2^n}$$
 
 p-series
 
-geometric series
+Geometric series
+
+Alternating series
 
 Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
 
