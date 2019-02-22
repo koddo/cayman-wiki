@@ -256,6 +256,8 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 <https://www.math.wvu.edu/~hjlai/Teaching/Math156_Website/Series Cheat Sheet.pdf>
 <https://www.math.hmc.edu/calculus/tutorials/convergence/>
 
+<http://infotables.ru/matematika/66-ryady/628-priznaki-skhodimosti-chislovogo-ryada-tablitsa>
+
 <!--- sl- --->
 
 ## Summary
