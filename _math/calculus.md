@@ -264,6 +264,12 @@ Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
 
 Root test: $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
 
+Direct comparison: 
+
+## Root test
+
+<https://en.wikipedia.org/wiki/Root_test>
+
 # Misc
 
 ## Bernoulli's inequality
