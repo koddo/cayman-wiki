@@ -290,7 +290,7 @@ Cauchy condensation test: $$\sum_{n=0}^\infty 2^n a_{2^n}$$
 <br/>
 <br/>
 
-p-series
+Harmonic series
 
 Geometric series
 
