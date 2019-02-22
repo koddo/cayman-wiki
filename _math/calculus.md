@@ -266,6 +266,8 @@ Nesessary condition: if $$\lim_{n \to \infty}a_n \ne 0$$ then diverges
 
 Absolute convergence: does $$\sum_{n=0}^\infty \left|a_n\right|$$ converge?
 
+Conditional convergence
+
 <br/>
 
 Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
@@ -290,7 +292,7 @@ Cauchy condensation test: $$\sum_{n=0}^\infty 2^n a_{2^n}$$
 <br/>
 <br/>
 
-Harmonic series
+Harmonic series: $$\sum n^p$$ converges if $p>1$, diverges if $p \le 1$ 
 
 Geometric series
 
@@ -343,8 +345,6 @@ $$(1+x_1)(1+x_2)\cdots(1+x_n) \ge 1+x_1+x_2+\ldots+x_n$$
 # Sequences
 
 <!--- sl- --->
-
-$$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} \ldots \right) = \frac{1}{1-q}$$, when $\vert q \vert \ < 1$
 
 $$\sum \left( 1 + 2 + 3 + \ldots + n \right) = \frac{(n+1)n}{2}$$
 
