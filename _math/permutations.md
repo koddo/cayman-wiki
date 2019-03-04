@@ -157,6 +157,107 @@ Properties of parity:
 
 # conjugation
 
+<http://unapologetic.wordpress.com/2010/09/10/conjugates/>
+
+$g \  (a_1\,\dots\,a_k) \  g^{-1} \quad = \quad (g(a_1)\,\dots\,g(a_k))$
+because when $h = g \, f \, g^{-1}$
+$h(g(1)) = g(f(g^{-1}(g(1)))) = g(f(1))$
+
+
+Example
+Any permutation can be written as a product of cycles: (1 2) (1 2 3 ... n)
+
+(1 2 3 ... n)^1 (1 2) (1 2 3 ... n)^{-1} = (2 3)
+(1 2 3 ... n)^k (1 2) (1 2 3 ... n)^{-k} = (k+1 k+2)
+
+this can be seen directly or with using properties of conjugates:
+(1 2) = (1 2)(3)...(n) conjugated with (1 2 3 ... n) is (2 3) (4) ... (n-1) (1) 
+
+
+now we have (1 2), (2 3), (3 4), ... , (n-1 n)
+(3 7)  =  (3 4) (4 5) (5 6) (6 _7_)   (6 5) (5 4) (4 3)
+
+now we have all transpositions
+
+http://math.berkeley.edu/~scanez/courses/math113/homework/hw3-solns.pdf
+http://mathhelpforum.com/advanced-algebra/56719-permutations-1x-123-n-generate-sn.html
+http://mathforum.org/library/drmath/view/51685.html
+
+
+
+Theorem. Permutations conjugate $\iff$ they have the same cycle structure.
+i.e. they consist of $n_1$ cycles of length $l_1$, ... , $n_k$ cycles of length $l_k$
+
+Begin proof. 
+
+$\boxed{\Rightarrow}$
+$\sigma(i) = k$
+$\left(\pi \sigma \pi^{-1}\right) \left(\pi(i)\right) = \pi(k)$  
+  
+e.g.
+$\pi \ \cdot \ \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix} 4 & 5\end{pmatrix} \ \cdot \ \pi^{-1} \ = \ \left( \begin{smallmatrix}\pi(1) & \pi(2) & \pi(3)\end{smallmatrix} \right) \left( \begin{smallmatrix}\pi(4) & \pi(5)\end{smallmatrix}  \right)$
+
+
+$\boxed{\Leftarrow}$
+we can easily get conjugating permutation of two permutations with same structure
+by just writing one under another
+
+$$
+\begin{align*}
+\sigma &= \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix}4 & 5\end{pmatrix} \\
+\pi \sigma \pi^{-1} &= \begin{pmatrix}1 & 5 & 2\end{pmatrix} \begin{pmatrix}3 & 4\end{pmatrix} \\
+\\
+\Rightarrow \pi &=  \begin{pmatrix}2 & 5 & 4 & 3\end{pmatrix}
+\end{align*}
+$$
+
+End proof.
+
+
+
+Find number of permutations in $S_{10}$ that conjugate with (1 3 5 7 9)(2)(4)(6)(8)(10)
+  
+  
+$\rho \tau = \tau \sigma \iff \rho = \tau \sigma \tau^-1$
+permutations conjugate $\iff$ they have the same cycle structure
+i.e. they consist of $n_1$ cycles of length $l_1$, ... , $n_k$ cycles of length $l_k$
+(1 2 3)(4 5)(6)(7)
+(1 5 2)(3 4)(7)(6)
+  
+  
+  
+  
+now, how many permutations $\tau$ such that $\rho = \sigma = \tau \sigma \tau^-1$?
+  
+the permutations in $S_6$ that commute with (123)(456) will either map 
+(123) and (456) to themselves or interchange them
+because disjoint cycles commute
+  
+giving total $3^2 \cdot 2!$ different permutations $\tau$ that commute with our (1 2 3)(4 5 6)
+  
+illustration for the method
+  
+(1 2 3)(4 5 6)
+(2 3 1)(4 5 6)
+(3 1 2)(4 5 6)
+  
+(1 2 3)(5 6 4)
+(2 3 1)(5 6 4)
+(3 1 2)(5 6 4)
+  
+(1 2 3)(5 6 4)
+(2 3 1)(5 6 4)
+(3 1 2)(5 6 4)
+  
+and the same if we interchange them --- (4 5 6)(1 2 3)
+  
+  
+  
+  
+and in general 
+$\sigma \ = \  \prod \ n_i \  \text{cycles of length} \  l_i$
+then the centralizer
+$|C_\sigma| \  = \  \prod {l_i}^{n_i} \, {n_i}!$
 
 
 
