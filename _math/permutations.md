@@ -207,7 +207,7 @@ put a instead of 1:
 - Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$
 A: <file:///Users/alex/Dropbox/hse_math/linear_algebra 04 -- Comments_permtation_root.pdf>
 
-- Q: Compute $\sigma^2019$
+- Q: Compute $\sigma^{2019}$
 A: Disjoint cycles decomposition, then $(1 \ \ldots \ n)^k = ()()()$ --- it breaks into $\frac{n}{\operatorname{gcd}(n, k)}$ parts, with $\operatorname{gcd}(n, k)$ elements in each part. 
 $(1 \ 2 \ 3 \ 4 \ 5 \ 6)^2 = (1 \ 3 \ 5)(2 \ 4 \ 6)$
 
