@@ -6,7 +6,7 @@ layout: default
 
 # mindmap
 
-!(permutations-mindmap.svg)[permutations-mindmap.svg]
+![img/permutations-mindmap.svg](img/permutations-mindmap.svg)
 
 # permutations, their properties
 
