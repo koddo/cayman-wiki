@@ -260,6 +260,16 @@ then the centralizer
 $|C_\sigma| \  = \  \prod {l_i}^{n_i} \, {n_i}!$
 
 
+algorithm --- number of inversions
+how to get number of inversions in an array in $O(n \log n)$
+The only moment when inversions are removed is when algorithm takes element from the right side of an array and merge it to the main array.
+The number of inversions removed by this operation is the number of elements left from the the left array to be merged.
+| merged | left      | right          | comment                                                                |
+| ( )    | (1 3 5 8) | (2 4 6 7 9 11) |                                                                        |
+| (1)    | (3 5 8)   | (2 4 6 7 9 11) |                                                                        |
+| (1 2)  | (3 5 8)   | (4 6 7 9 11)   | all elts in left array where greater that 2, then 3 inversions removed |
+   
+you can do the same with quicksort, but it's $O(n^2)$ in the worst case
 
 
 
@@ -313,8 +323,6 @@ A: Disjoint cycles decomposition, then $(1 \ \ldots \ n)^k = ()()()$ --- it brea
 $(1 \ 2 \ 3 \ 4 \ 5 \ 6)^2 = (1 \ 3 \ 5)(2 \ 4 \ 6)$
 
 - Q: <https://en.wikipedia.org/wiki/Vandermonde_matrix>
-
-- Q: How to solve $x^2 = \sigma$?
 
 - Q: Every $n$-cycle can be expressed as product of $n−1$ transpositions.
 
