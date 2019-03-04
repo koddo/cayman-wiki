@@ -4,6 +4,10 @@ layout: default
 
 ---
 
+# mindmap
+
+!(permutations-mindmap.svg)[permutations-mindmap.svg]
+
 # permutations, their properties
 
 $$
@@ -279,7 +283,7 @@ you can do the same with quicksort, but it's $O(n^2)$ in the worst case
     <p>Your browser does not support iframes.</p>
 </iframe>
 
-- Q: 
+- Q: How to get number of inversions in an array in $O(n \log n)$?
 
 - Q: Properties of parity
   - $\operatorname{sgn}(\sigma \tau) = ?$
