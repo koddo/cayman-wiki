@@ -220,7 +220,7 @@ $(1 \ 2 \ 3 \ 4 \ 5 \ 6)^2 = (1 \ 3 \ 5)(2 \ 4 \ 6)$
 - Q: How to find parity of a permutation?
 A: Using disjoing cycles, using decremtn.
 
-- Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^17$.
+- Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^{17}$.
 
 - Q: prove that permutations conjugate $\iff$ they have the same cycle structure
 A:
