@@ -533,7 +533,9 @@ $$T(n) \leqslant T(\lfloor \sqrt{n} \rfloor ) + 1,\;\;\; T(1) = C_1 (\textrm{con
 
 Рассмотрим четыре реализации одной и той же функции на языке программирования \textit{python}. Определите, что должна вычислять функция. 
 Какие из реализаций работают корректно?\\
-(a) \begin{lstlisting}
+(a)
+$$
+\begin{lstlisting}
 def solve(n, k):
     if n < 0 or k < 0 or k > n: return 0
     if n == 0 or k == 0 or n == k: return 1
@@ -544,7 +546,10 @@ def solve(n, k):
         s += solve(n - step, i * solve(step, k - i)
     return s
 \end{lstlisting}
-(b) \begin{lstlisting}
+$$
+(b) 
+$$
+\begin{lstlisting}
 def solve(n, k):
     A = [ 0 for i in range(n+1) ]
     for s in range(16**n)
@@ -556,7 +561,9 @@ def solve(n, k):
         A[odd] += 1
     return A[k] // 2**(3*n)
 \end{lstlisting}
-(c) \begin{lstlisting}
+$$
+(c) 
+$$\begin{lstlisting}
 def solve(n, k):
     if k == 0 or n == k: return 1
     return solve(n + 1, k) - solve(n, k - 1)
@@ -566,6 +573,8 @@ def solve(n, k):
     if k == 0 or n == k: return 1
     return solve(n, k + 1) * (k + 1) // (n - k)
 \end{lstlisting}
+$$
+
 \textit{Замечание.} Некоторые разъяснения к синтаксису \textit{python}.\\
 --- \lstinline!range(x)! возвращает массив \lstinline![0,1,...,x-1]!\\
 --- \lstinline!**! возведение в степень, например, \lstinline!2**5 == 32!\\
