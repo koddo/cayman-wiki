@@ -29,3 +29,6 @@ The problem is that we sometimes want to distinguish truthy values like `True`, 
 
 
 <https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc>
+<https://www.reddit.com/r/Python/comments/6cvx0s/the_meaning_of_underscores_in_python>
+
+
