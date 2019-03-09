@@ -28,3 +28,4 @@ The problem is that we sometimes want to distinguish truthy values like `True`, 
 `if var is True: ...` actually works, but relies on 
 
 
+<https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc>
