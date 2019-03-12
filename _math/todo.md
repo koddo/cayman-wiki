@@ -34,3 +34,24 @@ Probability of meeting at bar
 <http://www.cyberforum.ru/statistics/thread2120439.html>
 <https://math.stackexchange.com/questions/266129/if-n-people-randomly-pick-one-hat-out-of-n-hats-why-is-the-probability-of-a-m>
 <https://math.stackexchange.com/questions/922473/n-people-n-hats-probability-that-at-least-1-person-has-his-own-hat?rq=1>
+
+# Linear algebra
+
+Projection operator: $B^2 = B$.
+
+Eigenvalues and eigenvectors, which can't be zero?
+
+Diagonizable 
+matrix is diagonalizable <=> the sum of the dimensions of its eigenspaces is equal to n
+     <=> if its minimal polynomial is a product of distinct linear factors
+И еще:
+   matrix has n distinct eigenvalues => diagonalizable 
+
+
+
+https://koddo.github.io/cayman-wiki/math/exam_problems#1--se--ss--sl--recurrency
+https://koddo.github.io/cayman-wiki/math/exam_problems#1--se-ss--sl--calculus
+https://koddo.github.io/cayman-wiki/math/exam_problems#5--se--ss--sl--calculus-5
+
+что такое оператор проекции?
+https://efiminem.github.io/supershad/02-06-2018/ -- 6

@@ -89,3 +89,22 @@ _Greedy_ learning algorithm -- <https://en.wikipedia.org/wiki/ID3_algorithm>
 
 11. Stacking and blending -- <https://en.wikipedia.org/wiki/Ensemble_learning#Stacking>
 <https://stats.stackexchange.com/questions/18891/bagging-boosting-and-stacking-in-machine-learning>
+
+12. Clasterization.
+<https://scikit-learn.org/stable/modules/clustering.html>
+<http://www.machinelearning.ru/wiki/index.php?title=Кластеризация>
+<https://neerc.ifmo.ru/wiki/index.php?title=Кластеризация>
+Evaluation
+<https://en.wikipedia.org/wiki/Cluster_analysis#Evaluation_and_assessment>
+<https://neerc.ifmo.ru/wiki/index.php?title=Оценка_качества_в_задаче_кластеризации>
+Methods: K-means, Graph-based models, Hierarchical clustering
+<https://en.wikipedia.org/wiki/Category:Cluster_analysis_algorithms>
+
+13. Visualization
+t-SNE, <https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding>
+<https://www.coursera.org/lecture/unsupervised-learning/zadacha-vizualizatsii-hlvlT>
+more:
+<https://www.reddit.com/r/dataisbeautiful/comments/2o5qbu/interactive_subreddit_map_with_tsne_oc/>
+<https://www.reddit.com/r/MachineLearning/comments/5ygh1q/d_data_preprocessing_tips_for_tsne/>
+<https://www.reddit.com/r/MachineLearning/comments/70wlnm/p_want_to_understand_tsne_better_heres_a/>
+<https://www.reddit.com/r/MachineLearning/comments/57gios/project_how_to_use_tsne_effectively/>
