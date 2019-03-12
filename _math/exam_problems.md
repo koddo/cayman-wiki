@@ -7,19 +7,20 @@ layout: default
 * this line gets replaced with the generated table of contents
 {:toc}
 
-# print
+# TODO
 
-<https://en.wikipedia.org/wiki/Rank_(linear_algebra)#Properties>
-<https://en.wikipedia.org/wiki/Trace_(linear_algebra)>
+2013 3 7 рассмотреть однородные компоненты многочлена, дальше лин алгебра -- https://efiminem.github.io/supershad/26-05-2013/ -- 7
+2017 2 8 это дифференцирование сохраняет степени многочленов. посмотри как оно ействует в мн-нах степени 1 -- https://efiminem.github.io/supershad/27-05-2017/ -- 8
 
-<https://en.wikipedia.org/wiki/List_of_limits>
-<https://en.wikipedia.org/wiki/Squeeze_theorem>
+se+ 2014 1 7 принцип дирихле -- https://efiminem.github.io/supershad/25-05-2014/ -- 7
+https://dxdy.ru/topic97893.html
 
-<https://en.wikipedia.org/wiki/Differentiation_rules>
-<https://en.wikipedia.org/wiki/Limit_of_a_sequence#Properties>
-<https://en.wikipedia.org/wiki/Indeterminate_form>
-<https://en.wikipedia.org/wiki/Taylor_series>
-<https://en.wikipedia.org/wiki/Limit_of_a_function#Properties>
+*2016 3 2 нужно почитать про многочлены в курсе алгебры. понятие алгебраического целого числа -- https://efiminem.github.io/supershad/21-05-2016/ -- 2
+https://en.wikipedia.org/wiki/Algebraic_integer, https://ru.wikipedia.org/wiki/Целое_алгебраическое_число
+
+2018 2 6 собственные числа из хар. многочлена, на R можно построить когнтрпример -- https://efiminem.github.io/supershad/02-06-2018/ -- 6
+
+
 
 # 2012
 
@@ -231,21 +232,29 @@ $$\sum_{i=1}^n \frac{f(n)}{n(n+1)},$$
 
 ## 09-06-2013
 
-### 1 -- [se+ ss- sl- calculus]
+### 1 -- [se+ ss+ sl+ calculus]
 
 Последовательность $\{a_n\}_{n=0}^\infty$ определена рекурсивно:
 $$a_0=1, \;\;\;\;\;\;\; a_{n+1} = \frac{a_n}{1 + na_n}.$$
 Найдите формулу общего члена последовательности.
 
-### 2 -- [se- ss- sl- ll-]
+### 2 -- [se+ ss- sl- ll-]
 
 Дано множество $A=\{1,2,\ldots,n\}$. Среди всех его подмножеств рановероятно выбирается $k$ его подмножеств. 
 Найдите вероятность того, что $A_1 \cap A_2 \cap \ldots \cap A_k = \varnothing$.
 
-### 3 -- [se- ss- sl- algorithms]
+### 3 -- [se+ ss+ sl+ algorithms]
 
 Дан массив длины $n$ из нулей и единиц. Найдите в нем подмассив максимальной длины, в котором количество единиц равно количеству нулей. 
 Ограничения: $O(n)$ по времени, $O(n)$ по дополнительной памяти.
+
+---------------------------
+
+<https://habr.com/en/company/yandex/blog/220561/>
+<https://dxdy.ru/post798092.html>
+
+<https://en.wikipedia.org/wiki/Maximum_subarray_problem>
+<http://e-maxx.ru/algo/maximum_average_segment>
 
 ### 4 -- [se- ss- sl- calculus]
 
@@ -281,28 +290,33 @@ $$a_0=1, \;\;\;\;\;\;\; a_{n+1} = \frac{a_n}{1 + na_n}.$$
 
 Опишите все невырожденные вещественные матрицы $A$, для которых все элементы матриц $A$ и $A^{-1}$ неотрицательны.
 
-### 4 -- [se- ss- sl- algorithms]
+### 4 -- [se+ ss+ sl+ algorithms]
 
 Дан числовой массив длины $n$. Предложите алгоритм, находящий максимальное значение сумм отрезков этого массива. 
 Ограничение по времени --- $O(n)$, по дополнительной памяти --- $O(1)$.
 
-### 5 -- [se- ss- sl- ll-]
+---------------
+
+<https://en.wikipedia.org/wiki/Maximum_subarray_problem>
+<http://e-maxx.ru/algo/maximum_average_segment>
+
+### 5 -- [se+ ss- sl- ll-]
 
 Есть $10$ монет разного веса и некоторые весы. При помощи одного взвешивания на весах можно узнать для выбранных двух монет, какая тяжелее. 
 Можно ли за $20$ взвешиваний узнать, в каком порядке монеты идут по весу?
 
-### 6 -- [se- ss- sl- calculus]
+### 6 -- [se+ ss- sl- calculus]
 
 Вычислите сумму интегралов:
 $$\int\limits_{\sqrt{\pi/6}}^{\sqrt{\pi/3}} \sin (x^2) dx + \int\limits_{1/2}^{\sqrt{3}/2} \sqrt{\arcsin x} dx.$$
 
-### 7 -- [se- ss- sl- ll- probability calculus]
+### 7 -- [se+ ss- sl- ll- probability calculus]
 
 Игра состоит из одинаковых и независимых конов, в каждом из которых выигрыш происходит с вероятностью $p$. Когда игрок выигрывает, 
 он получает $1$ доллар, а когда проигрывает --- платит $1$ доллар. Как только его капитал достигает величины $N$ долларов, он объявляется победителем и удаляется из казино. 
 Найдите вероятность того, что игрок рано или поздно проиграет все деньги, в зависимости от его стартового капитала $K$.
 
-### 8 -- [se- ss- sl- ll-]
+### 8 -- [se+ ss- sl- ll-]
 
 Пусть $a$ --- действительное число. Для каждого целого $n \geqslant 0$ обозначим через $a_n$ расстояние от $a$ до ближайшего 
 рационального числа вида $\frac{m}{2^n}$, где $m$ --- целое. Найдите наибольшую возможную сумму ряда $\sum\limits_{n=0}^\infty a_n$.
@@ -360,7 +374,8 @@ $$a_{ij} = \begin{cases}1,& \textrm{ если }i\textrm{ делит }j,\\0,& \te
 Пусть $A$ --- квадратная матрица, у которой сумма матричных элементов в каждом столбце равна $\lambda$. 
 Докажите, что $\lambda$ является собственным значением матрицы $A$.
 
-#### Solution
+
+--------------
 
 Column sums of matrix $A - \lambda E$ are zero, sum of rows are zero vector, and rows are linearly dependent, therefore columns are linearly dependent as well.
 $\exists x \ne 0 : (A - \lambda E) x = 0$
@@ -634,6 +649,10 @@ $$\int\limits_{\frac13}^3 \frac{\textrm{arctg}\, x}{x^2-x+1} dx.$$
 Квадратная матрица $A$ такова, что $\mathrm{tr}(AX)=0$ для любой матрицы $X$, имеющей нулевой след. Докажите, что матрица $A$ является скалярной 
 (то есть имеет вид $\lambda E$ для некоторого скаляра $\lambda$).
 
+--------------------
+
+почитать про билинейные формы, проверить что tr дает невырожденную форму на матрицах
+
 ### 2 -- [se- ss- sl- ll-]
 
 Придя на письменный экзамен в ШАД, студенты поняли, что среди любых четырех человек хотя бы один уже знаком с тремя оставшимися.
@@ -799,11 +818,11 @@ $p_X (t) = \frac{t}{2} \cdot I_{[0;2]} (t)$ (где $I_{[0;2]} (t)$ --- инди
 
 ## 04-06-2016
 
-### 1 -- [se+ ss- sl- algebra]
+### 1 -- [se+ ss+ sl+ algebra]
 
 Докажите, что любая квадратная вещественная матрица является суммой двух обратимых.
 
-#### Solution
+----------
 
 $A = (A + tE) - tE$
 
@@ -822,7 +841,7 @@ $A = (A + tE) - tE$
 максимального пути, в котором любые два соседних ребра разного цвета. Ограничение по времени --- $O(V+E)$, где $V$ --- число
 вершин графа, $E$ --- число его ребер. Сколько дополнительной памяти требуется вашему алгоритму?
 
-### 5 -- [se- ss- sl- probability]
+### 5 -- [se+ ss+ sl+ probability]
 
 Пусть $\xi$, $\eta$ и $\lambda$ --- независимые случайные величины, равномерно распределенные на отрезке $[0;1]$, а $t$ --- фиксированное число. Найдите $P(\xi + \eta < t\lambda)$.
 
@@ -945,7 +964,7 @@ $x$ и $y$ действует оператор $y \frac{\partial}{\partial x} + 
 
 ## 03-06-2017
 
-### 1 -- [se- ss- sl- algebra]
+### 1 -- [se+ ss+ sl+ algebra]
 
 Пусть $x$ и $y$ --- два ненулевых вектора из $\mathbb{R}^n$. Верно ли, что найдется
 симметричная матрица $A$, для которой $y=Ax$?
@@ -1071,6 +1090,10 @@ $$\frac{1}{f^{'}(x_1)} + \frac{1}{f^{'}(x_2)} = 2.$$
 
 Линейный оператор $A : \mathbb{R}^n \longrightarrow \mathbb{R}^n$ таков, что $A^3$ --- это оператор проекции. Какие собственные значения может иметь $A$? Верно ли, что $A$ будет иметь диагональную матрицу в каком-либо базисе $\mathbb{R}^n$?
 
+------------------------
+
+
+
 ### 7 -- [se- ss- sl- calculus]
 
 (a) Для непрерывной функции $f(x)$ найдите
@@ -1091,7 +1114,7 @@ $$\iint\limits_{-a \leqslant x,y \leqslant a} f \left( \frac{x+y}{2} \right) dx 
 
 <file:///Users/alex/Disk.Yandex/DISK/ШАД/2_Exams/ШАД-Решения-VR/2018-3.pdf>
 
-### 1 -- [se+ ss- sl- algebra]
+### 1 -- [se+ ss+ sl+ algebra]
 
 Пусть $A$ --- квадратная матрица $n \times n$. Докажите, что $n - \text{rk}A \geqslant \text{rk}A - \text{rk} A^2$.
 
