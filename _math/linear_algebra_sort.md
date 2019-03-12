@@ -1,5 +1,5 @@
 ---
-title:  "Linear algebra"
+title:  "Linear algebra sort"
 layout: default
 
 ---
