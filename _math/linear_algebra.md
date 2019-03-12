@@ -15,7 +15,7 @@ Find kernel of bilinear form with matrix $B$.
 
 $\operatorname{Ker} \beta(x, y) = { y \vert \forall x \beta(x, y) = 0 }$
 So we have $x^t B y = 0$ for all x. We can't just get rid of $x^t$.
-But we can choose $x = By$, then we have $(By)^t By = 0$, which means $By=0$.
+But we can choose $x = By$, then we have $(By)^t By = 0$, which is dot product, this means $By=0$.
 
 --------------------
 
