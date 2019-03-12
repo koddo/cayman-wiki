@@ -1,5 +1,5 @@
 ---
-title:  "Linear algebra"
+title:  "Linear algebra -- bilinear and quadratic forms"
 layout: default
 
 ---
