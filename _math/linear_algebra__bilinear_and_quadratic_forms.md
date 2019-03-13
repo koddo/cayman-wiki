@@ -9,6 +9,11 @@ layout: default
 
 # Bilinear and quadratic forms
 
+[Degenerate bilinear form](https://en.wikipedia.org/wiki/Degenerate_bilinear_form) has a non-trivial kernel: there exist some non-zero x in V such that $B(x,y)=0$ for all $y\in V$, it's orthogonal to V.
+Bilinear form is degenerate if and only if the determinant of the associated matrix is zero.
+
+A nondegenerate (or nonsingular) form — $f(x,y)=0$ for all $y \in V$ implies that $x = 0$.
+
 --------------------
 
 Find kernel of bilinear form with matrix $B$.

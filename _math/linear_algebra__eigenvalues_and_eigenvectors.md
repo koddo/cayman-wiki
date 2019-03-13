@@ -13,6 +13,16 @@ Eigenvectors of real symmetric matrices are orthogonal: <https://math.stackexcha
 $<\langle A\mathbf{x},\mathbf{y}\rangle = \langle\mathbf{x},A^T\mathbf{y}\rangle>$
 $\lambda\langle\mathbf{x},\mathbf{y}\rangle = \langle\lambda\mathbf{x},\mathbf{y}\rangle = \langle A\mathbf{x},\mathbf{y}\rangle = \langle\mathbf{x},A^T\mathbf{y}\rangle = \langle\mathbf{x},A\mathbf{y}\rangle = \langle\mathbf{x},\mu\mathbf{y}\rangle = \mu\langle\mathbf{x},\mathbf{y}\rangle$
 
+Eigenvalues of block matrix $M$ are eigenvalues of $A$ and $D$ combined, <https://math.stackexchange.com/questions/207865/the-eigenvalues-of-a-block-matrix>, <https://math.stackexchange.com/questions/21454/prove-that-the-eigenvalues-of-a-block-matrix-are-the-combined-eigenvalues-of-its>:
+
+$$
+M = 
+\begin{pmatrix} 
+A & B \\
+0 & D
+\end{pmatrix}
+$$
+
 
 # Superlearn
 
