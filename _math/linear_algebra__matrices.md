@@ -25,6 +25,8 @@ there exists a basis such that every element of the basis is an eigenvector for 
 <https://math.stackexchange.com/questions/236212/simultaneously-diagonalizable-proof>
 <https://math.stackexchange.com/questions/56307/simultaneous-diagonalization>
 
+After orthogonal change of basis ($CC^T=1$) symmetric matrix stays symmetric: $(C^{-1} S C)^T = C^T S^T (C^{-1})^T = C^{-1} S C$.
+
 # Superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- matrices">

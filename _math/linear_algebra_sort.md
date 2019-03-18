@@ -925,10 +925,6 @@ A: TODO: proof <https://en.wikipedia.org/wiki/Vandermonde_matrix>
 - Q: Orthogonal matrix.
 A: TODO: <https://en.wikipedia.org/wiki/Orthogonal_matrix>
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra">
-    <p>Your browser does not support iframes.</p>
-</iframe>
-
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- determinant">
     <p>Your browser does not support iframes.</p>
 </iframe>
