@@ -901,7 +901,7 @@ The  vertical axis here is sum-of-eigenvalues. The horizontal axis is  product-o
 - Q: What do zero eigenvalues mean?
 
 - Q: <https://en.wikipedia.org/wiki/Lagrange_polynomial>
-- Q: What is orthogonal matrix? Examples.
+
 - Q: Gram–Schmidt orthogonalization.
 TODO:
 $$
@@ -922,8 +922,6 @@ TODO: proof <https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality>
 - Q: Vandermonde matrix.
 A: TODO: proof <https://en.wikipedia.org/wiki/Vandermonde_matrix>
 
-- Q: Orthogonal matrix.
-A: TODO: <https://en.wikipedia.org/wiki/Orthogonal_matrix>
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- determinant">
     <p>Your browser does not support iframes.</p>

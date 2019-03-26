@@ -27,6 +27,16 @@ there exists a basis such that every element of the basis is an eigenvector for 
 
 After orthogonal change of basis ($CC^T=1$) symmetric matrix stays symmetric: $(C^{-1} S C)^T = C^T S^T (C^{-1})^T = C^{-1} S C$.
 
+# Orthogonal matrix.
+
+<https://en.wikipedia.org/wiki/Orthogonal_matrix>
+
+An orthogonal matrix is a square matrix whose columns and rows are orthogonal unit vectors (i.e., orthonormal vectors):
+$Q^{\mathrm {T} }Q=QQ^{\mathrm {T} }=I$
+${\displaystyle Q^{\mathrm {T} }=Q^{-1}}$
+
+Orthogonal matrices preserve dot product: ${\displaystyle {\mathbf {v} }^{\mathrm {T} }{\mathbf {v} }=(Q{\mathbf {v} })^{\mathrm {T} }(Q{\mathbf {v} })={\mathbf {v} }^{\mathrm {T} }Q^{\mathrm {T} }Q{\mathbf {v} }}$
+
 # Superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- linear algebra -- matrices">
