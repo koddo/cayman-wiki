@@ -23,6 +23,27 @@ A & B \\
 \end{pmatrix}
 $$
 
+How many distinct possible forms for its Jordan canonical matrix are there for 4x4 non-diagonalizable matrix with two unique eigenvalues?
+The answer is 4 non-equivalent configurations.
+24 is a wrong answer: <https://math.stackexchange.com/questions/1247574/how-many-distinct-possible-forms-for-its-jordan-canonical-matrix-are-there-4x4>
+
+# Jordan normal form
+
+## JNF for complex matrices
+
+<https://en.wikipedia.org/wiki/Jordan_normal_form#Complex_matrices>
+
+- Алгебраическая кратность — сумма размеров жордановых клеток для с.з.
+- Геометрическая — количество клеток для с.з., она же — размерность собственного подпространства.
+- Есть еще кратность корня в минимальном многочлене — размер самой большой клетки.
+
+количество клеток размера >= j равно dim Ker(A - λE)^j - dim Ker(A - λE)^{j-1}
+Ровно j: 2 dim ker (A - λE)^j - dim ker (A - λE)^{j+1} - dim ker (A - λE)^{j-1}
+
+## JNF for real matrices
+
+<https://en.wikipedia.org/wiki/Jordan_normal_form#Real_matrices>
+
 
 # Superlearn
 
