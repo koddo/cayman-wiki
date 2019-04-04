@@ -44,6 +44,13 @@ The answer is 4 non-equivalent configurations.
 
 <https://en.wikipedia.org/wiki/Jordan_normal_form#Real_matrices>
 
+# Cayley–Hamilton theorem
+
+$p(\lambda )=\det(\lambda I_{n}-A)$ — characteristic polynomial. The Cayley–Hamilton theorem states that substituting the matrix $A$ for $\lambda$ results in the zero matrix: $p(A) = 0$ 
+
+Equivalently, (when the ring is a field) the Cayley–Hamilton theorem states that the minimal polynomial of a square matrix divides its characteristic polynomial. 
+
+<https://en.wikipedia.org/wiki/Cayley–Hamilton_theorem>
 
 # Superlearn
 
