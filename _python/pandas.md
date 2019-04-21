@@ -11,6 +11,7 @@ layout: default
 <https://github.com/rougier/numpy-100>
 <https://github.com/guipsamora/pandas_exercises>
 
+Brandon Rhodes - Pandas From The Ground Up - PyCon 2015: <https://www.youtube.com/watch?v=5JnMutdy6Fw>, <https://github.com/brandon-rhodes/pycon-pandas-tutorial>
 ```
 len(df)
 df.head(), df.tail()
