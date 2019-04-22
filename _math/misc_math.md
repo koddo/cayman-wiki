@@ -14,10 +14,20 @@ layout: default
 
 # Linear recurrences
 
+## Homogeneous
+
 $a_n = 4a_{n−1} − 5a_{n−2} + 2a_{n−3}$
 <https://math.stackexchange.com/questions/518088/solving-a-recurrence-relation-with-the-characteristic-polynomial/518092#518092>
 <https://www.probabilitycourse.com/chapter14/Chapter_14.pdf>
 <https://artofproblemsolving.com/wiki/index.php/Characteristic_polynomial#Linear_recurrences>
+
+When multiplicity of all $\lambda_i$ is one
+$a_n = \alpha_1 \lambda_1^n + \ldots \alpha_k \lambda_k^n$
+
+When multiplicity of $\lambda_1$ is two:
+$a_n = (\alpha_1 n + \beta_1) \lambda_1^n + \ldots$
+
+## Inhomogeneous with constant coefficients
 
 $a_n = 4a_{n−1} − 5a_{n−2} + 2a_{n−3} + 3^n$
 $a_n = 4a_{n−1} − 5a_{n−2} + 2a_{n−3} + 6$
