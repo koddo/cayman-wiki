@@ -11,6 +11,14 @@ Pdf of sum of two random variables:
 <https://www.statlect.com/fundamentals-of-probability/sums-of-independent-random-variables>
 $$f_{U+V}(x)=\int _{-\infty }^{\infty }f_{U}(y)f_{V}(x-y)\,dy=\left(f_{U}*f_{V}\right)(x)$$
 
+# Distributions
+
+## Binomial
+
+<https://en.wikipedia.org/wiki/Binomial_distribution>
+
+Distribution of sum of two independent binomial variables: $X \sim \def\Bin{\mathord{\rm Bin}}\Bin(n,p)$, $Y \sim \def\Bin{\mathord{\rm Bin}}\Bin(m,p)$, $X+Y \sim \Bin(n+m,p)$
+<https://math.stackexchange.com/questions/1176385/sum-of-two-independent-binomial-variables>
 
 # superlearn
 
