@@ -23,6 +23,8 @@ Distribution of sum of two independent binomial variables: $X \sim \def\Bin{\mat
 # Random walk
 
 There are $2^n$ paths of length $n$.
+A path from the origin to an arbitrary point $(n, x)$ exists $\iff \ n = p+q, \quad x = p - q$.
+
 
 # superlearn
 

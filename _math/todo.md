@@ -55,3 +55,4 @@ https://koddo.github.io/cayman-wiki/math/exam_problems#5--se--ss--sl--calculus-5
 
 что такое оператор проекции?
 https://efiminem.github.io/supershad/02-06-2018/ -- 6
+
