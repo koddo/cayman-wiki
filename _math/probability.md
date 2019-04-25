@@ -20,9 +20,17 @@ $$f_{U+V}(x)=\int _{-\infty }^{\infty }f_{U}(y)f_{V}(x-y)\,dy=\left(f_{U}*f_{V}\
 Distribution of sum of two independent binomial variables: $X \sim \def\Bin{\mathord{\rm Bin}}\Bin(n,p)$, $Y \sim \def\Bin{\mathord{\rm Bin}}\Bin(m,p)$, $X+Y \sim \Bin(n+m,p)$
 <https://math.stackexchange.com/questions/1176385/sum-of-two-independent-binomial-variables>
 
+# Random walk
+
+There are $2^n$ paths of length $n$.
+
 # superlearn
 
-<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=probability -- pdf and cdf">
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- pdf and cdf">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- random walk">
     <p>Your browser does not support iframes.</p>
 </iframe>
 
