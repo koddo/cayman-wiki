@@ -27,6 +27,12 @@ How many distinct possible forms for its Jordan canonical matrix are there for 4
 The answer is 4 non-equivalent configurations.
 24 is a wrong answer: <https://math.stackexchange.com/questions/1247574/how-many-distinct-possible-forms-for-its-jordan-canonical-matrix-are-there-4x4>
 
+## Minimal polynomial
+
+<https://en.wikipedia.org/wiki/Minimal_polynomial_(linear_algebra)>
+
+Minimal polynomial of a square matrix divides its characteristic polynomial, see Cayley–Hamilton theorem.
+
 # Jordan normal form
 
 ## JNF for complex matrices
