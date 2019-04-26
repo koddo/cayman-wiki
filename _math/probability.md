@@ -27,6 +27,10 @@ A path from the origin to an arbitrary point $(n, x)$ exists $\iff \ n = p+q, \q
 
 Lemma. (Reflection principle) The number of paths from A to B which touch or cross the x-axis equals the number of all paths from A' to B.
 
+Ballot theorem. In an election where candidate A receives p votes and candidate B receives q votes with p > q, what is the probability that A will be strictly ahead of B throughout the count?
+
+$$P(A) = {\frac {p-q}{p+q}}$$
+
 # superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- pdf and cdf">
