@@ -33,7 +33,7 @@ The answer is 4 non-equivalent configurations.
 
 Miminal polynomial looks similar to characteristic polynomial, they have the same roots, the eigenvalues. But the multiplicities are different.
 
-> The multiplicity of a root $\lambda$ of $\mu A$ is the largest power $m$ such that $Ker((A − \lambda E)m)$ strictly contains $Ker((A − \lambda E)m−1)$. In other words, increasing the exponent up to $m$ will give ever larger kernels, but further increasing the exponent beyond $m$ will just give the same kernel. 
+> The multiplicity of a root $\lambda$ of $\mu A$ is the largest power $m$ such that $Ker((A − \lambda E)^m)$ strictly contains $Ker((A − \lambda E)^{m−1})$. In other words, increasing the exponent up to $m$ will give ever larger kernels, but further increasing the exponent beyond $m$ will just give the same kernel. 
 
 Minimal polynomial of a square matrix divides its characteristic polynomial, see Cayley–Hamilton theorem.
 
