@@ -25,6 +25,7 @@ Distribution of sum of two independent binomial variables: $X \sim \def\Bin{\mat
 There are $2^n$ paths of length $n$.
 A path from the origin to an arbitrary point $(n, x)$ exists $\iff \ n = p+q, \quad x = p - q$.
 
+Lemma. (Reflection principle) The number of paths from A to B which touch or cross the x-axis equals the number of all paths from A' to B.
 
 # superlearn
 
