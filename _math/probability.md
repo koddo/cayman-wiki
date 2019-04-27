@@ -54,6 +54,8 @@ Or, using the symmetry:
 
 $$P(\{ S_1 > 0, \ldots, S_{2n} > 0\}) = \frac{1}{2} u_{2n}$$
 
+$$P(\{ S_1 \geq 0, \ldots, S_{2n} \geq 0\}) = u_{2n}$$
+
 # superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- pdf and cdf">
