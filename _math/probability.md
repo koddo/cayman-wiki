@@ -34,6 +34,18 @@ $$P(A) = {\frac {p-q}{p+q}}$$
 
 $$p_{n,r} = P(\{ S_n = r \}) = \binom{n}{\frac{n+r}{2}} 2^{-n}$$
 
+$u_{2v}$ — zero at 2v, $f_{2v}$ — first zero at 2v:
+
+$$u_{2v} = \binom{2v}{v} 2^{-2v}$$
+
+Using Stirlings's forluma, we get:
+
+$$u_{2v} \sim \frac{1}{\sqrt{\pi v}}$$
+
+And relation between the two:
+
+$$u_{2n} = f_2 u_{2n-2} + f_4 u_{2n-4} + \ldots + f_{2n} u_0$$
+
 # superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- pdf and cdf">
