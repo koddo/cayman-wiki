@@ -46,6 +46,14 @@ And relation between the two:
 
 $$u_{2n} = f_2 u_{2n-2} + f_4 u_{2n-4} + \ldots + f_{2n} u_0$$
 
+The main lemma. The probability that no return to 0 occurs at up to and including 2n is the same sa the probability that a return occurs at 2n:
+
+$$P(\{ S_1 \neq 0, \ldots, S_{2n} \neq 0\}) = P(\{ S_{2n} = 0\}) = u_{2n}$$
+
+Or, using the symmetry:
+
+$$P(\{ S_1 > 0, \ldots, S_{2n} > 0\}) = \frac{1}{2} u_{2n}$$
+
 # superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- probability -- pdf and cdf">
