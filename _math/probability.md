@@ -32,6 +32,8 @@ Ballot theorem. In an election where candidate A receives p votes and candidate 
 
 $$P(A) = {\frac {p-q}{p+q}}$$
 
+$p_{n,r}$ — visit to r at epoch n
+
 $$p_{n,r} = P(\{ S_n = r \}) = \binom{n}{\frac{n+r}{2}} 2^{-n}$$
 
 $u_{2v}$ — zero at 2v, $f_{2v}$ — first zero at 2v:
@@ -66,6 +68,8 @@ $\alpha_{2k,2n} = u_{2k} u_{2n-2k}$ — last zero at 2k, up to and including 2n.
 
 Approximation: $$\alpha_{2k,2n} = \frac{1}{n} f(x_k)$$, where $x_k = \frac{k}{n}$ and $$f(x) = \frac{1}{\pi \sqrt{x(1-x)}}$$.
 
+
+Theorem. Probability $\xi$
 
 # superlearn
 
