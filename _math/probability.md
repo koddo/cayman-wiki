@@ -62,7 +62,10 @@ It follows that $f_2 + f_4 + \ldots = 1$, i.e, returning to 0 is practically cer
 
 Probability of no return to 0 after 100 tosses is 0.08. 
 
-$\alpha_{2k,2n} = u_{2k} u_{2n-2k}$ — last zero at 2k, up to and including 2n
+$\alpha_{2k,2n} = u_{2k} u_{2n-2k}$ — last zero at 2k, up to and including 2n.
+
+Approximation: $$\alpha_{2k,2n} = \frac{1}{n} f(x_k)$$, where $x_k = \frac{k}{n}$ and $$f(x) = \frac{1}{\pi \sqrt{x(1-x)}}$$.
+
 
 # superlearn
 
