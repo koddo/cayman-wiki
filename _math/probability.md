@@ -71,7 +71,7 @@ Approximation: $$\alpha_{2k,2n} = \frac{1}{n} f(x_k)$$, where $x_k = \frac{k}{n}
 
 Theorem. Probability that up to epoch $2n+1$ there occur exactly $r$ changes of sign is $\xi_{r, 2n+1} = 2 p_{2n+1, 2r+1} = 2 P(\{ S_{2n+1} = 2r+1 \})$.
 
-
+The consequence of this is the lead never changes is more probable than any number of changes of sign: $\xi_{0,n} \ge \xi_{1,n} > \xi_{2,n} > \ldots$
 
 # superlearn
 
