@@ -69,7 +69,9 @@ $\alpha_{2k,2n} = u_{2k} u_{2n-2k}$ — last zero at 2k, up to and including 2n.
 Approximation: $$\alpha_{2k,2n} = \frac{1}{n} f(x_k)$$, where $x_k = \frac{k}{n}$ and $$f(x) = \frac{1}{\pi \sqrt{x(1-x)}}$$.
 
 
-Theorem. Probability $\xi$
+Theorem. Probability that up to epoch $2n+1$ there occur exactly $r$ changes of sign is $\xi_{r, 2n+1} = 2 p_{2n+1, 2r+1} = 2 P(\{ S_{2n+1} = 2r+1 \})$.
+
+
 
 # superlearn
 
