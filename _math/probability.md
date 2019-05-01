@@ -58,7 +58,7 @@ $$P(\{ S_1 > 0, \ldots, S_{2n} > 0\}) = \frac{1}{2} u_{2n}$$
 
 $$P(\{ S_1 \geq 0, \ldots, S_{2n} \geq 0\}) = u_{2n}$$
 
-Lemma. $$f_{2n} = u_{2n} - u_{2n - 2} = \frac{1}{2n-1} u_{2n}$$
+Lemma. $$f_{2n} =  u_{2n - 2} - u_{2n} = \frac{1}{2n-1} u_{2n}$$
 
 It follows that $f_2 + f_4 + \ldots = 1$, i.e, returning to 0 is practically certain in a long game.
 
