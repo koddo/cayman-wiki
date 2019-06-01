@@ -1206,6 +1206,37 @@ $$\sum_{n=1}^\infty P \left(\xi_n > \sqrt{2 \ln n + 2\ln \ln n} \right)?$$
 
 
 
+
+# 2019
+
+## 01-06-2018
+
+### 1 -- [se- ss- sl- ll-]
+
+### 2 -- [se- ss- sl- probability]
+
+Случайные величины X и Y независимы и экспоненциально распределены, X — с параметром λ=1, а Y — с параметром λ=2. Пусть Z=max(X,Y). Найдите математическое ожидание случайной величины Z.
+
+$$
+
+### 3 -- [se- ss- sl- ll-]
+
+### 4 -- [se- ss- sl- calculus]
+
+$$\lim_{x\to0}\int_0^x \frac{\cos(t^3)}{t+x} dt \ = \ ?$$
+
+<https://math.stackexchange.com/questions/3247414/find-the-limit-with-integral-from-0-to-x-cost3-tx-lim-x-0>
+
+
+
+### 5 -- [se- ss- sl- ll-]
+
+### 6 -- [se- ss- sl- ll-]
+
+### 7 -- [se- ss- sl- ll-]
+
+### 8 -- [se- ss- sl- ll-]
+
 # hse olympiad
 
 ## 2019
@@ -1215,6 +1246,7 @@ Similar to
 $$a_n=1+\frac{1}{a_{n-1}}$$
 
 <https://math.stackexchange.com/questions/1633109/limit-of-the-sequence-a-n-1-frac1a-n-1-and-a-1-1>
+
 
 ## other years
 2018
@@ -1243,3 +1275,4 @@ demo: <https://olymp.hse.ru/data/2014/03/11/1333282846/Науки о данны�
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- shad problems">
     <p>Your browser does not support iframes.</p>
 </iframe>
+
