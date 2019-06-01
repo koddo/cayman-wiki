@@ -151,7 +151,7 @@ df.iloc[1:5, 2:4]
 
 ```
 df.at['Christina', 'favorite color']
-df.loc['R'].at['B']
+df.loc[5].at['B']     # Get value within a Series
 df.iat[2, 5]
 ```
 
