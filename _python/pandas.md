@@ -117,7 +117,47 @@ all( type(sm[i]) == pd.Series for i in range(len(sm)) )
 
 <https://stackoverflow.com/questions/15819050/pandas-dataframe-concat-vs-append/48168086#48168086>
 
+# `DataFrame.loc` vs `iloc` vs `at` vs `iat` vs `ix` vs indexing operator `df[]`, peculiarities about slicing
 
+<https://stackoverflow.com/questions/28757389/pandas-loc-vs-iloc-vs-ix-vs-at-vs-iat/47098873#47098873>
+
+`loc` is label based. Accepts a single label, a list of labels, a slice, a boolean array, a callable.
+
+WARNING: When slicing by label, `loc` includes both start and stop values.
+
+Raises `KeyError`.
+
+```
+df.loc['viper']
+df.loc[['viper', 'sidewinder']]
+df.loc['cobra':'viper', ['food', 'score']]
+df.loc[df['shield'] > 6]
+df.loc[lambda df: df['shield'] == 8]
+
+df.loc['cobra'] = 10           # set entire row
+df.loc[:, 'max_speed'] = 30    # set entire column
+```
+
+`iloc` is position based. Accepts an integer, a list of integers, a slice, a boolean array, and a callable.
+
+Raises `IndexError` just like lists in python, when accessing out of range index, but not when using slicing.
+
+```
+df.iloc[[2, 3], [1, 2]]
+df.iloc[1:5, 2:4]
+```
+
+`at` and `iat` are for accessing a single cell.
+
+```
+df.at['Christina', 'favorite color']
+df.loc['R'].at['B']
+df.iat[2, 5]
+```
+
+`ix` is deprecated.
+
+Indexing operator `[]` can select rows or columns, but not at the same time.
 
 # Questions
 
