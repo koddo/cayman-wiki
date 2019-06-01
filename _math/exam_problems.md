@@ -1217,7 +1217,11 @@ $$\sum_{n=1}^\infty P \left(\xi_n > \sqrt{2 \ln n + 2\ln \ln n} \right)?$$
 
 Случайные величины X и Y независимы и экспоненциально распределены, X — с параметром λ=1, а Y — с параметром λ=2. Пусть Z=max(X,Y). Найдите математическое ожидание случайной величины Z.
 
-$$
+$E(X+Y) = E( min(X, Y) + max(X, Y))$
+
+$E(max(X, Y)) = EX + EY - Emin(X, Y) = \frac{1}{\lambda_X} + \frac{1}{\lambda_Y} - \frac{1}{\lambda_X + \lambda_Y}$
+
+That's because $min(X, Y) \sim exp(\lambda_X + \lambda_Y)$: $P(min(X, Y) \leq x) = 1 - P(min(X, Y) > x) = 1 - P(X > x) P(Y > x) = 1 - e^{\lambda_X x} e^{\lambda_Y x}$
 
 ### 3 -- [se- ss- sl- ll-]
 
