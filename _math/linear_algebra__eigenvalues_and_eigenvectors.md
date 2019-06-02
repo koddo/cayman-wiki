@@ -58,7 +58,7 @@ Minimal polynomial of a square matrix divides its characteristic polynomial, see
 
 $p(\lambda )=\det(\lambda I_{n}-A)$ — characteristic polynomial. The Cayley–Hamilton theorem states that substituting the matrix $A$ for $\lambda$ results in the zero matrix: $p(A) = 0$ 
 
-Equivalently, (when the ring is a field) the Cayley–Hamilton theorem states that the minimal polynomial of a square matrix divides its characteristic polynomial. 
+Equivalently, (when the ring is a field) the Cayley–Hamilton theorem states that the minimal polynomial of a square matrix divides its characteristic polynomial: <https://math.stackexchange.com/questions/1097548/the-minimal-polynomial-divides-the-characteristic-polynomial>
 
 <https://en.wikipedia.org/wiki/Cayley–Hamilton_theorem>
 
