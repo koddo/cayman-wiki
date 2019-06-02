@@ -1213,7 +1213,7 @@ $$\sum_{n=1}^\infty P \left(\xi_n > \sqrt{2 \ln n + 2\ln \ln n} \right)?$$
 
 ### 1 -- [se- ss- sl- ll-]
 
-### 2 -- [se- ss- sl- probability]
+### 2 -- [se+ ss+ sl+ probability]
 
 Случайные величины X и Y независимы и экспоненциально распределены, X — с параметром λ=1, а Y — с параметром λ=2. Пусть Z=max(X,Y). Найдите математическое ожидание случайной величины Z.
 
@@ -1225,7 +1225,7 @@ That's because $min(X, Y) \sim exp(\lambda_X + \lambda_Y)$: $P(min(X, Y) \leq x)
 
 ### 3 -- [se- ss- sl- ll-]
 
-### 4 -- [se- ss- sl- calculus]
+### 4 -- [se+ ss+ sl+ calculus]
 
 $$\lim_{x\to0}\int_0^x \frac{\cos(t^3)}{t+x} dt \ = \ ?$$
 
