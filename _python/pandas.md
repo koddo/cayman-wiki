@@ -159,6 +159,11 @@ df.iat[2, 5]
 
 Indexing operator `[]` can select rows or columns, but not at the same time.
 
+```
+df['height']   # get the _column_
+df['Penelope':'Christina'] # slice _rows_ by label
+```
+
 # Questions
 
 - Q: How to create a series, a data frame? --- a: <https://pandas.pydata.org/pandas-docs/stable/10min.html#object-creation>
