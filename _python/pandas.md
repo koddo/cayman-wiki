@@ -157,11 +157,12 @@ df.iat[2, 5]
 
 `ix` is deprecated.
 
-Indexing operator `[]` can select rows or columns, but not at the same time.
+Indexing operator `[]` is mostly for selecting columns, but confusingly selects rows by slicing:
 
 ```
-df['height']   # get the _column_
-df['Penelope':'Christina'] # slice _rows_ by label
+df['height']                  # one columns
+df[['height', 'weight']]      # two columns
+df['Penelope':'Christina'] # _rows_
 ```
 
 # Questions
