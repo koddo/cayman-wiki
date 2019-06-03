@@ -37,6 +37,8 @@ Miminal polynomial is a polynomial of the least degree that $P(A) = 0$. It looks
 
 Minimal polynomial of a square matrix divides its characteristic polynomial, see Cayley–Hamilton theorem.
 
+<https://math.stackexchange.com/questions/81467/when-are-minimal-and-characteristic-polynomials-the-same>
+
 # Jordan normal form
 
 ## JNF for complex matrices
