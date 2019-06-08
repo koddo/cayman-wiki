@@ -49,8 +49,8 @@ Minimal polynomial of a square matrix divides its characteristic polynomial, see
 - Geometric multiplicity — number of blocks for an eigenvalue, aka dimension of eigenspace
 - Multiplicity in minimal polynomial — size of the biggest block
 
-Number of blocks of size $\ge j$ is $dim Ker(A - λE)^j - dim Ker(A - λE)^{j-1}$
-$= j$ is $2 dim ker (A - λE)^j - dim ker (A - λE)^{j+1} - dim ker (A - λE)^{j-1}$
+Number of blocks of size $\ge j$ is $\operatorname{dim} \operatorname{Ker}(A - λE)^j - \operatorname{dim} \operatorname{Ker}(A - λE)^{j-1}$
+For Size $= j$ it is $2 \operatorname{dim} ker (A - λE)^j - \operatorname{dim} ker (A - λE)^{j+1} - \operatorname{dim} ker (A - λE)^{j-1}$
 
 ## JNF for real matrices
 
