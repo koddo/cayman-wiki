@@ -45,12 +45,14 @@ Minimal polynomial of a square matrix divides its characteristic polynomial, see
 
 <https://en.wikipedia.org/wiki/Jordan_normal_form#Complex_matrices>
 
-- Алгебраическая кратность — сумма размеров жордановых клеток для с.з.
-- Геометрическая — количество клеток для с.з., она же — размерность собственного подпространства.
-- Есть еще кратность корня в минимальном многочлене — размер самой большой клетки.
+- Algebraic multiplicity — sum of sizes of Jordan blocks for eigenvalues
+- Geometric multiplicity — number of blocks for an eigenvalue, aka dimension of eigenspace
+- Multiplicity in minimal polynomial — size of the biggest block
 
 количество клеток размера >= j равно dim Ker(A - λE)^j - dim Ker(A - λE)^{j-1}
 Ровно j: 2 dim ker (A - λE)^j - dim ker (A - λE)^{j+1} - dim ker (A - λE)^{j-1}
+
+Number of blocks
 
 ## JNF for real matrices
 
