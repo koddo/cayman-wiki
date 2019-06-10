@@ -97,10 +97,6 @@ Exercises-4.ipynb: `cast.groupby(['year', 'type']).size().unstack('type').fillna
   s.fillna(value)   s.dt.dayofweek
 ```
 
-## loc, iloc, at, iat
-
-<https://stackoverflow.com/questions/31593201/pandas-iloc-vs-ix-vs-loc-explanation-how-are-they-different/46915810#46915810>
-
 ## apply, applymap, map
 
 ```
