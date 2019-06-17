@@ -28,6 +28,10 @@ Left inequality can also be written as $\operatorname{Ker}A + \operatorname{Ker}
 <https://math.stackexchange.com/questions/298836/sylvester-rank-inequality-operatornamerank-a-operatornamerankb-leq-o>
 <https://math.stackexchange.com/questions/978/how-to-prove-and-interpret-operatornamerankab-leq-operatornamemin-ope?noredirect=1&lq=1>
 
+For square matrix $A$ of size $n$: $\operatorname{rank}(A^n) = \operatorname{rank}(A^{n+1})$ -- <https://math.stackexchange.com/questions/298041/given-a-square-matrix-a-of-order-n-prove-operatornamerankan-operatorn?noredirect=1&lq=1>
+
+Prove $\operatorname{rank}(A) = \operatorname{rank}(AA^T) = \operatorname{rank}(A^TA)$ -- <https://math.stackexchange.com/questions/215145/rank-of-product-of-a-matrix-and-its-transpose/682249#682249>
+
 # Properties of kernel
 
 ## dim ker A^2 <= 2 dim ker A
