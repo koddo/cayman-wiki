@@ -43,5 +43,9 @@ Named tuples behave like tuples by design. We can compare two tuples of differen
 Aaa(1, 'a') == Bbb(1, 'a')     # True
 ```
 
+<https://docs.python.org/3/library/typing.html#typing.NamedTuple>
 
 
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=python -- named tuples and data classes">
+    <p>Your browser does not support iframes.</p>
+</iframe>
