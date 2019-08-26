@@ -114,10 +114,10 @@ $$\int x^{\alpha} \, dx \ = \ \frac{x^{\alpha+1}}{\alpha+1}, \ \ \ \ \ \alpha \n
 
 
 
-$$\int x^{-1} \, dx \ = \int \frac{1}{x} \, dx \ = \ \ln |x|$$
+$$\int x^{-1} \, dx \ = \int \frac{1}{x} \, dx \ = \ \ln  \vert x \vert $$
 
 $$\int \frac{1}{x} \, dx = \ ?$$
-$$\int \frac{1}{x} \, dx \ = \ \ln |x|$$
+$$\int \frac{1}{x} \, dx \ = \ \ln  \vert x \vert $$
 
 
 $$\int a^x \, dx = \ ?$$
@@ -147,7 +147,7 @@ $$\int \frac{1}{a^2 + x^2} \; dx = \ ?$$
 $$\int \frac{1}{a^2 + x^2} \; dx \ = \ \frac{1}{a} \; \operatorname{arctg} \frac{x}{a}$$
 
 $$\int \frac{1}{a^2 - x^2} \; dx = \ ?$$
-$$\int \frac{1}{a^2 - x^2} \; dx \ = \ \frac{1}{2a} \; \ln \left| \frac{a+x}{a-x} \right|$$
+$$\int \frac{1}{a^2 - x^2} \; dx \ = \ \frac{1}{2a} \; \ln \left \vert  \frac{a+x}{a-x} \right \vert $$
 
 
 $$\int \frac{1}{ \sqrt{a^2-x^2} } \; dx = \ ?$$
@@ -155,7 +155,7 @@ $$\int \frac{1}{ \sqrt{a^2-x^2} } \; dx \ = \ \arcsin \frac{x}{a}$$
 
 
 $$\int \frac{1}{\sqrt{x^2 + a}} \; dx = \ ?$$
-$$\int \frac{1}{\sqrt{x^2 + a}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a} \right|$$
+$$\int \frac{1}{\sqrt{x^2 + a}} \; dx \ = \ \ln \left \vert  x+\sqrt{x^2 + a} \right \vert $$
 
 integration by parts
 
@@ -165,7 +165,7 @@ $$\int u \; dv \ = \ uv \ - \ \int v \; du$$
 integration by parts
 
 $$\int\limits_a^b u \; dv = \ ?$$
-$$\int\limits_a^b u \; dv \ = \ u\,v \ \bigg|_a^b \ - \ \int\limits_a^b v \; du$$
+$$\int\limits_a^b u \; dv \ = \ u\,v \ \bigg \vert _a^b \ - \ \int\limits_a^b v \; du$$
 
 
 integration by substitution
@@ -239,11 +239,11 @@ $$\int \frac{e^x}{x} \; dx$$
 $$\int \frac{\sin x}{x} \; dx$$
 
 $$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx = \ ?$$
-$$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 + a^2} \right|$$
+$$\int \frac{1}{\sqrt{x^2 + a^2}} \; dx \ = \ \ln \left \vert  x+\sqrt{x^2 + a^2} \right \vert $$
 
 
 $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx = \ ?$$
-$$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \right|$$
+$$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left \vert  x+\sqrt{x^2 - a^2} \right \vert $$
 
 # Series convergence
 
@@ -266,17 +266,17 @@ $$\int \frac{1}{\sqrt{x^2 - a^2}} \; dx \ = \ \ln \left| x+\sqrt{x^2 - a^2} \rig
 
 Nesessary condition: if $$\lim_{n \to \infty}a_n \ne 0$$ then diverges
 
-Absolute convergence: does $$\sum_{n=0}^\infty \left|a_n\right|$$ converge?
+Absolute convergence: does $$\sum_{n=0}^\infty \left \vert a_n\right \vert $$ converge?
 
 Conditional convergence
 
 <br/>
 
-Ratio test: $$ \lim _{n\to \infty }\left|{\frac {a_{n+1}}{a_{n}}}\right|=r$$
+Ratio test: $$ \lim _{n\to \infty }\left \vert {\frac {a_{n+1}}{a_{n}}}\right \vert =r$$
 
-Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$
+Root test: $$\lim_{n\rightarrow\infty}\sqrt[n]{ \vert a_n \vert }$$
 
-Direct comparison: $|a_n|\le |b_n|$
+Direct comparison: $ \vert a_n \vert \le  \vert b_n \vert $
 
 Limit comparision: $$\lim _{n\to \infty }{\frac {a_{n}}{b_{n}}}$$
 
@@ -300,7 +300,7 @@ Geometric series: $$\sum \left( 1 + \frac{1}{q} + \frac{1}{q^2} + \frac{1}{q^3} 
 
 Alternating series $$\sum _{n=k}^{\infty }(-1)^{n}a_{n}$$
 
-Telescoping test: $$\sum_{{n=1}}^{\infty }{\frac{1}{n(n+1)}} = \sum_{{n=1}}^{\infty}{\frac{1}{n} - \frac{1}{n+1}}$$, summands cancel out in partial sums.
+Telescoping test: $$\sum_{n=1}^\infty \frac{1}{n(n+1)} = \sum_{n=1}^\infty \left( \frac{1}{n} - \frac{1}{n+1} \right)$$, summands cancel out in partial sums.
 
 Taylor series test: is it Taylor series?
 
@@ -310,7 +310,7 @@ Taylor series test: is it Taylor series?
 
 <https://en.wikipedia.org/wiki/Root_test>
 
-$$\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{|a_{n}|}}$$
+$$\lim_{n\rightarrow\infty}\sqrt[n]{ \vert a_n \vert }$$ or $$r=\limsup_{n\to \infty }{\sqrt[{n}]{ \vert a_{n} \vert }}$$
 
 ## Telescoping test
 

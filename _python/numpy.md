@@ -15,3 +15,7 @@ layout: default
 argsort()
 vstack()
 asmatrix()
+
+
+arange <https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html>
+hstack <https://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html>

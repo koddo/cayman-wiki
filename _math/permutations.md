@@ -4,6 +4,10 @@ layout: default
 
 ---
 
+# mindmap
+
+![img/permutations-mindmap.svg](img/permutations-mindmap.svg)
+
 # permutations, their properties
 
 $$
@@ -157,8 +161,119 @@ Properties of parity:
 
 # conjugation
 
+<http://unapologetic.wordpress.com/2010/09/10/conjugates/>
+
+$g \  (a_1\,\dots\,a_k) \  g^{-1} \quad = \quad (g(a_1)\,\dots\,g(a_k))$
+because when $h = g \, f \, g^{-1}$
+$h(g(1)) = g(f(g^{-1}(g(1)))) = g(f(1))$
 
 
+Example
+Any permutation can be written as a product of cycles: (1 2) (1 2 3 ... n)
+
+(1 2 3 ... n)^1 (1 2) (1 2 3 ... n)^{-1} = (2 3)
+(1 2 3 ... n)^k (1 2) (1 2 3 ... n)^{-k} = (k+1 k+2)
+
+this can be seen directly or with using properties of conjugates:
+(1 2) = (1 2)(3)...(n) conjugated with (1 2 3 ... n) is (2 3) (4) ... (n-1) (1) 
+
+
+now we have (1 2), (2 3), (3 4), ... , (n-1 n)
+(3 7)  =  (3 4) (4 5) (5 6) (6 _7_)   (6 5) (5 4) (4 3)
+
+now we have all transpositions
+
+http://math.berkeley.edu/~scanez/courses/math113/homework/hw3-solns.pdf
+http://mathhelpforum.com/advanced-algebra/56719-permutations-1x-123-n-generate-sn.html
+http://mathforum.org/library/drmath/view/51685.html
+
+
+
+Theorem. Permutations conjugate $\iff$ they have the same cycle structure.
+i.e. they consist of $n_1$ cycles of length $l_1$, ... , $n_k$ cycles of length $l_k$
+
+Begin proof. 
+
+$\boxed{\Rightarrow}$
+$\sigma(i) = k$
+$\left(\pi \sigma \pi^{-1}\right) \left(\pi(i)\right) = \pi(k)$  
+  
+e.g.
+$\pi \ \cdot \ \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix} 4 & 5\end{pmatrix} \ \cdot \ \pi^{-1} \ = \ \left( \begin{smallmatrix}\pi(1) & \pi(2) & \pi(3)\end{smallmatrix} \right) \left( \begin{smallmatrix}\pi(4) & \pi(5)\end{smallmatrix}  \right)$
+
+
+$\boxed{\Leftarrow}$
+we can easily get conjugating permutation of two permutations with same structure
+by just writing one under another
+
+$$
+\begin{align*}
+\sigma &= \begin{pmatrix}1 & 2 & 3\end{pmatrix} \begin{pmatrix}4 & 5\end{pmatrix} \\
+\pi \sigma \pi^{-1} &= \begin{pmatrix}1 & 5 & 2\end{pmatrix} \begin{pmatrix}3 & 4\end{pmatrix} \\
+\\
+\Rightarrow \pi &=  \begin{pmatrix}2 & 5 & 4 & 3\end{pmatrix}
+\end{align*}
+$$
+
+End proof.
+
+
+
+Find number of permutations in $S_{10}$ that conjugate with (1 3 5 7 9)(2)(4)(6)(8)(10)
+  
+  
+$\rho \tau = \tau \sigma \iff \rho = \tau \sigma \tau^-1$
+permutations conjugate $\iff$ they have the same cycle structure
+i.e. they consist of $n_1$ cycles of length $l_1$, ... , $n_k$ cycles of length $l_k$
+(1 2 3)(4 5)(6)(7)
+(1 5 2)(3 4)(7)(6)
+  
+  
+  
+  
+now, how many permutations $\tau$ such that $\rho = \sigma = \tau \sigma \tau^-1$?
+  
+the permutations in $S_6$ that commute with (123)(456) will either map 
+(123) and (456) to themselves or interchange them
+because disjoint cycles commute
+  
+giving total $3^2 \cdot 2!$ different permutations $\tau$ that commute with our (1 2 3)(4 5 6)
+  
+illustration for the method
+  
+(1 2 3)(4 5 6)
+(2 3 1)(4 5 6)
+(3 1 2)(4 5 6)
+  
+(1 2 3)(5 6 4)
+(2 3 1)(5 6 4)
+(3 1 2)(5 6 4)
+  
+(1 2 3)(5 6 4)
+(2 3 1)(5 6 4)
+(3 1 2)(5 6 4)
+  
+and the same if we interchange them --- (4 5 6)(1 2 3)
+  
+  
+  
+  
+and in general 
+$\sigma \ = \  \prod \ n_i \  \text{cycles of length} \  l_i$
+then the centralizer
+$|C_\sigma| \  = \  \prod {l_i}^{n_i} \, {n_i}!$
+
+
+algorithm --- number of inversions
+how to get number of inversions in an array in $O(n \log n)$
+The only moment when inversions are removed is when algorithm takes element from the right side of an array and merge it to the main array.
+The number of inversions removed by this operation is the number of elements left from the the left array to be merged.
+| merged | left      | right          | comment                                                                |
+| ( )    | (1 3 5 8) | (2 4 6 7 9 11) |                                                                        |
+| (1)    | (3 5 8)   | (2 4 6 7 9 11) |                                                                        |
+| (1 2)  | (3 5 8)   | (4 6 7 9 11)   | all elts in left array where greater that 2, then 3 inversions removed |
+   
+you can do the same with quicksort, but it's $O(n^2)$ in the worst case
 
 
 
@@ -168,7 +283,7 @@ Properties of parity:
     <p>Your browser does not support iframes.</p>
 </iframe>
 
-- Q: 
+- Q: How to get number of inversions in an array in $O(n \log n)$?
 
 - Q: Properties of parity
   - $\operatorname{sgn}(\sigma \tau) = ?$
@@ -207,20 +322,18 @@ put a instead of 1:
 - Q: Solve $\sigma^2 = (1 \ 2 \ 3)(4 \ 5 \ 6)$
 A: <file:///Users/alex/Dropbox/hse_math/linear_algebra 04 -- Comments_permtation_root.pdf>
 
-- Q: Compute $\sigma^2019$
+- Q: Compute $\sigma^{2019}$
 A: Disjoint cycles decomposition, then $(1 \ \ldots \ n)^k = ()()()$ --- it breaks into $\frac{n}{\operatorname{gcd}(n, k)}$ parts, with $\operatorname{gcd}(n, k)$ elements in each part. 
 $(1 \ 2 \ 3 \ 4 \ 5 \ 6)^2 = (1 \ 3 \ 5)(2 \ 4 \ 6)$
 
 - Q: <https://en.wikipedia.org/wiki/Vandermonde_matrix>
-
-- Q: How to solve $x^2 = \sigma$?
 
 - Q: Every $n$-cycle can be expressed as product of $n−1$ transpositions.
 
 - Q: How to find parity of a permutation?
 A: Using disjoing cycles, using decremtn.
 
-- Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^17$.
+- Q: Solve $(1 \  2) \sigma (3 \  4) = ((1\ 2\ 3)(4\ 5))^{17}$.
 
 - Q: prove that permutations conjugate $\iff$ they have the same cycle structure
 A:

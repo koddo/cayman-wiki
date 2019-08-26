@@ -29,6 +29,9 @@ The problem is that we sometimes want to distinguish truthy values like `True`, 
 
 `if var is True: ...` actually works, but relies on 
 
+<https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc>
+<https://www.reddit.com/r/Python/comments/6cvx0s/the_meaning_of_underscores_in_python>
+
 
 # Data classes and named tuples
 
@@ -39,4 +42,6 @@ Named tuples behave like tuples by design. We can compare two tuples of differen
 ```
 Aaa(1, 'a') == Bbb(1, 'a')     # True
 ```
+
+
 
