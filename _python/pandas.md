@@ -218,7 +218,34 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
+# split-apply-combine
 
+```
+df.groupby('species').sum()['sepal_width'] # ← BAD!
+df.groupby('species')['sepal_width'].sum() # ← BETTER & FASTER!
+df.groupby('species').[['sepal_width']].sum()```
+
+multicol_sum = df.groupby(['species', 'petal_width']).sum()
+multicol_sum.xs('virginica', level='species')
+
+
+
+def foo(gr):
+  print(type(gr))
+  return None
+ 
+df.groupby('species').apply(foo)
+
+def foo(gr): 
+  print(gr, '\n')
+ 
+df.groupby('species').apply(func=foo)
+
+```
+
+apply calls func twice on the first row
 
 # numpy
+
+
 
