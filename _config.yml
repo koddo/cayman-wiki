@@ -24,6 +24,9 @@ collections:
   misc:
     title: "Misc"
     output: true
+  ml:
+    title: "Machine Learning"
+    output: true
 
 
 superlearn_url: "https://superlearn.it"
