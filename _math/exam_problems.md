@@ -4,7 +4,7 @@ layout: default
 
 ---
 
-* this line gets replaced with the generated table of contents
+* this line is replaced with the generated table of contents
 {:toc}
 
 # TODO
