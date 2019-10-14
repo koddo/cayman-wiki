@@ -97,6 +97,11 @@ Exercises-4.ipynb: `cast.groupby(['year', 'type']).size().unstack('type').fillna
   s.fillna(value)   s.dt.dayofweek
 ```
 
+## misc
+
+remove a column: `df.drop(columns, axis=1, inplace=True)`
+
+
 ## apply, applymap, map
 
 ```

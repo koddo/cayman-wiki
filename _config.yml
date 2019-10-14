@@ -27,6 +27,9 @@ collections:
   ml:
     title: "Machine Learning"
     output: true
+  coding_interviews:
+    title: "Coding Interviews"
+    output: true
 
 
 superlearn_url: "https://superlearn.it"

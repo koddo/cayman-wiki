@@ -12,6 +12,10 @@ TODO: draw own pictures, <https://youtu.be/sarVw-iVWgc?list=PLiaHhY2iBX9ihLasvE8
 TODO: examples
 TODO: examples of high/low recall and precision
 
+# Logistic regression
+
+Logistic function $$\sigma(x) = \frac{1}{1+e^{-x}}$$
+
 # superlearn
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=ml -- misc">

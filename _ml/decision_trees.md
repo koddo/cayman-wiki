@@ -29,6 +29,16 @@ def build(L):
     For classification a good default is: m = sqrt(p)
     For regression a good default is: m = p/3
 
+## Out-of-bag score
+
+
+
+## Feature importance
+
+<https://medium.com/the-artificial-impostor/feature-importance-measures-for-tree-models-part-i-47f187c1a2c3>
+
+<https://stackoverflow.com/questions/15810339/how-are-feature-importances-in-randomforestclassifier-determined>
+
 
 # superlearn
 
