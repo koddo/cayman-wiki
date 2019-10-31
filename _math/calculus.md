@@ -374,7 +374,9 @@ $$1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + \ldots = \ln 2$$
 
 <https://en.wikipedia.org/wiki/Telescoping_series>
 
+# Gradient
 
+Magnitude of gradient is equal to tan of angle of tangent plane.
 
 # Questions
 
@@ -383,6 +385,10 @@ $$1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} + \ldots = \ln 2$$
 </iframe>
 
 <iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- calculus -- derivatives">
+    <p>Your browser does not support iframes.</p>
+</iframe>
+
+<iframe class="autoresize nodisplay superlearn-iframe" src="{{ site.superlearn_url }}/ht/asdf2?deckname=math -- calculus -- gradient">
     <p>Your browser does not support iframes.</p>
 </iframe>
 
