@@ -7,7 +7,20 @@ layout: default
 * this line gets replaced with the generated table of contents
 {:toc}
 
-# Projection
+# TODO: change of basis for vectors and for transformations.
+
+
+
+# TODO: Dot product: algebraic and geometric definitions, their equivalence.
+
+
+# TODO: trace
+
+<https://en.wikipedia.org/wiki/Trace_(linear_algebra)>
+
+The trace of a nilpotent matrix is zero: <https://math.stackexchange.com/questions/1220470/trace-of-a-nilpotent-matrix-is-zero> 
+
+# TODO: Projection vs idempotent
 
 Let $P$ a projection operator, $P^2 = P$. Show $V = \operatorname{Im}P \oplus \operatorname{Ker}P$
 <https://math.stackexchange.com/questions/261704/show-that-the-direct-sum-of-a-kernel-of-a-projection-and-its-image-create-the-or>
@@ -16,10 +29,7 @@ Let $P$ a projection operator, $P^2 = P$. Show $V = \operatorname{Im}P \oplus \o
 
 <https://en.wikipedia.org/wiki/Nilpotent_matrix>
 
-$$
-{\rm{A = }}\left[ {\matrix{{\rm{1}} & { - 1} \cr {\rm{1}} & { - 1} \cr} } \right]
-$$
-
+$J(0)$ is the simplest example.
 
 # Cramer's rule
 
@@ -27,6 +37,8 @@ $$
 
 Inverse of matrix using Cramer's rule:
 <http://pi.math.cornell.edu/~andreim/Lec17.pdf>
+
+Geometric interpretation: <https://www.youtube.com/watch?v=jBsC34PxzoM>
 
 # Superlearn
 
