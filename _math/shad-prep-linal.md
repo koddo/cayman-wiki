@@ -15,8 +15,8 @@ layout: default
 
 # 4
 
-B \in M_n, \operatorname{rank}(B) = k
-\operatorname{rank}(\hat{B}) \ = \ ?
+$B \in M_n$, $\operatorname{rank}(B) = k$
+$\operatorname{rank}(\hat{B}) \ = \ ?$
 2:20:30
 
 # Superlearn
