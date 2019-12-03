@@ -81,8 +81,8 @@ a+bi & 0 \\
 =
 C^{-1}
 \begin{pmatrix} 
-a+bi & 0 \\
-0 & a-bi
+a & -b \\
+b & a
 \end{pmatrix}
 C
 $$
