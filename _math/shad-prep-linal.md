@@ -9,9 +9,14 @@ layout: default
 
 # 1
 
+number of solutions depending on size of matrix A in Ax = b
+
 набор эквивалентных определений обратимости
 Ax = 0 — это линейная комбинация столбцов: они все линейно независимы <=> существует только решение x=0
 
+
+what matrices commute with a diagonal? with diag(t_1, ..., t_n), where t_1 >= ... >= t_n?
+what matrices commute with all matrices?
 
 # 2
 
@@ -20,6 +25,7 @@ Ax = λx
 A^k x = λ^k x -- this is used in the following polynomial
 m(A) x = m(λ) x = 0
 
+spec(AB) = spec(BA), det(AB) = \lambda^{n-m} det(BA)
 
 # 3
 
@@ -30,6 +36,22 @@ TODO: <https://ru.wikipedia.org/wiki/Определитель_Вандермон
 $B \in M_n$, $\operatorname{rank}(B) = k$
 $\operatorname{rank}(\hat{B}) \ = \ ?$
 2:20:30
+
+
+задача 10:
+
+사무엘 김, [18.12.19 17:05]
+Найти ранг матрицы где элементы квадрат разности
+
+Alejandro, [18.12.19 17:24]
+идея офигенная. Только одно там надо доделать. У тебя исходная матрица раскладывается в виде A = B C, 
+где 
+B = 
+1 1 1
+...
+n^2 n 1
+
+Получается, ранг ≤ 3, потому что есть вторая матрица в разложении.
 
 # 5
 
@@ -58,8 +80,8 @@ TODO:
 
 TODO: Change of basis $A' = D^{-1} A C$
 
-
-TODO: <https://en.wikipedia.org/wiki/Kronecker_product>
+    
+TODO: <https://en.wikipedia.org/wiki/Kronecker_product>, det, trace, eigenvalues, https://digitalcommons.unf.edu/cgi/viewcontent.cgi?article=1025&context=etd -- 
 
 TODO: X^2 = A
 
@@ -87,6 +109,14 @@ b & a
 C
 $$
 
+# 7
+
+# 8
+
+SVD
+
+Proof that symmetric matrices are diagonalizable with real eigenvalues
+
 # misc
 
 orthogonal matrices rotate or mirror, but never stretch
@@ -97,6 +127,11 @@ orthogonal matrices rotate or mirror, but never stretch
 
 нильпотентна => след нулевой
 более общий гроб: A \in M_n(R) нильпотентна тогда и только тогда, когда tr (A^k) = 0 для любого k <=n
+
+
+ellipse to sphere -- <https://sites.math.washington.edu/~king/coursedir/m308a01/Projects/m308a01-pdf/brown.pdf>
+
+TODO: Im and Ker basis -- <https://math.stackexchange.com/questions/2078943/row-operations-do-not-change-the-dependency-relationships-among-columns>
 
 # Superlearn
 
