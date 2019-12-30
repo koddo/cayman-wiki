@@ -26,8 +26,29 @@ Precision, Recall
 
 AUC ROC
 
-F1
+## F_1
 
+<https://stackoverflow.com/questions/26355942/why-is-the-f-measure-a-harmonic-mean-and-not-an-arithmetic-mean-of-the-precision>
+
+> If you want to know if your predictions are good, you need these two measures. 
+> If one of these two values decreases dramatically, the f-score also does.
+
+<https://www.quora.com/What-is-an-intuitive-explanation-of-F-score>
+
+> When measuring how well you're doing, it's often useful to have a single number to describe your performance. 
+
+<https://www.mikulskibartosz.name/f1-score-explained/>
+
+![f_{1} score](https://www.mikulskibartosz.name/assets/images/2019-02-04-f1-score-explained/f1_score.png)
+
+![f_{2} score](https://www.mikulskibartosz.name/assets/images/2019-02-04-f1-score-explained/f2_score.png)
+
+![f_{0.5} score](https://www.mikulskibartosz.name/assets/images/2019-02-04-f1-score-explained/f05_score.png)
+
+Why harmonic mean:
+
+> The harmonic mean is the equivalent of the arithmetic mean for reciprocals of quantities that should be averaged by the arithmetic mean
+> Precision and the recall are "naturally" reciprocals because their numerator is the same and their denominators are different. Fractions are more sensible to average by arithmetic mean when they have the same denominator.
 
 # superlearn
 
